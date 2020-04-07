@@ -5,8 +5,325 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__logo brand-logo">
+        <span class="brand-logo__text">Погнали?</span>
+      </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Открыть меню</button>
+      </nav>
+    </header>
 
+    <main class="page-content">
+      <section class="page-section page-section--intro intro">
+        <h1 class="intro__title">
+          В путешествие
+          <br/>
+          с крутыми
+          <br/>
+          попутчиками!
+        </h1>
+
+        <div class="intro__image"></div>
+
+        <div class="intro__actions">
+          <ul class="button-group">
+            <li class="button-group__item">
+              <a class="button intro-button" href="tel:88005558628">
+                <svg class="intro-button__icon">
+                  <!-- TODO: добавить иконку -->
+                </svg>
+                <span class="visually-hidden">позвонить нам</span>
+              </a>
+            </li>
+
+            <li class="button-group__item">
+              <a class="button intro-button" href="mailto:mail@htmlacademy.ru">
+                <svg class="intro-button__icon">
+                  <!-- TODO: добавить иконку -->
+                </svg>
+                <span class="visually-hidden">
+                  написать нам
+                </span>
+              </a>
+            </li>
+
+            <li class="button-group__item">
+              <a class="button" href="#">авторизация</a>
+            </li>
+          </ul>
+        </div>
+
+        <blockquote class="intro__testimonial">
+          <p class="intro__testimonial-text">
+            «Лучшее приложение,
+            <br/>
+            что я видел в жизни!»
+          </p>
+
+          <cite class="intro__testimonial-author">
+            Мурат Эльтазин
+            <br/>
+            главный редактор
+            <br/>
+            газеты «гаджетлайф»
+          </cite>
+        </blockquote>
+
+        <ul class="intro__steps">
+          <li class="intro__steps-item">
+            Выберите
+            <br/>
+            направление
+          </li>
+
+          <li class="intro__steps-item">
+            Изучите идеи
+            <br/>
+            путешественников
+          </li>
+
+          <li class="intro__steps-item">
+            Находите тех,
+            <br/>
+            кто похож на вас
+          </li>
+
+          <li class="intro__steps-item">
+            Путешествуйте
+            <br/>
+            вместе!
+          </li>
+        </ul>
+      </section>
+
+      <section class="page-section page-section--about">
+        <h2 class="page-section__title">О сервисе</h2>
+
+        <div class="page-section__description">
+          <p class="page-section__paragraph">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          </p>
+
+          <p class="page-section__paragraph page-section__paragraph--bold">
+            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+          </p>
+        </div>
+      </section>
+
+      <section class="page-section page-section--directions">
+        <h2 class="page-section__title">Направления</h2>
+
+        <div class="page-section__description">
+          <p class="page-section__paragraph">
+            Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+          </p>
+        </div>
+
+        <ul class="directions">
+          <li class="directions__item">
+            <div class="direction">
+              <img class="direction__image" src="https://via.placeholder.com/270x110" alt="таиланд" width="270" height="110">
+
+              <p class="direction__info">
+                <img class="direction__flag" src="https://via.placeholder.com/35x24" alt="флаг таиланда" width="35" height="24">
+                <span class="direction__views">18321</span>
+                <span class="direction__title">Таиланд</span>
+                <span class="direction__subtitle">Джунгли зовут!</span>
+              </p>
+            </p>
+          </li>
+
+          <li class="directions__item">
+            <div class="direction">
+              <img class="direction__image" src="https://via.placeholder.com/270x110" alt="франция" width="270" height="110">
+
+              <p class="direction__info">
+                <img class="direction__flag" src="https://via.placeholder.com/35x24" alt="флаг франции" width="35" height="24">
+                <span class="direction__views">12518</span>
+                <span class="direction__title">Франция</span>
+                <span class="direction__subtitle">Трэ бьен, манифик!</span>
+              </p>
+            </p>
+          </li>
+
+          <li class="directions__item">
+            <div class="direction">
+              <img class="direction__image" src="https://via.placeholder.com/270x110" alt="чехия" width="270" height="110">
+
+              <p class="direction__info">
+                <img class="direction__flag" src="https://via.placeholder.com/35x24" alt="флаг чехии" width="35" height="24">
+                <span class="direction__views">5326</span>
+                <span class="direction__title">Чехия</span>
+                <span class="direction__subtitle">Закоулки старой Европы</span>
+              </p>
+            </p>
+          </li>
+        </ul>
+
+        <div class="page-section__actions">
+          <a class="button button--next" href="/form.html">Показать все</a>
+        </div>
+      </section>
+
+      <section class="page-section page-section--companions">
+        <h2 class="page-section__title">Попутчики</h2>
+
+        <div class="page-section__description">
+          <p class="page-section__paragraph">
+            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+          </p>
+
+          <p class="page-section__paragraph page-section__paragraph--bold">
+            Теперь можно легко найти единомышленников!
+          </p>
+        </div>
+
+        <ul class="companions">
+          <li class="companions__item">
+            <div class="companion">
+              <div class="companion__level">
+                <div class="level-label">
+                  <div class="level-label__amount">99</div>
+                  <div class="level-label__caption">level</div>
+                </div>
+              </div>
+
+              <img class="companion__image" src="https://via.placeholder.com/270x270" alt="Таня Фирсова" width="270" height="270">
+
+              <div class="companion__info">
+                <div class="companion__flags">
+                  <img class="companion__flag" src="https://via.placeholder.com/35x24" alt="флаг страны 1" width="35" height="24">
+                  <img class="companion__flag" src="https://via.placeholder.com/35x24" alt="флаг страны 2" width="35" height="24">
+                  <img class="companion__flag" src="https://via.placeholder.com/35x24" alt="флаг страны 3" width="35" height="24">
+                </div>
+
+                <div class="companion__name">Таня Фирсова</div>
+
+                <div class="companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</div>
+
+                <div class="companion__transport">
+                  <svg class="companion__transport-icon companion__transport-icon--available">
+                    <!-- TODO: добавить иконку -->
+                  </svg>
+
+                  <svg class="companion__transport-icon">
+                    <!-- TODO: добавить иконку -->
+                  </svg>
+                </div>
+              </div>
+            </p>
+          </li>
+
+          <li class="companions__item">
+            <div class="companion">
+              <div class="companion__level">
+                <div class="level-label">
+                  <div class="level-label__amount">80</div>
+                  <div class="level-label__caption">level</div>
+                </div>
+              </div>
+
+              <img class="companion__image" src="https://via.placeholder.com/270x270" alt="Петя Демин" width="270" height="270">
+
+              <div class="companion__info">
+                <div class="companion__flags">
+                  <img class="companion__flag" src="https://via.placeholder.com/35x24" alt="флаг страны 1" width="35" height="24">
+                  <img class="companion__flag" src="https://via.placeholder.com/35x24" alt="флаг страны 2" width="35" height="24">
+                </div>
+
+                <div class="companion__name companion__name--online">Петя Демин</div>
+
+                <div class="companion__tags">#бургер #бар #футбол #концерт #крафт</div>
+
+                <div class="companion__transport">
+                  <svg class="companion__transport-icon companion__transport-icon--available">
+                    <!-- TODO: добавить иконку -->
+                  </svg>
+
+                  <svg class="companion__transport-icon">
+                    <!-- TODO: добавить иконку -->
+                  </svg>
+                </div>
+              </div>
+            </p>
+          </li>
+        </ul>
+
+        <div class="page-section__actions">
+          <a class="button button--next" href="/catalog.html">Показать всех</a>
+        </div>
+      </section>
+
+      <section class="page-section page-section--tariffs tariffs">
+        <h2 class="page-section__title">Добавьте свой профиль</h2>
+
+        <img class="tariffs__icon" src="https://via.placeholder.com/99x99" alt="" width="99" height="99">
+
+        <table class="tariffs__table">
+          <tbody>
+            <tr class="tariffs__table-row">
+              <td class="tariffs__table-col">Базовое размещение</td>
+              <td class="tariffs__table-col">Бесплатно</td>
+            </tr>
+
+            <tr class="tariffs__table-row">
+              <td class="tariffs__table-col">Вывод на первых позициях</td>
+              <td class="tariffs__table-col">99 руб./мес</td>
+            </tr>
+
+            <tr class="tariffs__table-row">
+              <td class="tariffs__table-col">Кастомный цвет карточки</td>
+              <td class="tariffs__table-col">59 руб./мес</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="page-section__actions">
+          <a class="tariffs__show-all" href="#">Показать тарифы для бизнеса</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo brand-logo">
+        <span class="brand-logo__text">Погнали?</span>
+      </div>
+
+      <ul class="page-footer__social-list button-group">
+        <li class="button-group__item">
+          <a class="button social-button" href="https://facebook.com" target="_blank">
+            <svg class="social-button__icon">
+              <!-- TODO: добавить иконку -->
+            </svg>
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="button-group__item">
+          <a class="button social-button" href="https://vk.com" target="_blank">
+            <svg class="social-button__icon">
+              <!-- TODO: добавить иконку -->
+            </svg>
+            <span class="visually-hidden">vk</span>
+          </a>
+        </li>
+        <li class="button-group__item">
+          <a class="button social-button" href="https://instagram.com" target="_blank">
+            <svg class="social-button__icon">
+              <!-- TODO: добавить иконку -->
+            </svg>
+            <span class="visually-hidden">instagram</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__development">
+        <span class="page-footer__development-caption">Разработано</span>
+        <svg class="page-footer__development-icon">
+          <!-- TODO: добавить иконку -->
+        </svg>
+      </div>
+    </footer>
   </body>
 </html>
