@@ -23,68 +23,69 @@
       </div>
 
       <section class="page-section page-section--companion-cards">
+        <h2 class="visually-hidden">Список попутчиков</h2>
+
         <ul class="companion-cards">
           <li class="companion-cards__item">
-            <div class="companion-card">
-              <div class="companion-card__avatar">
-                <img class="companion-card__avatar-image" src="https://via.placeholder.com/70x70" alt="Таня Фирсова" width="70" height="70">
-              </div>
+            <article class="companion-card">
+              <img class="companion-card__avatar" src="https://via.placeholder.com/70x70" alt="Таня Фирсова" width="70" height="70">
 
               <div class="companion-card__main">
-                <div class="companion-card__name">Таня Фирсова</div>
+                <h3 class="companion-card__name">Таня Фирсова</h3>
 
                 <div class="companion-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</div>
 
-                <ul class="companion-card__actions button-group">
-                  <li class="button-group__item">
-                    <button class="button">позвать!</button>
-                  </li>
+                <div class="companion-card__actions">
+                  <a class="button" href="#">позвать!</a>
 
-                  <li class="button-group__item">
-                    <button class="button like-button like-button--active">
-                      <svg class="like-button__icon">
+                  <div class="like-button">
+                    <a class="button button--like button--like-active" href="#">
+                      <svg class="button__icon">
                         <!-- TODO: добавить иконку -->
                       </svg>
                       <span class="visually-hidden">поставить лайк</span>
-                      <span class="like-button__stats">1,5 M</span>
-                    </button>
-                  </li>
-                </ul>
+                    </a>
+
+                    <span class="like-button__stats">1,5 M</span>
+                  </div>
+                </div>
               </div>
 
               <div class="companion-card__travel-info">
-                <ul class="companion-card__wishlist">
-                  <li class="companion-card__wishlist-item">
-                    <div class="companion-card__country">
-                      <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг шри-ланки" width="35" height="24">
-                      <span class="companion-card__country-name">шри-ланка</span>
-                    </div>
-                  </li>
+                <div class="companion-card__countries">
+                  <div class="companion-card__country">
+                    <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг шри-ланки" width="35" height="24">
+                    <span class="companion-card__country-name">шри-ланка</span>
+                  </div>
 
-                  <li class="companion-card__wishlist-item">
-                    <div class="companion-card__country">
-                      <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг таиланда" width="35" height="24">
-                      <span class="companion-card__country-name">таиланд</span>
-                    </div>
-                  </li>
+                  <div class="companion-card__country">
+                    <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг таиланда" width="35" height="24">
+                    <span class="companion-card__country-name">таиланд</span>
+                  </div>
 
-                  <li class="companion-card__wishlist-item">
-                    <div class="companion-card__country">
-                      <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг сейшелов" width="35" height="24">
-                      <span class="companion-card__country-name">сейшелы</span>
-                    </div>
-                  </li>
-                </ul>
+                  <div class="companion-card__country">
+                    <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг сейшелов" width="35" height="24">
+                    <span class="companion-card__country-name">сейшелы</span>
+                  </div>
+                </div>
 
                 <div class="companion-card__extra-info">
                   <div class="companion-card__transport">
-                    <svg class="companion-card__transport-icon companion-card__transport-icon--available">
-                      <!-- TODO: добавить иконку -->
-                    </svg>
+                    <div class="tooltip transport transport--avia transport--available">
+                      <div class="tooltip__content">Авиаперелет</div>
+                    </div>
 
-                    <svg class="companion-card__transport-icon">
-                      <!-- TODO: добавить иконку -->
-                    </svg>
+                    <div class="tooltip transport transport--car">
+                      <div class="tooltip__content">Автотранспорт</div>
+                    </div>
+
+                    <div class="tooltip transport transport--bicycle">
+                      <div class="tooltip__content">Велосипед</div>
+                    </div>
+
+                    <div class="tooltip transport transport--walk">
+                      <div class="tooltip__content">Пешком</div>
+                    </div>
                   </div>
 
                   <div class="companion-card__level">
@@ -95,63 +96,64 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </li>
 
           <li class="companion-cards__item">
-            <div class="companion-card">
-              <div class="companion-card__avatar">
-                <img class="companion-card__avatar-image" src="https://via.placeholder.com/70x70" alt="Лариса Роговая" width="70" height="70">
-              </div>
+            <article class="companion-card">
+              <img class="companion-card__avatar" src="https://via.placeholder.com/70x70" alt="Лариса Роговая" width="70" height="70">
 
               <div class="companion-card__main">
-                <div class="companion-card__name companion-card__name--online">Лариса Роговая</div>
+                <h3 class="companion-card__name companion-card__name--online">Лариса Роговая</h3>
 
                 <div class="companion-card__tags">#образование #карьера #учеба #линкедин</div>
 
-                <ul class="companion-card__actions button-group">
-                  <li class="button-group__item">
-                    <button class="button">позвать!</button>
-                  </li>
+                <div class="companion-card__actions">
+                  <a class="button" href="#">позвать!</a>
 
-                  <li class="button-group__item">
-                    <button class="button like-button">
-                      <svg class="like-button__icon">
+                  <div class="like-button">
+                    <a class="button button--like" href="#">
+                      <svg class="button__icon">
                         <!-- TODO: добавить иконку -->
                       </svg>
                       <span class="visually-hidden">поставить лайк</span>
-                      <span class="like-button__stats">23</span>
-                    </button>
-                  </li>
-                </ul>
+                    </a>
+
+                    <span class="like-button__stats">23</span>
+                  </div>
+                </div>
               </div>
 
               <div class="companion-card__travel-info">
-                <ul class="companion-card__wishlist">
-                  <li class="companion-card__wishlist-item">
-                    <div class="companion-card__country">
-                      <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг великобритании" width="35" height="24">
-                      <span class="companion-card__country-name">великобритания</span>
-                    </div>
-                  </li>
+                <div class="companion-card__countries">
+                  <div class="companion-card__country">
+                    <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг великобритании" width="35" height="24">
+                    <span class="companion-card__country-name">великобритания</span>
+                  </div>
 
-                  <li class="companion-card__wishlist-item">
-                    <div class="companion-card__country">
-                      <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг германии" width="35" height="24">
-                      <span class="companion-card__country-name">германия</span>
-                    </div>
-                  </li>
-                </ul>
+                  <div class="companion-card__country">
+                    <img class="companion-card__country-flag" src="https://via.placeholder.com/35x24" alt="флаг германии" width="35" height="24">
+                    <span class="companion-card__country-name">германия</span>
+                  </div>
+                </div>
 
                 <div class="companion-card__extra-info">
                   <div class="companion-card__transport">
-                    <svg class="companion-card__transport-icon companion-card__transport-icon--available">
-                      <!-- TODO: добавить иконку -->
-                    </svg>
+                    <div class="tooltip transport transport--avia transport--available">
+                      <div class="tooltip__content">Авиаперелет</div>
+                    </div>
 
-                    <svg class="companion-card__transport-icon">
-                      <!-- TODO: добавить иконку -->
-                    </svg>
+                    <div class="tooltip transport transport--car">
+                      <div class="tooltip__content">Автотранспорт</div>
+                    </div>
+
+                    <div class="tooltip transport transport--bicycle">
+                      <div class="tooltip__content">Велосипед</div>
+                    </div>
+
+                    <div class="tooltip transport transport--walk">
+                      <div class="tooltip__content">Пешком</div>
+                    </div>
                   </div>
 
                   <div class="companion-card__level">
@@ -162,7 +164,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </li>
         </ul>
 
