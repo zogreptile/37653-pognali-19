@@ -78,6 +78,100 @@
         </button>
       </section>
 
+      <form class="companion-filter" action="https://echo.htmlacademy.ru">
+        <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
+
+        <fieldset class="companion-filer__fields">
+          <legend class="companion-filter__fields-caption">хобби</legend>
+
+          <div class="companion-filter__fields-container companion-filter__fields-container--opened">
+            <label class="companion-filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="hobby" value="gym">
+              <span class="companion-filter__checkbox-caption">Спортзал</span>
+            </label>
+
+            <label class="companion-filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="hobby" value="smoke">
+              <span class="companion-filter__checkbox-caption">Кальян</span>
+            </label>
+
+            <label class="companion-filter__checkbox">
+              <input class="visually-hidden" type="checkbox" name="hobby" value="chill">
+              <span class="companion-filter__checkbox-caption">Диван</span>
+            </label>
+          </div>
+
+          <button class="companion-filter__toggle">
+            <span class="visually-hidden">раскрыть/свернуть варианты</span>
+          </button>
+        </fieldset>
+
+        <fieldset class="companion-filer__fields">
+          <legend class="companion-filter__fields-caption">Транспорт</legend>
+
+          <div class="companion-filter__fields-container companion-filter__fields-container--opened">
+            <label class="transport-field">
+              <input class="visually-hidden" type="checkbox" name="transport" value="avia" checked>
+              <span class="tooltip transport-field__icon transport-field__icon--avia">
+                <span class="tooltip__content">Авиаперелет</span>
+              </span>
+            </label>
+
+            <label class="transport-field">
+              <input class="visually-hidden" type="checkbox" name="transport" value="car">
+              <span class="tooltip transport-field__icon transport-field__icon--car">
+                <span class="tooltip__content">Автотранспорт</span>
+              </span>
+            </label>
+
+            <label class="transport-field">
+              <input class="visually-hidden" type="checkbox" name="transport" value="bicycle">
+              <span class="tooltip transport-field__icon transport-field__icon--bicycle">
+                <span class="tooltip__content">Велосипед</span>
+              </span>
+            </label>
+
+            <label class="transport-field">
+              <input class="visually-hidden" type="checkbox" name="transport" value="walk">
+              <span class="tooltip transport-field__icon transport-field__icon--walk">
+                <span class="tooltip__content">Пешком</span>
+              </span>
+            </label>
+          </div>
+
+          <button class="companion-filter__toggle">
+            <span class="visually-hidden">раскрыть/свернуть варианты</span>
+          </button>
+        </fieldset>
+
+        <fieldset class="companion-filer__fields">
+          <legend class="companion-filter__fields-caption">левел</legend>
+
+          <div class="companion-filter__fields-container companion-filter__fields-container--opened">
+            <div class="companion-filter__level-wrapper">
+              <div class="companion-filter__range">
+                <div class="companion-filter__range-fill"></div>
+                <div class="companion-filter__range-min" data-level-min-id="level-min"></div>
+                <div class="companion-filter__range-max" data-level-max-id="level-max"></div>
+              </div>
+
+              <div class="companion-filter__level-inputs">
+                <input class="companion-filter__level-input" id="level-min" type="number" name="level" value="30">
+                <input class="companion-filter__level-input" id="level-max" type="number" name="level" value="100">
+              </div>
+            </div>
+          </div>
+
+          <button class="companion-filter__toggle">
+            <span class="visually-hidden">раскрыть/свернуть варианты</span>
+          </button>
+        </fieldset>
+
+        <div class="companion-filter__action">
+          <button class="button button--wide button--light">показать</button>
+        </div>
+      </form>
+
       <section class="page-section page-section--companion-cards">
         <h2 class="visually-hidden">Список попутчиков</h2>
 
