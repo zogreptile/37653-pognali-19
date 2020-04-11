@@ -21,6 +21,61 @@
           <span class="top-panel__title-text">Направления</span>
         </h1>
       </div>
+
+      <section class="user">
+        <h2 class="visually-hidden">Информация о пользователе</h2>
+
+        <form class="user__inner" action="https://echo.htmlacademy.ru">
+          <div class="user__level level-label">
+            <div class="level-label__amount">99</div>
+            <div class="level-label__caption">level</div>
+          </div>
+
+          <img class="user__avatar" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Аватар Петя Демин">
+
+          <a class="user__change-avatar" href="#">сменить фото</a>
+
+          <article class="user__tags">
+            <h3 class="user__tags-title">тэги</h3>
+
+            <textarea class="user__tags-input" name="tags">
+              #бургер #бар #футбол #концерт #крафт
+            </textarea>
+          </article>
+
+          <article class="user__transport">
+            <h3 class="user__transport-title">транспорт</h3>
+
+            <label class="transport-field">
+              <input class="visually-hidden" type="checkbox" name="transport" value="avia" checked>
+              <span class="tooltip transport-field__icon transport-field__icon--avia">
+                <span class="tooltip__content">Авиаперелет</span>
+              </span>
+            </label>
+
+            <label class="transport-field">
+              <input class="visually-hidden" type="checkbox" name="transport" value="car">
+              <span class="tooltip transport-field__icon transport-field__icon--car">
+                <span class="tooltip__content">Автотранспорт</span>
+              </span>
+            </label>
+
+            <label class="transport-field">
+              <input class="visually-hidden" type="checkbox" name="transport" value="bicycle">
+              <span class="tooltip transport-field__icon transport-field__icon--bicycle">
+                <span class="tooltip__content">Велосипед</span>
+              </span>
+            </label>
+
+            <label class="transport-field">
+              <input class="visually-hidden" type="checkbox" name="transport" value="walk">
+              <span class="tooltip transport-field__icon transport-field__icon--walk">
+                <span class="tooltip__content">Пешком</span>
+              </span>
+            </label>
+          </article>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
