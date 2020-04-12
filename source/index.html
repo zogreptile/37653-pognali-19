@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo brand-logo">
-        <span class="brand-logo__text">Погнали?</span>
+      <div class="page-header__logo">
+        <img class="brand-logo" src="https://via.placeholder.com/100x19" alt="Погнали?">
       </div>
 
       <nav class="main-nav">
@@ -25,34 +25,24 @@
           попутчиками!
         </h1>
 
-        <div class="intro__image"></div>
-
         <div class="intro__actions">
-          <ul class="button-group">
-            <li class="button-group__item">
-              <a class="button intro-button" href="tel:88005558628">
-                <svg class="intro-button__icon">
-                  <!-- TODO: добавить иконку -->
-                </svg>
-                <span class="visually-hidden">позвонить нам</span>
-              </a>
-            </li>
+          <a class="button button--intro-call" href="tel:88005558628">
+            <svg class="button__icon">
+              <!-- TODO: добавить иконку -->
+            </svg>
+            <span class="visually-hidden">позвонить нам</span>
+          </a>
 
-            <li class="button-group__item">
-              <a class="button intro-button" href="mailto:mail@htmlacademy.ru">
-                <svg class="intro-button__icon">
-                  <!-- TODO: добавить иконку -->
-                </svg>
-                <span class="visually-hidden">
-                  написать нам
-                </span>
-              </a>
-            </li>
+          <a class="button button--intro-mail" href="mailto:mail@htmlacademy.ru">
+            <svg class="button__icon">
+              <!-- TODO: добавить иконку -->
+            </svg>
+            <span class="visually-hidden">
+              написать нам
+            </span>
+          </a>
 
-            <li class="button-group__item">
-              <a class="button" href="#">авторизация</a>
-            </li>
-          </ul>
+          <a class="button" href="#">авторизация</a>
         </div>
 
         <blockquote class="intro__testimonial">
@@ -71,7 +61,7 @@
           </cite>
         </blockquote>
 
-        <ul class="intro__steps">
+        <ol class="intro__steps">
           <li class="intro__steps-item">
             Выберите
             <br/>
@@ -95,7 +85,7 @@
             <br/>
             вместе!
           </li>
-        </ul>
+        </ol>
       </section>
 
       <section class="page-section page-section--about">
@@ -123,42 +113,42 @@
 
         <ul class="directions">
           <li class="directions__item">
-            <div class="direction">
+            <article class="direction">
               <img class="direction__image" src="https://via.placeholder.com/270x110" alt="таиланд" width="270" height="110">
 
-              <p class="direction__info">
+              <div class="direction__info">
                 <img class="direction__flag" src="https://via.placeholder.com/35x24" alt="флаг таиланда" width="35" height="24">
                 <span class="direction__views">18321</span>
-                <span class="direction__title">Таиланд</span>
+                <h3 class="direction__title">Таиланд</h3>
                 <span class="direction__subtitle">Джунгли зовут!</span>
-              </p>
-            </p>
+              </div>
+            </article>
           </li>
 
           <li class="directions__item">
-            <div class="direction">
+            <article class="direction">
               <img class="direction__image" src="https://via.placeholder.com/270x110" alt="франция" width="270" height="110">
 
-              <p class="direction__info">
+              <div class="direction__info">
                 <img class="direction__flag" src="https://via.placeholder.com/35x24" alt="флаг франции" width="35" height="24">
                 <span class="direction__views">12518</span>
-                <span class="direction__title">Франция</span>
+                <h3 class="direction__title">Франция</h3>
                 <span class="direction__subtitle">Трэ бьен, манифик!</span>
-              </p>
-            </p>
+              </div>
+            </article>
           </li>
 
           <li class="directions__item">
-            <div class="direction">
+            <article class="direction">
               <img class="direction__image" src="https://via.placeholder.com/270x110" alt="чехия" width="270" height="110">
 
-              <p class="direction__info">
+              <div class="direction__info">
                 <img class="direction__flag" src="https://via.placeholder.com/35x24" alt="флаг чехии" width="35" height="24">
                 <span class="direction__views">5326</span>
-                <span class="direction__title">Чехия</span>
+                <h3 class="direction__title">Чехия</h3>
                 <span class="direction__subtitle">Закоулки старой Европы</span>
-              </p>
-            </p>
+              </div>
+            </article>
           </li>
         </ul>
 
@@ -182,7 +172,7 @@
 
         <ul class="companions">
           <li class="companions__item">
-            <div class="companion">
+            <article class="companion">
               <div class="companion__level">
                 <div class="level-label">
                   <div class="level-label__amount">99</div>
@@ -199,25 +189,33 @@
                   <img class="companion__flag" src="https://via.placeholder.com/35x24" alt="флаг страны 3" width="35" height="24">
                 </div>
 
-                <div class="companion__name">Таня Фирсова</div>
+                <h3 class="companion__name">Таня Фирсова</h3>
 
                 <div class="companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</div>
 
                 <div class="companion__transport">
-                  <svg class="companion__transport-icon companion__transport-icon--available">
-                    <!-- TODO: добавить иконку -->
-                  </svg>
+                  <div class="tooltip transport transport--avia transport--available">
+                    <div class="tooltip__content">Авиаперелет</div>
+                  </div>
 
-                  <svg class="companion__transport-icon">
-                    <!-- TODO: добавить иконку -->
-                  </svg>
+                  <div class="tooltip transport transport--car">
+                    <div class="tooltip__content">Автотранспорт</div>
+                  </div>
+
+                  <div class="tooltip transport transport--bicycle">
+                    <div class="tooltip__content">Велосипед</div>
+                  </div>
+
+                  <div class="tooltip transport transport--walk">
+                    <div class="tooltip__content">Пешком</div>
+                  </div>
                 </div>
               </div>
-            </p>
+            </article>
           </li>
 
           <li class="companions__item">
-            <div class="companion">
+            <article class="companion">
               <div class="companion__level">
                 <div class="level-label">
                   <div class="level-label__amount">80</div>
@@ -233,21 +231,29 @@
                   <img class="companion__flag" src="https://via.placeholder.com/35x24" alt="флаг страны 2" width="35" height="24">
                 </div>
 
-                <div class="companion__name companion__name--online">Петя Демин</div>
+                <h3 class="companion__name companion__name--online">Петя Демин</h3>
 
                 <div class="companion__tags">#бургер #бар #футбол #концерт #крафт</div>
 
                 <div class="companion__transport">
-                  <svg class="companion__transport-icon companion__transport-icon--available">
-                    <!-- TODO: добавить иконку -->
-                  </svg>
+                  <div class="tooltip transport transport--avia transport--available">
+                    <div class="tooltip__content">Авиаперелет</div>
+                  </div>
 
-                  <svg class="companion__transport-icon">
-                    <!-- TODO: добавить иконку -->
-                  </svg>
+                  <div class="tooltip transport transport--car">
+                    <div class="tooltip__content">Автотранспорт</div>
+                  </div>
+
+                  <div class="tooltip transport transport--bicycle">
+                    <div class="tooltip__content">Велосипед</div>
+                  </div>
+
+                  <div class="tooltip transport transport--walk">
+                    <div class="tooltip__content">Пешком</div>
+                  </div>
                 </div>
               </div>
-            </p>
+            </article>
           </li>
         </ul>
 
@@ -259,22 +265,20 @@
       <section class="page-section page-section--tariffs tariffs">
         <h2 class="page-section__title">Добавьте свой профиль</h2>
 
-        <img class="tariffs__icon" src="https://via.placeholder.com/99x99" alt="" width="99" height="99">
-
         <table class="tariffs__table">
           <tbody>
             <tr class="tariffs__table-row">
-              <td class="tariffs__table-col">Базовое размещение</td>
+              <th class="tariffs__table-col">Базовое размещение</th>
               <td class="tariffs__table-col">Бесплатно</td>
             </tr>
 
             <tr class="tariffs__table-row">
-              <td class="tariffs__table-col">Вывод на первых позициях</td>
+              <th class="tariffs__table-col">Вывод на первых позициях</th>
               <td class="tariffs__table-col">99 руб./мес</td>
             </tr>
 
             <tr class="tariffs__table-row">
-              <td class="tariffs__table-col">Кастомный цвет карточки</td>
+              <th class="tariffs__table-col">Кастомный цвет карточки</th>
               <td class="tariffs__table-col">59 руб./мес</td>
             </tr>
           </tbody>
@@ -284,39 +288,77 @@
           <a class="tariffs__show-all" href="#">Показать тарифы для бизнеса</a>
         </div>
       </section>
+
+      <section class="page-section page-section--sign-up sign-up">
+        <h2 class="page-section__title">Заинтересовались?</h2>
+
+        <div class="page-section__description">
+          <p class="page-section__paragraph">
+            Зарегистрируйтесь,
+            это быстро и бесплатно!
+            Уже зарегистрированы? Тогда скорее <a href="#">авторизуйтесь</a>.
+          </p>
+        </div>
+
+        <form class="sign-up__form" action="https://echo.htmlacademy.ru">
+          <input class="sign-up__input" type="text" placeholder="E-mail">
+          <button class="button button--next sign-up__submit">
+            <span class="sign-up__submit-text">Регистрация</span>
+          </button>
+        </form>
+
+        <div class="page-section__description">
+          <p class="page-section__paragraph">
+            Остались вопросы?
+            Мы с радостью на них ответим!
+          </p>
+        </div>
+
+        <div class="sign-up__links">
+          <a class="sign-up__link sign-up__link-phone" href="tel:88005558628">8 800 555-86-28</a>
+          <a class="sign-up__link sign-up__link-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+      </section>
+
+      <section class="page-section page-section--address address">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <p class="address__text">ул. Большая Конюшенная, 19/8</p>
+        <a class="button button--next button--stroke" href="#">Проложить маршрут</a>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Мы на карте</h2>
+        <div class="map__container" id="map"></div>
+      </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo brand-logo">
-        <span class="brand-logo__text">Погнали?</span>
+      <div class="page-footer__logo">
+        <img class="brand-logo" src="https://via.placeholder.com/100x19" alt="Погнали?">
       </div>
 
-      <ul class="page-footer__social-list button-group">
-        <li class="button-group__item">
-          <a class="button social-button" href="https://facebook.com" target="_blank">
-            <svg class="social-button__icon">
-              <!-- TODO: добавить иконку -->
-            </svg>
-            <span class="visually-hidden">facebook</span>
-          </a>
-        </li>
-        <li class="button-group__item">
-          <a class="button social-button" href="https://vk.com" target="_blank">
-            <svg class="social-button__icon">
-              <!-- TODO: добавить иконку -->
-            </svg>
-            <span class="visually-hidden">vk</span>
-          </a>
-        </li>
-        <li class="button-group__item">
-          <a class="button social-button" href="https://instagram.com" target="_blank">
-            <svg class="social-button__icon">
-              <!-- TODO: добавить иконку -->
-            </svg>
-            <span class="visually-hidden">instagram</span>
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__socials">
+        <a class="button button--social" href="https://facebook.com" target="_blank">
+          <svg class="button__icon">
+            <!-- TODO: добавить иконку -->
+          </svg>
+          <span class="visually-hidden">facebook</span>
+        </a>
+
+        <a class="button button--social" href="https://vk.com" target="_blank">
+          <svg class="button__icon">
+            <!-- TODO: добавить иконку -->
+          </svg>
+          <span class="visually-hidden">vk</span>
+        </a>
+
+        <a class="button button--social" href="https://instagram.com" target="_blank">
+          <svg class="button__icon">
+            <!-- TODO: добавить иконку -->
+          </svg>
+          <span class="visually-hidden">instagram</span>
+        </a>
+      </div>
 
       <div class="page-footer__development">
         <span class="page-footer__development-caption">Разработано</span>
