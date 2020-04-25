@@ -69,3 +69,35 @@
     margin-top: 25px;
   }
 }
+
+.page-section--companions {
+  padding-top: 103px;
+  position: relative;
+  background-color: $dark-blue-grey;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $dark-blue-grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .page-section__title {
+    padding: 0 25px;
+  }
+
+  .page-section__description {
+    margin-bottom: 60px;
+    padding: 0 25px;
+  }
+
+  .page-section__actions {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+.transport {
+  margin: 0 5px;
+  width: 26px;
+  height: 22px;
+  position: relative;
+}
+
+.transport__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: rgba($greyish-brown, .3);
+}
+
+.transport--available {
+  .transport__icon {
+    fill: $dark-slate-blue;
+  }
+}
