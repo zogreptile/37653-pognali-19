@@ -1,0 +1,57 @@
+.level-label {
+  padding-top: 18px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  color: $white;
+  position: relative;
+}
+
+.level-label__amount {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 19px;
+  position: relative;
+  z-index: 1;
+}
+
+.level-label__caption {
+  padding-top: 3px;
+  font-size: 14px;
+  line-height: 14px;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 1px;
+    width: 32px;
+    background-color: rgba($white, .5);
+  }
+}
+
+.level-label__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.level-label__svg-bg {
+  fill: rgba($black, .5);
+}
+
+.level-label__svg-progress {
+  fill: none;
+  stroke-width: 3px;
+  stroke: $mango;
+  stroke-linecap: round;
+  stroke-dasharray: 126.56;
+  stroke-dashoffset: 60;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
