@@ -1,0 +1,82 @@
+.tariffs {
+  background: url('../../img/rates@1x.png') calc(100% - 25px) 70px / 99px 99px no-repeat $pale-grey;
+}
+
+.tariffs__table {
+  display: block;
+  padding-right: 45px;
+  width: 100%;
+  border-collapse: collapse;
+  counter-reset: table-row;
+  position: relative;
+}
+
+.tariffs__table-body {
+  display: block;
+  width: 100%;
+}
+
+.tariffs__table-row {
+  display: block;
+  padding: 14px 0;
+  text-align: left;
+  box-shadow: 0 -1px 0 0 rgba($greyish-brown, .1);
+  position: relative;
+
+  &:last-child {
+    box-shadow:
+      0 1px 0 0 rgba($greyish-brown, .1),
+      0 -1px 0 0 rgba($greyish-brown, .1);
+  }
+
+  &:after {
+    counter-increment: table-row;
+    content: counter(table-row);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    padding-top: 12px;
+    text-align: center;
+    color: $white;
+    position: absolute;
+    top: 0;
+    right: -44px;
+    font-size: 16px;
+    line-height: 14px;
+  }
+
+  &:nth-child(1) {
+    &:after {
+      background-color: $mango-three;
+    }
+  }
+
+  &:nth-child(2) {
+    &:after {
+      background-color: $mango-two;
+    }
+  }
+
+  &:nth-child(3) {
+    &:after {
+      background-color: $light-gold;
+    }
+  }
+
+}
+
+.tariffs__table-col {
+  padding: 0;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.tariffs__show-all {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: $dark-blue-grey;
+  text-decoration: none;
+}

@@ -3,7 +3,7 @@
 }
 
 .page-section__title {
-  margin: 0 auto 23px;
+  margin: 0 0 23px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -99,5 +99,35 @@
 
   .page-section__actions {
     margin-top: 20px;
+  }
+}
+
+.page-section--tariffs {
+  padding: 82px 25px 8px 50px;
+
+  background-color: $pale-grey;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $pale-grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .page-section__title {
+    margin-bottom: 44px;
+    max-width: 102px;
+    text-align: left;
+  }
+
+  .page-section__actions {
+    margin-top: 30px;
   }
 }
