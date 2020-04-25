@@ -36,3 +36,36 @@
   position: relative;
   z-index: 1;
 }
+
+.page-section--directions {
+  padding: 102px 25px 0;
+  background-color: $pale-grey;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $pale-grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .page-section__title {
+    padding: 0 25px;
+  }
+
+  .page-section__description {
+    margin-bottom: 66px;
+    padding: 0 25px;
+    color: $greyish-brown;
+  }
+
+  .page-section__actions {
+    margin-top: 25px;
+  }
+}

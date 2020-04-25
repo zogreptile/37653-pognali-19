@@ -106,3 +106,25 @@
     }
   }
 }
+
+.button--next {
+  padding: 24px 55px 24px 24px;
+  border-radius: 10px;
+  text-transform: none;
+  text-align: left;
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-slate-blue;
+
+  &:active {
+    .button__icon {
+      opacity: 0.3;
+    }
+  }
+
+  .button__icon {
+    fill: $dark-slate-blue;
+    right: 17px;
+    left: auto;
+  }
+}

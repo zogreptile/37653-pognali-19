@@ -1,0 +1,28 @@
+.directions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 90px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), $pale-grey);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.directions__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.directions__button {
+  width: 100%;
+}
