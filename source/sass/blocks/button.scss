@@ -1,0 +1,39 @@
+.button {
+  display: inline-block;
+  border: none;
+  position: relative;
+  font-family: inherit;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button--social {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $light-gold;
+
+  .button__icon {
+    fill: $dark-slate-blue;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $mango-two;
+  }
+
+  &:active {
+    .button__icon {
+      opacity: 0.3;
+    }
+  }
+}
