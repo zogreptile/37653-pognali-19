@@ -1,0 +1,13 @@
+.link {
+  color: $light-gold;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $mango;
+  }
+
+  &:active {
+    color: rgba($mango, .3);
+  }
+}
