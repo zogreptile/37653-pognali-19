@@ -108,7 +108,7 @@
 }
 
 .button--next {
-  padding: 24px 55px 24px 24px;
+  padding: 22px 55px 22px 24px;
   border-radius: 10px;
   text-transform: none;
   text-align: left;
@@ -126,5 +126,27 @@
     fill: $dark-slate-blue;
     right: 17px;
     left: auto;
+  }
+}
+
+.button--stroke {
+  box-shadow: inset 0 0 0 3px $dark-blue-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue-grey;
+    color: $white;
+
+    .button__icon {
+      fill: $white;
+    }
+  }
+
+  &:active {
+    color: rgba($white, .3);
+
+    .button__icon {
+      fill: rgba($white, .3);
+    }
   }
 }

@@ -159,3 +159,22 @@
     text-align: center;
   }
 }
+
+.page-section--address {
+  padding-top: 62px;
+  background-color: $light-gold;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $light-gold;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
