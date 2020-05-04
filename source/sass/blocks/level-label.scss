@@ -39,6 +39,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .level-label__svg-bg {
@@ -50,8 +52,26 @@
   stroke-width: 3px;
   stroke: $mango;
   stroke-linecap: round;
-  stroke-dasharray: 126.56;
+  stroke-dasharray: 166.56;
   stroke-dashoffset: 60;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
+}
+
+.level-label--companion-card {
+  padding-top: 16px;
+  width: 45px;
+  height: 45px;
+
+  .level-label__svg-bg {
+    fill: $white;
+  }
+
+  .level-label__amount {
+    color: $dark-slate-blue;
+  }
+
+  .level-label__caption {
+    display: none;
+  }
 }
