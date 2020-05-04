@@ -1,0 +1,42 @@
+.show-more {
+  margin: 24px 0 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $dark-slate-blue;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($dark-slate-blue, .6);
+
+    .show-more__icon {
+      fill: rgba($dark-slate-blue, .6);
+    }
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, .3);
+
+    .show-more__icon {
+      fill: rgba($dark-slate-blue, .3);
+    }
+  }
+}
+
+.show-more__icon {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+  fill: $dark-slate-blue;
+}
+
+.show-more__text {
+  display: inline-block;
+  padding-top: 3px;
+}
