@@ -1,0 +1,43 @@
+.paginator {
+  margin-bottom: 46px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.paginator__buttons {
+  display: flex;
+}
+
+.paginator__button {
+  display: block;
+  width: 50%;
+  height: 50px;
+  background-color: $white;
+  position: relative;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    .paginator__button-icon {
+      fill: rgba($dark-blue-grey, .6);
+    }
+  }
+
+  &:active {
+    .paginator__button-icon {
+      fill: rgba($dark-blue-grey, .3);
+    }
+  }
+
+  + .paginator__button {
+    margin-left: 1px;
+  }
+}
+
+.paginator__button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $dark-blue-grey;
+}
