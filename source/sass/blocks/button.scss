@@ -182,3 +182,21 @@
     }
   }
 }
+
+.button--light {
+  background-color: $white;
+  box-shadow: none;
+  transition: box-shadow .3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .08);
+  }
+
+  &:active {
+    background-color: $macaroni-and-cheese;
+    box-shadow: none;
+    color: rgba($dark-two, .3);
+  }
+}
