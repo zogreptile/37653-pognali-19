@@ -178,3 +178,23 @@
     border-bottom-right-radius: 30px;
   }
 }
+
+.page-section__country-filter {
+  margin-top: -20px;
+  padding-top: 40px;
+  background-color: $pale-grey-four;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: $pale-grey-four;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}

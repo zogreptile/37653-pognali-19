@@ -23,7 +23,7 @@
   }
 
   &:active {
-    color: transparentize($dark-two, .7);
+    color: rgba($dark-two, .3);
   }
 }
 
@@ -147,6 +147,38 @@
 
     .button__icon {
       fill: rgba($white, .3);
+    }
+  }
+}
+
+.button--country-filter {
+  background-color: $light-periwinkle;
+
+  .button__text {
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 12px;
+      background-image: url('../../img/close.svg');
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $light-blue-grey-four;
+
+    .button__text {
+      color: $dark-two;
+    }
+  }
+
+  &:active {
+    background-color: $light-blue-grey-four;
+
+    .button__text {
+      opacity: .3;
     }
   }
 }

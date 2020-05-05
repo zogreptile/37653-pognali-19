@@ -24,59 +24,84 @@
         <h1 class="top-panel__title">Попутчики</h1>
       </div>
 
-      <section class="page-section page-section__country-filter country-filter">
+      <section class="page-section page-section__country-filter country-filter country-filter--opened">
         <h2 class="country-filter__title">Фильтрация по странам</h2>
 
         <button class="country-filter__toggle">
           <span class="country-filter__toggle-text">Показать все</span>
         </button>
 
-        <ul class="country-filter__continents continents">
-          <li class="continents__item">
-            <a class="continents__link" href="/europe">Европа</a>
+        <ul class="country-filter__continents">
+          <li class="country-filter__continents-item">
+            <a class="country-filter__continents-link country-filter__continents-link--active" href="#">Европа</a>
           </li>
 
-          <li class="continents__item">
-            <a class="continents__link" href="/asia">Азия</a>
+          <li class="country-filter__continents-item">
+            <a class="country-filter__continents-link" href="#">Азия</a>
           </li>
 
-          <li class="continents__item">
-            <a class="continents__link" href="/usa">Америка</a>
+          <li class="country-filter__continents-item">
+            <a class="country-filter__continents-link" href="#">Америка</a>
           </li>
 
-          <li class="continents__item">
-            <a class="continents__link" href="/islands">Острова</a>
+          <li class="country-filter__continents-item">
+            <a class="country-filter__continents-link" href="#">Острова</a>
           </li>
         </ul>
 
-        <div class="country-filter__alphabet alphabet alphabet--filter">
-          <a class="alphabet__item alphabet__item--active" href="">а</a>
-          <a class="alphabet__item" href="">б</a><a class="alphabet__item" href="">в</a>
-          <a class="alphabet__item" href="">г</a><a class="alphabet__item" href="">д</a>
-          <a class="alphabet__item" href="">е</a><a class="alphabet__item" href="">з</a>
-          <a class="alphabet__item" href="">и</a><a class="alphabet__item" href="">к</a>
-          <a class="alphabet__item" href="">л</a><a class="alphabet__item" href="">м</a>
-          <a class="alphabet__item" href="">н</a><a class="alphabet__item" href="">о</a>
-          <a class="alphabet__item" href="">п</a><a class="alphabet__item" href="">р</a>
-          <a class="alphabet__item" href="">с</a><a class="alphabet__item" href="">т</a>
-          <a class="alphabet__item" href="">у</a><a class="alphabet__item" href="">ф</a>
-          <a class="alphabet__item" href="">х</a><a class="alphabet__item" href="">ч</a>
-          <a class="alphabet__item" href="">ш</a><a class="alphabet__item" href="">э</a>
-          <a class="alphabet__item" href="">ю</a><a class="alphabet__item" href="">я</a>
+        <div class="country-filter__alphabet-wrapper">
+          <div class="country-filter__alphabet">
+            <a class="country-filter__alphabet-item country-filter__alphabet-item--active" href="#">а</a>
+            <a class="country-filter__alphabet-item" href="#">б</a><a class="country-filter__alphabet-item" href="#">в</a>
+            <a class="country-filter__alphabet-item" href="#">г</a><a class="country-filter__alphabet-item" href="#">д</a>
+            <a class="country-filter__alphabet-item" href="#">е</a><a class="country-filter__alphabet-item" href="#">з</a>
+            <a class="country-filter__alphabet-item" href="#">и</a><a class="country-filter__alphabet-item" href="#">к</a>
+            <a class="country-filter__alphabet-item" href="#">л</a><a class="country-filter__alphabet-item" href="#">м</a>
+            <a class="country-filter__alphabet-item" href="#">н</a><a class="country-filter__alphabet-item" href="#">о</a>
+            <a class="country-filter__alphabet-item" href="#">п</a><a class="country-filter__alphabet-item" href="#">р</a>
+            <a class="country-filter__alphabet-item" href="#">с</a><a class="country-filter__alphabet-item" href="#">т</a>
+            <a class="country-filter__alphabet-item" href="#">у</a><a class="country-filter__alphabet-item" href="#">ф</a>
+            <a class="country-filter__alphabet-item" href="#">х</a><a class="country-filter__alphabet-item" href="#">ч</a>
+            <a class="country-filter__alphabet-item" href="#">ш</a><a class="country-filter__alphabet-item" href="#">э</a>
+            <a class="country-filter__alphabet-item" href="#">ю</a><a class="country-filter__alphabet-item" href="#">я</a>
+          </div>
         </div>
 
-        <ul class="country-filter__countries countries countries--filter">
-          <li class="countries__item">
-            <a class="countries__link" href="/islands">Австралия</a>
+        <ul class="country-filter__countries">
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Австралия</a>
           </li>
-
-          <li class="countries__item">
-            <a class="countries__link" href="/islands">Австрия</a>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Австрия</a>
+          </li>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Азербайджан</a>
+          </li>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Албания</a>
+          </li>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Алжир</a>
+          </li>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Ангола</a>
+          </li>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Андорра</a>
+          </li>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Антигуа и Барбуда</a>
+          </li>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Аргентина</a>
+          </li>
+          <li class="country-filter__countries-item">
+            <a class="country-filter__countries-link" href="#">Армения</a>
           </li>
         </ul>
 
-        <button class="country-filter__close">
-          <span>свернуть</span>
+        <button class="country-filter__hide-button button button--country-filter button--wide">
+          <span class="button__text">свернуть</span>
         </button>
       </section>
 
