@@ -75,3 +75,36 @@
     display: none;
   }
 }
+
+.level-label--user {
+  padding-top: 22px;
+  width: 100px;
+  height: 100px;
+
+  .level-label__svg-bg {
+    fill: transparent;
+  }
+
+  .level-label__svg-progress {
+    stroke-width: 2px;
+  }
+
+  .level-label__amount {
+    font-size: 38px;
+    line-height: 1;
+    color: $dark-two;
+  }
+
+  .level-label__caption {
+    padding-top: 5px;
+    font-size: 18px;
+    color: $greyish-brown;
+
+    &:before {
+      top: -3px;
+      height: 2px;
+      width: 50px;
+      background-color: $cloudy-blue;
+    }
+  }
+}
