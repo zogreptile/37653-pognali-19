@@ -198,3 +198,26 @@
     border-bottom-right-radius: 20px;
   }
 }
+
+.page-section--plans {
+  padding-bottom: 56px;
+  background-color: $pale-grey-two;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $pale-grey-two;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
+
+.page-section__title--blue {
+  color: $dark-slate-blue;
+}

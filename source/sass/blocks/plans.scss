@@ -1,0 +1,72 @@
+.plans {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: plans-items;
+}
+
+.plans__item {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: $white;
+
+  + .plans__item {
+    margin-top: 10px;
+  }
+}
+
+.plans__item-title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: $dark-slate-blue;
+
+  &:before {
+    margin-right: 4px;
+    display: inline-block;
+    counter-increment: plans-items;
+    content: counter(plans-items)'. ';
+    font-weight: 600;
+  }
+}
+
+.plans__item-companions {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: $dark-slate-blue;
+}
+
+.plans__item-dates {
+  margin-bottom: 22px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: $dark-slate-blue;
+}
+
+.plans__item-change {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.4px;
+  color: rgba($black, .3);
+
+  &:hover,
+  &:focus {
+    color: rgba($black, .6);
+  }
+
+  &:active {
+    color: rgba($black, .1);
+  }
+}
