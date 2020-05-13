@@ -35,40 +35,40 @@
 
 .sign-up__link-mail {
   &:before {
-    background-image: url('../../img/contacts-mail.svg');
+    background-image: url('../img/contacts-mail.svg');
     background-size: 18px 13px;
   }
 
   &:hover,
   &:focus {
     &:before {
-      background-image: url('../../img/contacts-mail-hover.svg');
+      background-image: url('../img/contacts-mail-hover.svg');
     }
   }
 
   &:active {
     &:before {
-      background-image: url('../../img/contacts-mail-active.svg');
+      background-image: url('../img/contacts-mail-active.svg');
     }
   }
 }
 
 .sign-up__link-phone {
   &:before {
-    background-image: url('../../img/contacts-phone.svg');
+    background-image: url('../img/contacts-phone.svg');
     background-size: 18px 18px;
   }
 
   &:hover,
   &:focus {
     &:before {
-      background-image: url('../../img/contacts-phone-hover.svg');
+      background-image: url('../img/contacts-phone-hover.svg');
     }
   }
 
   &:active {
     &:before {
-      background-image: url('../../img/contacts-phone-active.svg');
+      background-image: url('../img/contacts-phone-active.svg');
     }
   }
 }
