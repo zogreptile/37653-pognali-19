@@ -1,0 +1,15 @@
+.companions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.companions__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.companions__action {
+  width: 100%;
+}

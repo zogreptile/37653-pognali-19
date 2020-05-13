@@ -1,0 +1,259 @@
+.page-section {
+  padding: 0 25px;
+}
+
+.page-section__title {
+  margin: 0 0 23px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: $mango;
+}
+
+.page-section__description {
+  color: $white;
+}
+
+.page-section__paragraph {
+  margin: 0;
+  font-weight: 300;
+
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+}
+
+.page-section__paragraph--bold {
+  font-weight: 700;
+}
+
+.page-section--about {
+  margin-bottom: -30px;
+  padding: 326px 50px 84px;
+  background: $dark-blue-grey url('../../img/about-mobile@1x.png') no-repeat center bottom;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-section--directions {
+  padding: 102px 25px 0;
+  background-color: $pale-grey;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $pale-grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .page-section__title {
+    padding: 0 25px;
+  }
+
+  .page-section__description {
+    margin-bottom: 66px;
+    padding: 0 25px;
+    color: $greyish-brown;
+  }
+
+  .page-section__actions {
+    margin-top: 25px;
+  }
+}
+
+.page-section--companions {
+  padding-top: 103px;
+  position: relative;
+  background-color: $dark-blue-grey;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $dark-blue-grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .page-section__title {
+    padding: 0 25px;
+  }
+
+  .page-section__description {
+    margin-bottom: 60px;
+    padding: 0 25px;
+  }
+
+  .page-section__actions {
+    margin-top: 20px;
+  }
+}
+
+.page-section--tariffs {
+  padding: 82px 25px 8px 50px;
+
+  background-color: $pale-grey;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $pale-grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .page-section__title {
+    margin-bottom: 44px;
+    max-width: 102px;
+    text-align: left;
+  }
+
+  .page-section__actions {
+    margin-top: 30px;
+  }
+}
+
+.page-section--sign-up {
+  padding-top: 102px;
+  background-color: $dark-blue-grey;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $dark-blue-grey;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .page-section__title {
+    text-align: center;
+  }
+
+  .page-section__description {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
+.page-section--address {
+  padding-top: 62px;
+  background-color: $light-gold;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $light-gold;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+
+.page-section__country-filter {
+  margin-top: -20px;
+  padding-top: 40px;
+  background-color: $pale-grey-four;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: $pale-grey-four;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.page-section--plans {
+  padding-bottom: 56px;
+  background-color: $pale-grey-two;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: $pale-grey-two;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
+
+.page-section__title--blue {
+  color: $dark-slate-blue;
+}
+
+.page-section--plan-form {
+  padding-bottom: 44px;
+  background-color: $light-blue-grey-five;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: inherit;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: inherit;
+  }
+}
+
+.page-section__steps {
+  position: absolute;
+  top: 9px;
+  right: 42px;
+}

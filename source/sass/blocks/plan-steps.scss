@@ -1,0 +1,18 @@
+.plan-steps {
+  display: flex;
+}
+
+.plan-steps__item {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba($steel-grey, .3);
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.plan-steps__item--active {
+  background-color: $dark-slate-blue;
+}

@@ -1,0 +1,31 @@
+.address__button {
+  width: 100%;
+}
+
+.address__text {
+  margin: 0 0 32px;
+  padding-left: 62px;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  color: $dark-blue-grey;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $dark-blue-grey-two;
+    background-image: url('../../img/contacts-location.svg');
+    background-size: 14px 22px;
+  }
+}

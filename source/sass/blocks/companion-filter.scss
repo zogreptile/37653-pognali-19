@@ -1,0 +1,256 @@
+.companion-filter {
+  padding: 0 25px;
+  margin-top: 45px;
+  margin-bottom: 28px;
+}
+
+.companion-filter__inner {
+  padding: 25px 25px 22px;
+  background-color: $light-gold;
+  border-radius: 20px;
+}
+
+.companion-filter__title {
+  margin: 0 0 20px;
+  width: 120px;
+  font-size: 22px;
+  font-weight: 700;
+  color: $dark-slate-blue;
+}
+
+.companion-filer__fields {
+  margin: 0;
+  border: none;
+  border-top: 1px solid $macaroni-and-cheese;
+}
+
+.companion-filter__fields--opened {
+  .companion-filter__fields-container {
+    display: block;
+  }
+
+  .companion-filter__toggle {
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.companion-filter__fields-container {
+  display: none;
+  padding-bottom: 14px;
+}
+
+.companion-filter__toggle {
+  padding: 14px 0;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  color: $dark-slate-blue;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 8px;
+    height: 4px;
+    background-image: url('../../img/dropdown.svg');
+  }
+}
+
+.companion-filter__checkbox {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  cursor: pointer;
+}
+
+.companion-filter__checkbox-input {
+  outline: none;
+
+  &:hover,
+  &:focus {
+    + .companion-filter__checkbox-caption {
+      color: rgba($greyish-brown, .6);
+
+      &:before {
+        background-color: rgba($white, .6);
+      }
+    }
+  }
+
+  &:active {
+    + .companion-filter__checkbox-caption {
+      color: rgba($greyish-brown, .3);
+
+      &:before {
+        background-color: rgba($white, .3);
+      }
+    }
+  }
+
+  &:checked {
+    + .companion-filter__checkbox-caption {
+      &:before {
+        background-image: url('../../img/tick.svg');
+      }
+    }
+  }
+}
+
+.companion-filter__checkbox-caption {
+  padding-left: 27px;
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: $white;
+    background-position: center center;
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+  }
+}
+
+.companion-filter__level-inputs {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 11px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      $white,
+      $white 5px,
+      $cloudy-blue 5px,
+      $cloudy-blue 6px,
+      $white 6px
+    );
+  }
+}
+
+.companion-filter__level-input {
+  padding: 11px 0 6px;
+  width: 50%;
+  border-radius: 4px;
+  border: 1px solid $cloudy-blue;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  color: $dark-slate-blue;
+  outline: none;
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:last-child {
+    margin-left: -1px;
+    flex-grow: 1;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $bluey-grey;
+    z-index: 1;
+  }
+
+  &:active {
+    border-color: $dark-two;
+    z-index: 1;
+  }
+}
+
+.companion-filter__range {
+  margin: 24px 0 10px;
+  height: 2px;
+  background-color: rgba($dark-slate-blue, .2);
+  position: relative;
+}
+
+.companion-filter__range-fill {
+  height: 2px;
+  background-color: $dark-slate-blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.companion-filter__range-control {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $dark-slate-blue;
+  box-shadow: none;
+  position: absolute;
+  top: -4px;
+  cursor: pointer;
+  transition:
+    transform .2s ease-in-out,
+    box-shadow .2s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.6);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 7px 0 rgba(29, 46, 91, 0.35);
+  }
+}
+
+.companion-filter__transports {
+  display: flex;
+}

@@ -1,0 +1,240 @@
+.button {
+  display: inline-block;
+  padding: 14px 0 10px 0;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  background-color: $light-gold;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-two;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $mango-two;
+  }
+
+  &:active {
+    color: rgba($dark-two, .3);
+  }
+}
+
+.button--wide {
+  width: 100%;
+}
+
+.button__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button--social {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $light-gold;
+
+  .button__icon {
+    fill: $dark-slate-blue;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $mango-two;
+  }
+
+  &:active {
+    .button__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.button--intro-call {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: $mango;
+
+  .button__icon {
+    fill: $dark-two;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $dusty-orange;
+  }
+
+  &:active {
+    .button__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.button--intro-mail {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: $mango-two;
+
+  .button__icon {
+    fill: $dark-two;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $mango;
+  }
+
+  &:active {
+    .button__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.button--next {
+  padding: 22px 55px 22px 24px;
+  border-radius: 10px;
+  text-transform: none;
+  text-align: left;
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-slate-blue;
+
+  &:active {
+    .button__icon {
+      opacity: 0.3;
+    }
+  }
+
+  .button__icon {
+    fill: $dark-slate-blue;
+    right: 17px;
+    left: auto;
+  }
+}
+
+.button--stroke {
+  box-shadow: inset 0 0 0 3px $dark-blue-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-blue-grey;
+    color: $white;
+
+    .button__icon {
+      fill: $white;
+    }
+  }
+
+  &:active {
+    color: rgba($white, .3);
+
+    .button__icon {
+      fill: rgba($white, .3);
+    }
+  }
+}
+
+.button--country-filter {
+  background-color: $light-periwinkle;
+
+  .button__text {
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 12px;
+      background-image: url('../../img/close.svg');
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $light-blue-grey-four;
+
+    .button__text {
+      color: $dark-two;
+    }
+  }
+
+  &:active {
+    background-color: $light-blue-grey-four;
+
+    .button__text {
+      opacity: .3;
+    }
+  }
+}
+
+.button--light {
+  background-color: $white;
+  box-shadow: none;
+  transition: box-shadow .3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .08);
+  }
+
+  &:active {
+    background-color: $macaroni-and-cheese;
+    box-shadow: none;
+    color: rgba($dark-two, .3);
+  }
+}
+
+.button--change-avatar {
+  background-color: $pale-grey-two;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $light-blue-grey;
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, .3);
+  }
+}
+
+.button--plan-form-next {
+  display: block;
+  width: 100%;
+}
+
+.button--plan-form-prev {
+  display: block;
+  margin-top: 19px;
+  padding: 0;
+  width: 100%;
+  background-color: $transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $transparent;
+    color: rgba($dark-slate-blue, .7);
+  }
+
+  &:active {
+    background-color: $transparent;
+    color: rgba($dark-slate-blue, .3);
+  }
+}

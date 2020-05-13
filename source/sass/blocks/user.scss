@@ -1,0 +1,104 @@
+.user {
+  padding: 23px 25px 63px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.user__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user__change-avatar {
+  margin-top: 20px;
+  margin-bottom: 33px;
+  display: block;
+  width: 100%;
+}
+
+.user__tags {
+  width: 100%;
+}
+
+.user__transport {
+  width: 100%;
+}
+
+.user__tags {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.user__tags-title {
+  margin: 0;
+  padding: 0 17px;
+  background-color: $pale-grey;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user__tags-input {
+  display: block;
+  padding: 25px;
+  width: 100%;
+  border: 1px solid $cloudy-blue;
+  border-radius: 10px;
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: $cloudy-blue-two;
+  }
+
+  &:active {
+    border-color: $dark-two;
+  }
+}
+
+.user__info-title {
+  margin: 0;
+  padding: 0 17px;
+  background-color: $pale-grey;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user__transport {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border: 1px solid $cloudy-blue;
+  border-radius: 10px;
+  position: relative;
+}
+
+.user__transport-title {
+  margin: 0;
+  padding: 0 17px;
+  background-color: $pale-grey;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

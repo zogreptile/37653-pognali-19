@@ -1,0 +1,170 @@
+.companion-card {
+  padding: 15px 20px 80px;
+  background-color: $white;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: none;
+  transition: box-shadow .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, .08);
+
+    .companion-card__avatar-img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.companion-card__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  overflow: hidden;
+}
+
+.companion-card__avatar-img {
+  transform: scale(1);
+  transition: transform .3s ease-in-out;
+}
+
+.companion-card__name {
+  min-height: 70px;
+  margin: 0 0 14px;
+  padding-left: 85px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $dark-slate-blue;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $salmon;
+  }
+}
+
+.companion-card__tags {
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.companion-card__call-button {
+  position: absolute;
+  left: 15px;
+  right: 20px;
+  bottom: 22px;
+}
+
+.companion-card__like-button {
+  position: absolute;
+  top: 54px;
+  left: 67px;
+}
+
+.companion-card__countries {
+  padding: 24px 0;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: rgba($greyish-brown, .1);
+  }
+}
+
+.companion-card__countries-title {
+  padding: 0 10px;
+  position: absolute;
+  top: -9px;
+  left: -10px;
+  font-size: 15px;
+  background-color: $white;
+}
+
+.companion-card__country {
+  display: flex;
+  align-items: flex-end;
+
+  + .companion-card__country {
+    margin-top: 10px;
+  }
+}
+
+.companion-card__country-flag {
+  margin-right: 15px;
+}
+
+.companion-card__country-name {
+  font-size: 15px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+}
+
+.companion-card__transport {
+  padding-top: 24px;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.companion-card__transport-title {
+  padding: 0 10px;
+  position: absolute;
+  top: -9px;
+  left: -10px;
+  font-size: 15px;
+  background-color: $white;
+}
+
+.companion-card__extra-info {
+  display: flex;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: rgba($greyish-brown, .1);
+  }
+}
+
+.companion-card__level {
+  padding-top: 16px;
+  position: relative;
+}
+
+.companion-card__level-title {
+  padding: 0 10px;
+  position: absolute;
+  top: -9px;
+  left: -10px;
+  font-size: 15px;
+  background-color: $white;
+}
+
+.companion-card--online {
+  .companion-card__name {
+    &:after {
+      background-color: $green-apple;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.intro {
+  background:
+    url('../../img/traveller-illustration-mobile@1x.png') no-repeat 76px 153px,
+    $dark-two url('../../img/globe-back-mobile@1x.jpg') no-repeat left -161px;
+}
+
+.intro__title {
+  margin: 0 auto 247px;
+  padding-top: 21px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: $white;
+}
+
+.intro__actions {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro__testimonial {
+  margin: 0 auto 33px;
+  padding-left: 25px;
+  color: $white;
+}
+
+.intro__testimonial-text {
+  margin: 0 auto 25px;
+  font-weight: 300;
+}
+
+.intro__testimonial-author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.intro__steps {
+  margin: 0 auto -252px;
+  padding: 0;
+  list-style: none;
+  counter-reset: intro-steps;
+  position: relative;
+  z-index: 2;
+}
+
+.intro__steps-item {
+  padding: 23px 25px 25px;
+  border-radius: 10px;
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-two;
+
+  &:before {
+    position: absolute;
+    top: 23px;
+    right: 22px;
+    counter-increment: intro-steps;
+    content: counter(intro-steps);
+    color: $white;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 20px;
+  }
+
+  &:nth-child(1) {
+    background-color: $mango;
+
+    &:after {
+      background-color: $mango;
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: $mango-three;
+
+    &:after {
+      background-color: $mango-three;
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: $mango-two;
+
+    &:after {
+      background-color: $mango-two;
+    }
+  }
+
+  &:nth-child(4) {
+    background-color: $light-gold;
+
+    &:after {
+      content: none;
+    }
+  }
+}
