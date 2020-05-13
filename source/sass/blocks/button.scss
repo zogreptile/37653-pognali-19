@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  padding: 13px 0 11px 0;
+  padding: 14px 0 10px 0;
   border: none;
   border-radius: 20px;
   position: relative;
@@ -211,6 +211,30 @@
   }
 
   &:active {
+    color: rgba($dark-slate-blue, .3);
+  }
+}
+
+.button--plan-form-next {
+  display: block;
+  width: 100%;
+}
+
+.button--plan-form-prev {
+  display: block;
+  margin-top: 19px;
+  padding: 0;
+  width: 100%;
+  background-color: $transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $transparent;
+    color: rgba($dark-slate-blue, .7);
+  }
+
+  &:active {
+    background-color: $transparent;
     color: rgba($dark-slate-blue, .3);
   }
 }

@@ -1,0 +1,138 @@
+.calendar {
+  margin-bottom: 21px;
+}
+
+.calendar__month {
+  margin-bottom: 25px;
+  padding: 11px 0 7px;
+  border-top: 1px solid $light-blue-grey-five;
+  border-bottom: 1px solid $light-blue-grey-five;
+  text-align: center;
+  position: relative;
+}
+
+.calendar__month-value {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: $dark-slate-blue;
+}
+
+.calendar__month-control {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .calendar__month-control-icon {
+      fill: rgba($dark-slate-blue, .5);
+    }
+  }
+
+  &:active {
+    .calendar__month-control-icon {
+      fill: rgba($dark-slate-blue, .1);
+    }
+  }
+}
+
+.calendar__month-control--decrement {
+  padding-right: 20px;
+  left: 0;
+}
+
+.calendar__month-control--increment {
+  padding-left: 20px;
+  right: 0;
+}
+
+.calendar__month-control-icon {
+  fill: rgba($dark-slate-blue, .3);
+}
+
+.calendar__weekdays {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.calendar__weekdays-item {
+  width: 14.2857%;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+
+  &:nth-last-child(1),
+  &:nth-last-child(2) {
+    color: $orange-red;
+  }
+}
+
+.calendar__days {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $white;
+}
+
+.calendar__day-cell {
+  margin-left: -1px;
+  margin-top: -1px;
+  width: calc(14.2857% + 1px);
+
+  &:hover {
+    z-index: 1;
+  }
+}
+
+.calendar__day {
+  padding: 8px 0 6px;
+  border: 1px solid $cloudy-blue;
+  background-color: $pale-grey;
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calendar__day-caption {
+  display: none;
+}
+
+.calendar__day-month {
+  display: none;
+}
+
+.calendar__day-input {
+  &:disabled {
+    + .calendar__day {
+      background-color: $white;
+      color: rgba($greyish-brown, .3);
+      cursor: auto;
+    }
+  }
+
+  &:checked {
+    + .calendar__day {
+      background-color: $dark-blue-grey-three;
+      color: $white;
+    }
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    + .calendar__day {
+      background-color: $dark-slate-blue;
+      box-shadow: inset 0 0 0 1px $orange-red;
+      border-color: $orange-red;
+      color: $white;
+      z-index: 1;
+    }
+  }
+}

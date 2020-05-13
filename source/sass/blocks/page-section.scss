@@ -221,3 +221,39 @@
 .page-section__title--blue {
   color: $dark-slate-blue;
 }
+
+.page-section--plan-form {
+  padding-bottom: 44px;
+  background-color: $light-blue-grey-five;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: inherit;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: inherit;
+  }
+}
+
+.page-section__steps {
+  position: absolute;
+  top: 9px;
+  right: 42px;
+}

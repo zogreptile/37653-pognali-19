@@ -118,9 +118,9 @@
       </section>
 
       <section class="page-section page-section--plan-form">
-        <h2 class="page-section__title page-section__title--mid-size">Добавить план:</h2>
+        <h2 class="page-section__title page-section__title--blue">Добавить план:</h2>
 
-        <div class="plan-steps">
+        <div class="plan-steps page-section__steps">
           <div class="plan-steps__item plan-steps__item--active"></div>
           <div class="plan-steps__item"></div>
           <div class="plan-steps__item"></div>
@@ -142,22 +142,20 @@
               <div class="plan-form__field">
                 <input class="plan-form__field-input" type="number" name="companions" value="2">
 
-                <button class="plan-form__field-decrement" type="button">
+                <button class="plan-form__field-control plan-form__field-control--decrement" type="button">
+                  <svg class="plan-form__field-control-icon" width="14" height="2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 2" xml:space="preserve">
+                    <rect class="st0" width="14" height="2"/>
+                  </svg>
                   <span class="visually-hidden">уменьшить количество попутчиков</span>
                 </button>
 
-                <button class="plan-form__field-increment" type="button">
+                <button class="plan-form__field-control plan-form__field-control--increment" type="button">
+                  <svg class="plan-form__field-control-icon" width="14" height="14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" xml:space="preserve">
+                    <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+                  </svg>
                   <span class="visually-hidden">увеличить количество попутчиков</span>
                 </button>
               </div>
-            </div>
-
-            <div class="plan-form__checkbox-wrap">
-              <label class="plan-form__checkbox">
-                <input class="plan-form__checkbox-input" type="checkbox" name="childrenAllowed">
-                <span class="plan-form__checkbox-icon"></span>
-                Можно с детьми
-              </label>
             </div>
 
             <div class="plan-form__field-wrap">
@@ -167,25 +165,44 @@
               <div class="plan-form__field">
                 <input class="plan-form__field-input" type="number" name="duration" value="2">
 
-                <button class="plan-form__field-decrement" type="button">
+                <button class="plan-form__field-control plan-form__field-control--decrement" type="button">
+                  <svg class="plan-form__field-control-icon" width="14" height="2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 2" xml:space="preserve">
+                    <rect class="st0" width="14" height="2"/>
+                  </svg>
                   <span class="visually-hidden">уменьшить количество дней</span>
                 </button>
 
-                <button class="plan-form__field-increment" type="button">
+                <button class="plan-form__field-control plan-form__field-control--increment" type="button">
+                  <svg class="plan-form__field-control-icon" width="14" height="14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" xml:space="preserve">
+                    <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+                  </svg>
                   <span class="visually-hidden">увеличить количество дней</span>
                 </button>
               </div>
             </div>
 
+            <div class="plan-form__checkbox-wrap">
+              <label class="plan-form__checkbox">
+                <input class="plan-form__checkbox-input visually-hidden" type="checkbox" name="childrenAllowed">
+                <span class="plan-form__checkbox-caption">Можно с детьми</span>
+              </label>
+            </div>
+
             <div class="calendar">
               <div class="calendar__month">
-                <button class="calendar__month-decrement" type="button">
+                <button class="calendar__month-control calendar__month-control--decrement" type="button">
+                  <svg class="calendar__month-control-icon" width="9" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 34" xml:space="preserve">
+                    <path d="M3.6,17l14-14.4c0.6-0.6,0.6-1.6,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L0.4,15.9c-0.6,0.6-0.6,1.6,0,2.1l15.1,15.5c0.3,0.3,0.7,0.4,1,0.4s0.8-0.1,1-0.4c0.6-0.6,0.6-1.6,0-2.1L3.6,17z"/>
+                  </svg>
                   <span class="visually-hidden">предыдущий месяц</span>
                 </button>
 
                 <span class="calendar__month-value">Март 2019</span>
 
-                <button class="calendar__month-decrement" type="button">
+                <button class="calendar__month-control calendar__month-control--increment" type="button">
+                  <svg class="calendar__month-control-icon" width="9" height="17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 34" xml:space="preserve">
+                    <path d="M14.4,17L0.4,2.6C-0.1,2-0.1,1,0.4,0.4c0.6-0.6,1.5-0.6,2.1,0l15.1,15.5c0.6,0.6,0.6,1.6,0,2.1L2.5,33.6c-0.3,0.3-0.7,0.4-1,0.4s-0.8-0.1-1-0.4c-0.6-0.6-0.6-1.6,0-2.1L14.4,17z"/>
+                  </svg>
                   <span class="visually-hidden">следующий месяц</span>
                 </button>
               </div>
@@ -202,28 +219,225 @@
 
               <div class="calendar__days">
                 <label class="calendar__day-cell">
-                  <input class="calendar__day-input" type="checkbox" name="day" value="23-03-2020" disabled>
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="23-02-2020" disabled>
                   <span class="calendar__day">
                     <span class="calendar__day-number">23</span>
                   </span>
                 </label>
 
                 <label class="calendar__day-cell">
-                  <input class="calendar__day-input" type="checkbox" name="day" value="24-03-2020" disabled>
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="24-02-2020" disabled>
                   <span class="calendar__day">
                     <span class="calendar__day-number">24</span>
                   </span>
                 </label>
 
                 <label class="calendar__day-cell">
-                  <input class="calendar__day-input" type="checkbox" name="day" value="25-03-2020" disabled>
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="25-02-2020" disabled>
                   <span class="calendar__day">
                     <span class="calendar__day-number">25</span>
                   </span>
                 </label>
 
                 <label class="calendar__day-cell">
-                  <input class="calendar__day-input" type="checkbox" name="day" value="26-03-2020" checked>
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="26-02-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">26</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="27-02-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">27</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="28-02-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">28</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="01-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">1</span>
+                    <span class="calendar__day-month">мар</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="02-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">2</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="03-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">3</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="04-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">4</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="05-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">5</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="06-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">6</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="07-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">7</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="08-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">8</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="09-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">9</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="10-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">10</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="11-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">11</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="12-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">12</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="13-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">13</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="14-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">14</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="15-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">15</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="16-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">16</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="17-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">17</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="18-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">18</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="19-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">19</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="20-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">20</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="21-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">21</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="22-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">22</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="23-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">23</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="24-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">24</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="25-03-2020" disabled>
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">25</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="26-03-2020" checked>
                   <span class="calendar__day">
                     <span class="calendar__day-number">26</span>
                     <span class="calendar__day-caption">Заезд</span>
@@ -231,14 +445,14 @@
                 </label>
 
                 <label class="calendar__day-cell">
-                  <input class="calendar__day-input" type="checkbox" name="day" value="27-03-2020" checked>
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="27-03-2020" checked>
                   <span class="calendar__day">
                     <span class="calendar__day-number">27</span>
                   </span>
                 </label>
 
                 <label class="calendar__day-cell">
-                  <input class="calendar__day-input" type="checkbox" name="day" value="28-03-2020" checked>
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="28-03-2020" checked>
                   <span class="calendar__day">
                     <span class="calendar__day-number">28</span>
                     <span class="calendar__day-caption">Выезд</span>
@@ -246,16 +460,64 @@
                 </label>
 
                 <label class="calendar__day-cell">
-                  <input class="calendar__day-input" type="checkbox" name="day" value="01-04-2020">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="29-03-2020">
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">29</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="30-03-2020">
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">30</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="31-03-2020">
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">31</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="01-04-2020">
                   <span class="calendar__day">
                     <span class="calendar__day-number">1</span>
-                    <span class="calendar__day-month">апр</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="02-04-2020">
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">2</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="03-04-2020">
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">3</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="04-04-2020">
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">4</span>
+                  </span>
+                </label>
+
+                <label class="calendar__day-cell">
+                  <input class="calendar__day-input visually-hidden" type="checkbox" name="day" value="05-04-2020">
+                  <span class="calendar__day">
+                    <span class="calendar__day-number">5</span>
                   </span>
                 </label>
               </div>
             </div>
 
-            <a class="plan-form__button plan-form__button--next" href="#step-2">Следующий шаг</a>
+            <a class="button button--plan-form-next" href="#step-2">Следующий шаг</a>
           </div>
 
           <div class="plan-form__step" id="step-2">
@@ -266,62 +528,166 @@
 
             <p class="plan-form__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
 
-            <ul class="route">
-              <li class="route__item">
-                <button class="route__btn route__btn--chosen route__btn--bosnia" type="button">
+            <ul class="route" id="js-route">
+              <!-- Состояние при открытом дропдауне: .route__item--active -->
+              <!-- Состояние при выбранной стране: .route__item--choosen -->
+              <li class="js-route-item route__item route__item--choosen">
+                <button class="js-choose-route route__btn route__btn--choose" type="button">
                   <span class="route__btn-text">Босния и герцеговина</span>
+                  <svg class="route__btn-icon" width="12" height="7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 9" xml:space="preserve">
+                    <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+                  </svg>
                 </button>
 
-                <!-- TODO: здесь будет скрытый route__countries -->
+                <div class="route__flag">
+                  <img class="route__flag-img" src="https://via.placeholder.com/35x24" width="35" height="24" alt="флаг Босния и герцеговина">
+                </div>
 
-                <button class="route__item-remove" type="button">
-                  <span class="visually-hidden">удалить страну</span>
-                </button>
-              </li>
-
-              <li class="route__item">
-                <button class="route__btn route__btn--choose" type="button">Выберите страну</button>
-
-                <div class="route__countries route__countries--open">
-                  <div class="route__countries-alphabet alphabet alphabet--route">
-                    <a class="alphabet__item" href="#">а</a><a class="alphabet__item" href="#">б</a>
-                    <a class="alphabet__item" href="#">в</a><a class="alphabet__item" href="#">г</a>
-                    <a class="alphabet__item" href="#">д</a><a class="alphabet__item" href="#">е</a>
-                    <a class="alphabet__item" href="#">з</a><a class="alphabet__item" href="#">и</a>
-                    <a class="alphabet__item" href="#">к</a><a class="alphabet__item" href="#">л</a>
-                    <a class="alphabet__item" href="#">м</a><a class="alphabet__item" href="#">н</a>
-                    <a class="alphabet__item" href="#">о</a><a class="alphabet__item" href="#">п</a>
-                    <a class="alphabet__item" href="#">р</a><a class="alphabet__item" href="#">с</a>
-                    <a class="alphabet__item" href="#">т</a><a class="alphabet__item" href="#">у</a>
-                    <a class="alphabet__item" href="#">ф</a><a class="alphabet__item" href="#">х</a>
-                    <a class="alphabet__item" href="#">ч</a><a class="alphabet__item" href="#">ш</a>
-                    <a class="alphabet__item" href="#">э</a><a class="alphabet__item" href="#">ю</a>
-                    <a class="alphabet__item" href="#">я</a>
+                <!-- Показать дропдаун со странами: .route-countries--opened -->
+                <div class="js-countries route__countries">
+                  <div class="route__countries-alphabet">
+                    <a class="route__countries-alphabet-item" href="#">а</a><a class="route__countries-alphabet-item" href="#">б</a>
+                    <a class="route__countries-alphabet-item" href="#">в</a><a class="route__countries-alphabet-item" href="#">г</a>
+                    <a class="route__countries-alphabet-item" href="#">д</a><a class="route__countries-alphabet-item" href="#">е</a>
+                    <a class="route__countries-alphabet-item" href="#">з</a><a class="route__countries-alphabet-item" href="#">и</a>
+                    <a class="route__countries-alphabet-item" href="#">к</a><a class="route__countries-alphabet-item" href="#">л</a>
+                    <a class="route__countries-alphabet-item" href="#">м</a><a class="route__countries-alphabet-item" href="#">н</a>
+                    <a class="route__countries-alphabet-item" href="#">о</a><a class="route__countries-alphabet-item" href="#">п</a>
+                    <a class="route__countries-alphabet-item" href="#">р</a><a class="route__countries-alphabet-item" href="#">с</a>
+                    <a class="route__countries-alphabet-item" href="#">т</a><a class="route__countries-alphabet-item" href="#">у</a>
+                    <a class="route__countries-alphabet-item" href="#">ф</a><a class="route__countries-alphabet-item" href="#">х</a>
+                    <a class="route__countries-alphabet-item" href="#">ч</a><a class="route__countries-alphabet-item" href="#">ш</a>
+                    <a class="route__countries-alphabet-item" href="#">э</a><a class="route__countries-alphabet-item" href="#">ю</a>
+                    <a class="route__countries-alphabet-item" href="#">я</a>
                   </div>
 
-                  <ul class="route__countries-list countries countries--route">
-                    <li class="countries__item">
-                      <a class="countries__link" href="/islands">Австралия</a>
+                  <ul class="route__countries-list">
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Австралия</a>
                     </li>
-
-                    <li class="countries__item">
-                      <a class="countries__link" href="/islands">Австрия</a>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Австрия</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Азербайджан</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Албания</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Алжир</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Ангола</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Андорра</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Антигуа и Барбуда</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Аргентина</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Армения</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Афганистан</a>
                     </li>
                   </ul>
                 </div>
 
-                <button class="route__item-remove" type="button">
+                <button class="js-remove-route route__item-remove" type="button">
                   <span class="visually-hidden">удалить страну</span>
+                  <svg class="route__item-remove-icon" width="9" height="9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9" xml:space="preserve">
+                    <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2L5.2,4.5z"/>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="js-route-item route__item">
+                <button class="js-choose-route route__btn route__btn--choose" type="button">
+                  <span class="route__btn-text">Выберите страну</span>
+                  <svg class="route__btn-icon" width="12" height="7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 9" xml:space="preserve">
+                    <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+                  </svg>
+                </button>
+
+                <div class="js-countries route__countries">
+                  <div class="route__countries-alphabet">
+                    <a class="route__countries-alphabet-item" href="#">а</a><a class="route__countries-alphabet-item" href="#">б</a>
+                    <a class="route__countries-alphabet-item" href="#">в</a><a class="route__countries-alphabet-item" href="#">г</a>
+                    <a class="route__countries-alphabet-item" href="#">д</a><a class="route__countries-alphabet-item" href="#">е</a>
+                    <a class="route__countries-alphabet-item" href="#">з</a><a class="route__countries-alphabet-item" href="#">и</a>
+                    <a class="route__countries-alphabet-item" href="#">к</a><a class="route__countries-alphabet-item" href="#">л</a>
+                    <a class="route__countries-alphabet-item" href="#">м</a><a class="route__countries-alphabet-item" href="#">н</a>
+                    <a class="route__countries-alphabet-item" href="#">о</a><a class="route__countries-alphabet-item" href="#">п</a>
+                    <a class="route__countries-alphabet-item" href="#">р</a><a class="route__countries-alphabet-item" href="#">с</a>
+                    <a class="route__countries-alphabet-item" href="#">т</a><a class="route__countries-alphabet-item" href="#">у</a>
+                    <a class="route__countries-alphabet-item" href="#">ф</a><a class="route__countries-alphabet-item" href="#">х</a>
+                    <a class="route__countries-alphabet-item" href="#">ч</a><a class="route__countries-alphabet-item" href="#">ш</a>
+                    <a class="route__countries-alphabet-item" href="#">э</a><a class="route__countries-alphabet-item" href="#">ю</a>
+                    <a class="route__countries-alphabet-item" href="#">я</a>
+                  </div>
+
+                  <ul class="route__countries-list">
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Австралия</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Австрия</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Азербайджан</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Албания</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Алжир</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Ангола</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Андорра</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Антигуа и Барбуда</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Аргентина</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Армения</a>
+                    </li>
+                    <li class="route__countries-list-item">
+                      <a class="js-route-country-link route__countries-list-link" href="#">Афганистан</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <button class="js-remove-route route__item-remove" type="button">
+                  <span class="visually-hidden">удалить страну</span>
+                  <svg class="route__item-remove-icon" width="9" height="9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9" xml:space="preserve">
+                    <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2L5.2,4.5z"/>
+                  </svg>
                 </button>
               </li>
 
               <li class="route__item">
-                <button class="route__btn route__btn--add" type="button">Добавить страну</button>
+                <button class="js-add-route route__btn route__btn--add" type="button">
+                  Добавить страну
+                  <svg class="route__btn-icon" width="14" height="14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 14" xml:space="preserve">
+                    <polygon points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+                  </svg>
+                </button>
               </li>
             </ul>
 
-            <a class="plan-form__button plan-form__button--next" href="step-3">Следующий шаг</a>
-            <a class="plan-form__button plan-form__button--prev" href="step-1">На шаг назад</a>
+            <a class="button button--plan-form-next" href="#step-3">Следующий шаг</a>
+            <a class="button button--plan-form-prev" href="#step-1">На шаг назад</a>
           </div>
 
           <div class="plan-form__step" id="step-3">
@@ -332,25 +698,38 @@
 
             <p class="plan-form__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
 
-            <ul class="description">
+            <ul class="description" id="js-description">
               <li class="description__item description__item--bosnia">
-                <div class="description__item-title">Босния и Герцеговина</div>
-                <textarea class="description__content" name="descriptionBosnia"></textarea>
+                <div class="description__item-title">
+                  <div class="description__item-title-text">Босния и Герцеговина</div>
+                </div>
+
+                <img class="description__item-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="флаг Босния и Герцеговина">
+
+                <!-- Состояние при пустом поле во время редактирования: .description__content--error -->
+                <div class="description__content">
+                  <textarea class="js-description description__input" name="descriptionBosnia" placeholder="План действий"></textarea>
+                </div>
               </li>
 
               <li class="description__item description__item--czech">
-                <div class="description__item-title">Чехия</div>
-                <textarea class="description__content" name="descriptionCzech"></textarea>
+                <div class="description__item-title">
+                  <div class="description__item-title-text">Чехия</div>
+                </div>
+
+                <img class="description__item-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="флаг Чехия">
+
+                <div class="description__content">
+                  <textarea class="js-description description__input" name="descriptionCzech" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </div>
               </li>
             </ul>
 
-            <button class="plan-form__button plan-form__button--next" type="submit">Отправить</button>
-            <a class="plan-form__button plan-form__button--prev" href="step-2">На шаг назад</a>
+            <button class="button button--plan-form-next" type="submit">Отправить</button>
+            <a class="button button--plan-form-prev" href="#step-2">На шаг назад</a>
           </div>
         </form>
       </section>
-
-
     </main>
 
     <footer class="page-footer">
@@ -412,5 +791,6 @@
         </svg>
       </a>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
