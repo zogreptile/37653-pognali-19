@@ -6,8 +6,12 @@
   margin: 0 0 23px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   color: $mango;
+
+  @media (min-width: $tablet) {
+    font-size: 45px;
+  }
 }
 
 .page-section__description {
@@ -127,8 +131,25 @@
     text-align: left;
   }
 
-  .page-section__actions {
-    margin-top: 30px;
+  @media (min-width: $tablet) {
+    padding: 135px 40px 0 40px;
+
+    .page-section__title {
+      margin-bottom: 74px;
+      max-width: none;
+      text-align: center;
+    }
+
+    &:after {
+      bottom: -60px;
+      height: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 160px 132px 0 132px;
   }
 }
 
