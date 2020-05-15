@@ -25,10 +25,20 @@
   &:not(:last-of-type) {
     margin-bottom: 25px;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
-.page-section__paragraph--bold {
+.page-section__paragraph--secondary {
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .page-section--about {
