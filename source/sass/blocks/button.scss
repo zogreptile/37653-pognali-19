@@ -59,6 +59,15 @@
       opacity: 0.3;
     }
   }
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+
+    .button__icon {
+      transform: translate(-50%, -50%) scale(1.35);
+    }
+  }
 }
 
 .button--intro-call {
