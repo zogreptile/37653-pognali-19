@@ -113,7 +113,7 @@
   text-transform: none;
   text-align: left;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   color: $dark-slate-blue;
 
   &:active {
@@ -126,6 +126,16 @@
     fill: $dark-slate-blue;
     right: 17px;
     left: auto;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 29px 34px 28px;
+    border-radius: 20px;
+    font-size: 24px;
+
+    .button__icon {
+      right: 30px;
+    }
   }
 }
 

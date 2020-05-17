@@ -1,3 +1,30 @@
+.directions {
+  position: relative;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.directions__title {
+  @media (min-width: $desktop) {
+    order: 1;
+  }
+}
+
+.directions__description {
+  @media (min-width: $desktop) {
+    order: 2;
+  }
+}
+
+.directions__actions {
+  @media (min-width: $desktop) {
+    order: 3;
+  }
+}
+
 .directions__list {
   margin: 0;
   padding: 0;
@@ -15,6 +42,13 @@
     z-index: 1;
     pointer-events: none;
   }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 251px;
+    left: 130px;
+    width: 560px;
+  }
 }
 
 .directions__item {
@@ -25,4 +59,8 @@
 
 .directions__button {
   width: 100%;
+
+  @media (min-width: $desktop) {
+    width: 275px;
+  }
 }

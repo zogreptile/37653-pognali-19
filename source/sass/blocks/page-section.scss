@@ -56,7 +56,7 @@
   background-color: $pale-grey;
   position: relative;
 
-  &:before {
+  &:after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -81,6 +81,55 @@
 
   .page-section__actions {
     margin-top: 25px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 132px 75px 0;
+
+    &:after {
+      bottom: -60px;
+      height: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+
+    .page-section__title {
+      padding: 0;
+      margin-bottom: 62px;
+    }
+
+    .page-section__description {
+      margin-bottom: 113px;
+      max-width: 340px;
+    }
+
+    .page-section__description {
+      padding: 0;
+    }
+
+    .page-section__actions {
+      margin-top: 47px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 251px 60px 65px 130px;
+    box-sizing: content-box;
+    min-height: 450px;
+
+    .page-section__title {
+      margin-left: 735px;
+    }
+
+    .page-section__description {
+      margin-bottom: 0;
+      margin-left: 735px;
+    }
+
+    .page-section__actions {
+      margin-top: auto;
+      margin-left: 735px;
+    }
   }
 }
 
