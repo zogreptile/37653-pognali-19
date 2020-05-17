@@ -289,6 +289,29 @@
     margin-bottom: 32px;
     text-align: center;
   }
+
+  @media (min-width: $tablet) {
+    padding: 137px 75px 0;
+
+    &:after {
+      bottom: -60px;
+      height: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+
+    .page-section__title {
+      margin-bottom: 60px;
+    }
+
+    .page-section__description {
+      margin-bottom: 67px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 168px 132px 44px;
+  }
 }
 
 .page-section--address {
