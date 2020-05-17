@@ -1,5 +1,4 @@
 html {
-  box-sizing: border-box;
   font-family: $base-font;
   font-size: 16px;
   font-weight: 400;
@@ -12,12 +11,7 @@ body {
 }
 
 * {
-  box-sizing: inherit;
-
-  &:before,
-  &:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
 }
 
 img {

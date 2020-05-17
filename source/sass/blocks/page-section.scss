@@ -156,12 +156,63 @@
   }
 
   .page-section__description {
+    box-sizing: content-box;
     margin-bottom: 60px;
     padding: 0 25px;
+    width: 215px;
   }
 
   .page-section__actions {
     margin-top: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 203px 75px 22px;
+
+    &:after {
+      bottom: -60px;
+      height: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+
+    .page-section__title {
+      margin-bottom: 60px;
+      padding: 0;
+    }
+
+    .page-section__description {
+      margin-bottom: 60px;
+      padding: 0;
+      width: 425px;
+    }
+
+    .page-section__actions {
+      margin-top: 80px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 191px 60px 54px 132px;
+    box-sizing: content-box;
+    min-height: 485px;
+
+    .page-section__title {
+      margin-bottom: 60px;
+      margin-right: 690px;
+      padding: 0;
+    }
+
+    .page-section__description {
+      margin-bottom: 60px;
+      margin-right: 690px;
+      padding: 0;
+    }
+
+    .page-section__actions {
+      margin-top: auto;
+      margin-right: 690px;
+    }
   }
 }
 
