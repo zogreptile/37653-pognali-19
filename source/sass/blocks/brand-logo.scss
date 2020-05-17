@@ -1,3 +1,21 @@
 .brand-logo {
+  width: 100px;
+  height: 19px;
   display: block;
+  background-image: url('../img/logo-mobile-white@1x.png');
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    width: 164px;
+    height: 42px;
+    background-image: url('../img/logo-tablet-white@1x.png');
+  }
+}
+
+.brand-logo--dark {
+  background-image: url('../img/logo-mobile-blue@1x.png');
+
+  @media (min-width: $tablet) {
+    background-image: url('../img/logo-tablet-blue@1x.png');
+  }
 }
