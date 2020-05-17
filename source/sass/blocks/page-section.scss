@@ -308,6 +308,21 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 106px 75px 0;
+
+    &:after {
+      bottom: -60px;
+      height: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 114px 133px 0;
+  }
 }
 
 .page-section__country-filter {

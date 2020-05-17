@@ -1,5 +1,18 @@
+.address {
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .address__button {
   width: 100%;
+
+  @media (min-width: $desktop) {
+    width: 324px;
+    flex-shrink: 0;
+  }
 }
 
 .address__text {
@@ -27,5 +40,32 @@
     background-color: $dark-blue-grey-two;
     background-image: url('../img/contacts-location.svg');
     background-size: 14px 22px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+    padding-left: 93px;
+    min-height: 67px;
+    font-size: 28px;
+    line-height: 1;
+
+    &:before {
+      width: 67px;
+      height: 67px;
+      background-size: 21px 31px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 148px;
+    padding-left: 122px;
+    min-height: 90px;
+
+    &:before {
+      width: 90px;
+      height: 90px;
+      background-size: 28px 43px;
+    }
   }
 }
