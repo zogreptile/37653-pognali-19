@@ -21,16 +21,26 @@
 }
 
 .transport--companion-card {
-  margin: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: $pale-grey;
+  @media (max-width: $tablet) {
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $pale-grey;
 
-  .transport__icon {
-    transform:
-      translate(-50%, -50%)
-      scale(.8);
+    .transport__icon {
+      transform:
+        translate(-50%, -50%)
+        scale(.8);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
   }
 }
 

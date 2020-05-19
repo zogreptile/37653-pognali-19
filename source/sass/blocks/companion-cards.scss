@@ -8,4 +8,16 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom:30px;
+    }
+  }
 }

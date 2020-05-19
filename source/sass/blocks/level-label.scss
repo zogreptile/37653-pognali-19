@@ -74,6 +74,20 @@
   .level-label__caption {
     display: none;
   }
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+
+    .level-label__caption {
+      display: block;
+      color: rgba($greyish-brown, .4);
+
+      &:before {
+        background-color: rgba($greyish-brown, .1);
+      }
+    }
+  }
 }
 
 .level-label--user {
