@@ -419,6 +419,35 @@
     height: 30px;
     background-color: inherit;
   }
+
+  @media (min-width: $tablet) {
+    padding: 30px 75px 62px;
+
+    .page-section__title {
+      margin-bottom: 60px;
+      font-size: 36px;
+    }
+
+    &:after {
+      bottom: -60px;
+      height: 60px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 60px 72px;
+
+    &:before {
+      top: -60px;
+      height: 60px;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+    }
+
+    .page-section__title {
+      padding-left: 65px;
+    }
+  }
 }
 
 .page-section__steps {

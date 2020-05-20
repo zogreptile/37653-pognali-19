@@ -1,6 +1,10 @@
 .page-content {
   padding-bottom: 30px;
   background-color: $pale-grey;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 60px;
+  }
 }
 
 .page-content--index {

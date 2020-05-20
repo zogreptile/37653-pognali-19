@@ -10,6 +10,19 @@
   + .plan-form__step {
     margin-top: 10px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 50px 42px 55px;
+    border-radius: 30px;
+
+    + .plan-form__step {
+      margin-top: 40px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 160px 105px;
+  }
 }
 
 .plan-form__step-title {
@@ -18,14 +31,34 @@
   font-weight: 700;
   line-height: 1;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 36px;
+    font-size: 36px;
+  }
 }
 
 .plan-form__step-number {
   display: block;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
 }
 
 .plan-form__description {
   margin: 0 0 25px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 42px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 56px;
+    max-width: 55%;
+  }
 }
 
 .plan-form__field-wrap {
@@ -39,6 +72,25 @@
   text-transform: uppercase;
   letter-spacing: 1.6px;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    padding-top: 24px;
+    margin-bottom: 34px;
+    border-top: 1px solid $light-blue-grey-two;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 66%;
+    border-top: none;
+  }
 }
 
 .plan-form__field {
@@ -46,21 +98,50 @@
   flex-grow: 1;
   width: 100%;
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    order: 2;
+    flex-grow: 0;
+    margin-top: 0;
+    margin-right: 34px;
+    width: 180px;
+  }
+}
+
+.plan-form__field-title {
+  @media (min-width: $desktop) {
+    padding-right: 20px;
+    width: 100%;
+    max-width: 220px;
+  }
 }
 
 .plan-form__field-units {
   color: rgba($dark-slate-blue, .3);
+
+  @media (min-width: $desktop) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop) {
+    color: $dark-slate-blue;
+  }
 }
 
 .plan-form__field-input {
   display: block;
   width: 100%;
-  padding: 12px 0;
+  padding: 0;
   border: 1px solid $cloudy-blue;
   border-radius: 4px;
+  font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  line-height: inherit;
+  line-height: 44px;
   letter-spacing: inherit;
   text-align: center;
   color: inherit;
@@ -93,6 +174,10 @@
       }
     }
   }
+
+  @media (min-width: $tablet) {
+    line-height: 70px;
+  }
 }
 
 .plan-form__field-control {
@@ -119,6 +204,10 @@
       fill: rgba($dark-two, .1);
     }
   }
+
+  @media (min-width: $tablet) {
+    width: 62px;
+  }
 }
 
 .plan-form__field-control--decrement {
@@ -135,10 +224,25 @@
   left: 50%;
   transform: translate(-50%, -50%);
   fill: $cloudy-blue;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .plan-form__checkbox-wrap {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .plan-form__checkbox {
@@ -186,6 +290,7 @@
 
   &:before {
     content: '';
+    box-sizing: border-box;
     position: absolute;
     top: -2px;
     left: 0;
@@ -197,5 +302,66 @@
     background-position: center center;
     background-size: 9px 9px;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 59px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $dark-slate-blue;
+
+    &:before {
+      top: -6px;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 4px;
+      background-size: 12px 12px;
+    }
+  }
+}
+
+.plan-form__basic-fields {
+  @media (min-width: $tablet) {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+
+    .plan-form__field-wrap:nth-child(1) {
+      order: 1;
+    }
+
+    .plan-form__field-wrap:nth-child(2) {
+      order: 3;
+    }
+
+    .plan-form__checkbox-wrap {
+      order: 2;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: -14px;
+    border-top: 1px solid $light-blue-grey-two;
+  }
+}
+
+.plan-form__actions {
+  margin-top: 24px;
+
+  @media (min-width: $tablet) {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 56px;
   }
 }

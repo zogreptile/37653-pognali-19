@@ -1,7 +1,3 @@
-.calendar {
-  margin-bottom: 21px;
-}
-
 .calendar__month {
   margin-bottom: 25px;
   padding: 11px 0 7px;
@@ -9,6 +5,15 @@
   border-bottom: 1px solid $light-blue-grey-five;
   text-align: center;
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+    padding: 27px 0 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 20px;
+  }
 }
 
 .calendar__month-value {
@@ -16,6 +21,10 @@
   font-weight: 700;
   line-height: 1;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+  }
 }
 
 .calendar__month-control {
@@ -41,25 +50,59 @@
       fill: rgba($dark-slate-blue, .1);
     }
   }
+
+  @media (min-width: $tablet) {
+    width: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+  }
 }
 
 .calendar__month-control--decrement {
   padding-right: 20px;
   left: 0;
+
+  @media (min-width: $desktop) {
+    padding-right: 80px;
+  }
 }
 
 .calendar__month-control--increment {
   padding-left: 20px;
   right: 0;
+
+  @media (min-width: $desktop) {
+    padding-left: 80px;
+  }
 }
 
 .calendar__month-control-icon {
   fill: rgba($dark-slate-blue, .3);
+
+  @media (min-width: $tablet) {
+    width: 15px;
+    height: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 18px;
+    height: 34px;
+  }
 }
 
 .calendar__weekdays {
   margin-bottom: 10px;
   display: flex;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 20px;
+  }
+}
+
+.calendar__weekdays-item-end {
+  display: none;
 }
 
 .calendar__weekdays-item {
@@ -71,6 +114,15 @@
   &:nth-last-child(1),
   &:nth-last-child(2) {
     color: $orange-red;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+
+    .calendar__weekdays-item-end {
+      display: inline-block;
+    }
   }
 }
 
@@ -99,14 +151,39 @@
   line-height: 1;
   text-align: center;
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    padding: 25px 0 23px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 14px;
+    height: 72px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-align: left;
+  }
 }
 
 .calendar__day-caption {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin-top: 8px;
+  }
 }
 
 .calendar__day-month {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
 }
 
 .calendar__day-input {

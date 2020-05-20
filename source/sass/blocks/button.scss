@@ -237,6 +237,34 @@
 .button--plan-form-next {
   display: block;
   width: 100%;
+
+  .button__icon {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 0 76px 0 34px;
+    width: auto;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 80px;
+    text-transform: none;
+
+    &:active {
+      .button__icon {
+        opacity: 0.3;
+      }
+    }
+
+    .button__icon {
+      display: block;
+      left: auto;
+      right: 30px;
+      fill: $dark-slate-blue;
+    }
+  }
 }
 
 .button--plan-form-prev {
