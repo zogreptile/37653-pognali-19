@@ -732,32 +732,34 @@
 
             <p class="plan-form__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
 
-            <ul class="description" id="js-description">
-              <li class="description__item description__item--bosnia">
-                <div class="description__item-title">
-                  <div class="description__item-title-text">Босния и Герцеговина</div>
-                </div>
+            <div class="description__wrapper">
+              <ul class="description__list" id="js-description">
+                <li class="description__item description__item--bosnia">
+                  <div class="description__item-title">
+                    <div class="description__item-title-text">Босния и Герцеговина</div>
+                  </div>
 
-                <img class="description__item-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="флаг Босния и Герцеговина">
+                  <img class="description__item-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="флаг Босния и Герцеговина">
 
-                <!-- Состояние при пустом поле во время редактирования: .description__content--error -->
-                <div class="description__content">
-                  <textarea class="js-description description__input" name="descriptionBosnia" placeholder="План действий"></textarea>
-                </div>
-              </li>
+                  <!-- Состояние при пустом поле во время редактирования: .description__content--error -->
+                  <div class="description__content">
+                    <textarea class="js-description description__input" name="descriptionBosnia" placeholder="План действий"></textarea>
+                  </div>
+                </li>
 
-              <li class="description__item description__item--czech">
-                <div class="description__item-title">
-                  <div class="description__item-title-text">Чехия</div>
-                </div>
+                <li class="description__item description__item--czech">
+                  <div class="description__item-title">
+                    <div class="description__item-title-text">Чехия</div>
+                  </div>
 
-                <img class="description__item-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="флаг Чехия">
+                  <img class="description__item-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="флаг Чехия">
 
-                <div class="description__content">
-                  <textarea class="js-description description__input" name="descriptionCzech" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-                </div>
-              </li>
-            </ul>
+                  <div class="description__content">
+                    <textarea class="js-description description__input" name="descriptionCzech" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
             <div class="plan-form__actions">
               <button class="button button--plan-form-next" type="submit">
