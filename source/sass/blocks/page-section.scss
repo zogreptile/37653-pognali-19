@@ -385,6 +385,26 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 25px 75px 104px;
+
+    .page-section__title {
+      margin-bottom: 56px;
+      font-size: 36px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 60px 122px 124px;
+
+    &:before {
+      top: -60px;
+      height: 60px;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+    }
+  }
 }
 
 .page-section__title--blue {

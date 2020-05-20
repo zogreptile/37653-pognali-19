@@ -13,21 +13,60 @@
   + .plans__item {
     margin-top: 10px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 39px 33px 34px;
+    align-items: center;
+  }
 }
 
 .plans__item-title {
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
   color: $dark-slate-blue;
 
   &:before {
-    margin-right: 4px;
+    width: 20px;
     display: inline-block;
     counter-increment: plans-items;
     content: counter(plans-items)'. ';
     font-weight: 600;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 39px 32px 33px 37px;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 24px;
+    border-bottom: 1px solid $pale-grey-two;
+
+    &:before {
+      width: auto;
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    padding: 0;
+    width: 50%;
+    border: none;
+
+    &:before {
+      width: 52px;
+    }
   }
 }
 
@@ -39,6 +78,19 @@
   text-transform: uppercase;
   letter-spacing: 1.4px;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    margin: 0 47px 0 0;
+    padding: 19px 0 17px 33px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+  }
 }
 
 .plans__item-dates {
@@ -49,6 +101,17 @@
   text-transform: uppercase;
   letter-spacing: 1.4px;
   color: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 19px 0 17px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .plans__item-change {
@@ -68,5 +131,16 @@
 
   &:active {
     color: rgba($black, .1);
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 0 0 auto;
+    padding: 19px 36px 17px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
