@@ -237,6 +237,7 @@
 .button--plan-form-next {
   display: block;
   width: 100%;
+  color: $dark-slate-blue;
 
   .button__icon {
     display: none;
@@ -273,15 +274,45 @@
   padding: 0;
   width: 100%;
   background-color: $transparent;
+  color: $dark-slate-blue;
 
   &:hover,
   &:focus {
     background-color: $transparent;
     color: rgba($dark-slate-blue, .7);
+
+    .button__icon {
+      fill: rgba($dark-slate-blue, .7);
+    }
   }
 
   &:active {
     background-color: $transparent;
     color: rgba($dark-slate-blue, .3);
+
+    .button__icon {
+      fill: rgba($dark-slate-blue, .3);
+    }
+  }
+
+  .button__icon {
+    display: none;
+    left: 46px;
+    fill: $dark-slate-blue;
+  }
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    width: auto;
+    flex-shrink: 0;
+    margin-top: 0;
+    padding-left: 76px;
+    font-size: 24px;
+    line-height: 80px;
+    text-transform: none;
+
+    .button__icon {
+      display: block;
+    }
   }
 }
