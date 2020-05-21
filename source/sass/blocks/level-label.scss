@@ -121,4 +121,23 @@
       background-color: $cloudy-blue;
     }
   }
+
+  @media (min-width: $tablet) {
+    width: 94px;
+    height: 94px;
+  }
+
+  @media (min-width: $desktop) {
+    .level-label__amount {
+      color: $white;
+    }
+
+    .level-label__caption {
+      color: $white;
+
+      &:before {
+        background-color: rgba($cloudy-blue, .3);
+      }
+    }
+  }
 }

@@ -221,6 +221,8 @@
 }
 
 .button--change-avatar {
+  display: block;
+  width: 100%;
   background-color: $pale-grey-two;
 
   &:hover,
@@ -231,6 +233,24 @@
 
   &:active {
     color: rgba($dark-slate-blue, .3);
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    color: $dark-slate-blue;
+  }
+
+  @media (min-width: $desktop) {
+    width: 190px;
+    height: 47px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    line-height: 50px;
   }
 }
 

@@ -94,6 +94,15 @@
       }
     }
   }
+
+  @media (min-width: $tablet) {
+    width: 43px;
+    height: 43px;
+
+    .transport__icon {
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .transport__input {
