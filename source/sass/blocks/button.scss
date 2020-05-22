@@ -336,3 +336,11 @@
     }
   }
 }
+
+.button--companion-filter {
+  @media (min-width: $tablet) {
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+}
