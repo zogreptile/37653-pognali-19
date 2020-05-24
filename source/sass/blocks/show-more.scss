@@ -27,6 +27,15 @@
       fill: rgba($dark-slate-blue, .3);
     }
   }
+
+  @media (min-width: $tablet) {
+    margin: 48px 0 46px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 68px 0 66px;
+  }
 }
 
 .show-more__icon {
@@ -34,6 +43,12 @@
   width: 18px;
   height: 18px;
   fill: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    margin-right: 25px;
+    width: 27px;
+    height: 27px;
+  }
 }
 
 .show-more__text {
