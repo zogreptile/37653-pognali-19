@@ -68,6 +68,21 @@ if (document.getElementById('js-description')) {
   });
 }
 
+if (document.getElementById('country-filter')) {
+  var countryFilterToggle = document.querySelector('.js-country-filter-toggle');
+  var countryFilter = countryFilterToggle.closest('.country-filter');
+
+  countryFilterToggle.addEventListener('click', function() {
+    countryFilter.classList.toggle('country-filter--opened');
+  });
+
+  var countryFilterClose = document.querySelector('.js-country-filter-close');
+
+  countryFilterClose.addEventListener('click', function() {
+    countryFilter.classList.remove('country-filter--opened');
+  });
+}
+
 (function disableHashLinks() {
   var links = document.querySelectorAll('a');
 

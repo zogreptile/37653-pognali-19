@@ -349,22 +349,19 @@
 }
 
 .page-section__country-filter {
-  margin-top: -20px;
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: $pale-grey-four;
+  box-shadow: 0 -20px $pale-grey-four;
   position: relative;
 
-  &:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    bottom: -20px;
-    left: 0;
-    right: 0;
-    height: 20px;
-    background-color: $pale-grey-four;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  @media (min-width: $tablet) {
+    padding: 60px 75px 55px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0 -60px $pale-grey-four;
   }
 }
 
