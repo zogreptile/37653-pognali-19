@@ -1,10 +1,15 @@
 .companion-filter {
-  padding: 0 25px;
-  margin-top: 45px;
   margin-bottom: 28px;
 
   @media (min-width: $tablet) {
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 85px;
+    padding: 0;
+    width: 285px;
+    flex-shrink: 0;
   }
 }
 

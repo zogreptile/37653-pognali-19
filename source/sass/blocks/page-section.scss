@@ -472,15 +472,3 @@
   top: 9px;
   right: 42px;
 }
-
-.page-section--companion-cards {
-  padding-bottom: 46px;
-
-  @media (min-width: $tablet) {
-    padding-bottom: 62px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-bottom: 77px;
-  }
-}
