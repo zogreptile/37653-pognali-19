@@ -1,7 +1,45 @@
 .page-header {
-  padding: 27px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: $dark-two;
+}
+
+.page-header--main-nav-opened {
+  @media (max-width: $not-desktop) {
+    background-color: $white;
+  }
+}
+
+.page-header--light {
+  background-color: $white;
+}
+
+.page-header__inner {
+  height: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $dark-two;
+}
+
+.page-header__nav-toggle {
+  width: 25px;
+  height: 11px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url('../img/menu.svg');
+  background-size: 25px 11px;
+}
+
+.no-js {
+  .page-header {
+    position: static;
+
+    @media (max-width: $not-desktop) {
+      background-color: $white;
+    }
+  }
 }

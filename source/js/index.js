@@ -1,15 +1,31 @@
-var mapContainer = document.getElementById('map');
+document.querySelector('.no-js').classList.remove('no-js');
 
-if (mapContainer) {
-  ymaps.ready(init);
-  function init(){
-    new ymaps.Map("map", {
-      center: [55.76, 37.64],
-      zoom: 7,
-      controls: [],
-    });
-  }
+// хедер + навигация =====
+var mainNavToggle = document.querySelector('.js-main-nav-toggle');
+var mainNav = document.querySelector('.js-main-nav');
+var pageHeader = document.querySelector('.js-page-header');
+
+mainNavToggle.addEventListener('click', function() {
+  mainNav.classList.toggle('main-nav--opened');
+  pageHeader.classList.toggle('page-header--main-nav-opened');
+});
+
+if (window.pageYOffset > 130) {
+  pageHeader.classList.add('page-header--light');
+  mainNav.classList.add('main-nav--page-scrolled');
 }
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 130) {
+    pageHeader.classList.add('page-header--light');
+    mainNav.classList.add('main-nav--page-scrolled');
+  } else {
+    pageHeader.classList.remove('page-header--light');
+    mainNav.classList.remove('main-nav--page-scrolled');
+  }
+});
+// =====
+
 
 
 if (document.getElementById('js-route')) {
@@ -52,6 +68,8 @@ if (document.getElementById('js-route')) {
   });
 }
 
+
+
 if (document.getElementById('js-description')) {
   var descriptionInputs = document.querySelectorAll('.js-description');
 
@@ -68,6 +86,8 @@ if (document.getElementById('js-description')) {
   });
 }
 
+
+
 if (document.getElementById('country-filter')) {
   var countryFilterToggle = document.querySelector('.js-country-filter-toggle');
   var countryFilter = countryFilterToggle.closest('.country-filter');
@@ -83,6 +103,8 @@ if (document.getElementById('country-filter')) {
   });
 }
 
+
+
 (function disableHashLinks() {
   var links = document.querySelectorAll('a');
 
@@ -94,3 +116,18 @@ if (document.getElementById('country-filter')) {
     })
   });
 })();
+
+
+
+var mapContainer = document.getElementById('map');
+
+if (mapContainer) {
+  ymaps.ready(init);
+  function init(){
+    new ymaps.Map("map", {
+      center: [55.76, 37.64],
+      zoom: 7,
+      controls: [],
+    });
+  }
+}
