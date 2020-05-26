@@ -1,5 +1,16 @@
 .user {
   padding: 23px 25px 63px;
+
+  @media (min-width: $tablet) {
+    padding: 64px 75px 90px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 73px 60px 125px 124px;
+  }
+}
+
+.user__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -7,12 +18,10 @@
   z-index: 2;
 
   @media (min-width: $tablet) {
-    padding: 64px 75px 90px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
-    padding: 73px 60px 125px 124px;
     flex-wrap: nowrap;
   }
 }
@@ -24,8 +33,18 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: -145px;
-    right: 390px;
+    top: -215px;
+    right: 335px;
+  }
+}
+
+.user__avatar-container {
+  @media (min-width: $tablet) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop) {
+    order: 0;
   }
 }
 
@@ -35,22 +54,20 @@
   border-radius: 50%;
 
   @media (min-width: $tablet) {
-    order: 3;
     width: 94px;
     height: 94px;
     border-radius: 7px;
   }
 
   @media (min-width: $desktop) {
-    order: 0;
     width: 190px;
     height: 190px;
     border-radius: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: absolute;
-    top: -190px;
-    right: 155px;
+    top: -263px;
+    right: 99px;
   }
 }
 
@@ -67,8 +84,8 @@
     order: 0;
     margin: 0;
     position: absolute;
-    top: 0;
-    right: 155px;
+    top: -73px;
+    right: 99px;
   }
 }
 
