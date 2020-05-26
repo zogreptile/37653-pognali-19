@@ -11,13 +11,14 @@
 }
 
 .direction__image {
+  display: block;
   width: 100%;
   height: 110px;
   object-fit: cover;
 
   @media (min-width: $tablet) {
     width: 186px;
-    height: auto;
+    height: 140px;
   }
 }
 
@@ -30,7 +31,7 @@
   z-index: 1;
 
   @media (min-width: $tablet) {
-    padding: 32px 0 25px 30px;
+    padding: 29px 0 23px 30px;
     margin: 0;
     flex-grow: 1;
     border-radius: 0;
@@ -38,6 +39,8 @@
 }
 
 .direction__flag {
+  width: 35px;
+  height: 24px;
   border-radius: 4px;
   position: absolute;
   top: -12px;

@@ -130,7 +130,6 @@
 }
 
 .page-section--directions {
-  padding: 72px 25px 0;
   background-color: $pale-grey;
   position: relative;
 
@@ -162,8 +161,6 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 72px 75px 0;
-
     &:after {
       bottom: -60px;
       height: 60px;
@@ -191,7 +188,6 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 160px 60px 65px 130px;
     box-sizing: content-box;
     min-height: 450px;
 
@@ -200,7 +196,7 @@
     }
 
     .page-section__description {
-      margin-bottom: 0;
+      margin-bottom: 105px;
       margin-left: 735px;
     }
 
