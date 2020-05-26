@@ -1,0 +1,443 @@
+.plan {
+  position: relative;
+}
+
+.plan__steps {
+  position: absolute;
+  top: 9px;
+  right: 17px;
+
+  @media (min-width: $tablet) {
+    top: 15px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.plan__step {
+  padding: 25px 25px 20px;
+  border-radius: 10px;
+  background-color: $white;
+
+  + .plan__step {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 50px 42px 55px;
+    border-radius: 30px;
+
+    + .plan__step {
+      margin-top: 40px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 160px 105px 90px;
+    border-radius: 60px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -70px;
+      bottom: 0;
+      width: 70px;
+      border-top-left-radius: 60px;
+      border-bottom-left-radius: 60px;
+      background-color: $white;
+    }
+  }
+}
+
+.plan__step-indicator {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 108px;
+  right: 240px;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.plan__step-indicator-item {
+  padding-left: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  + .plan__step-indicator-item {
+    margin-top: 24px;
+  }
+}
+
+.plan__step-indicator-item--active {
+  color: $black;
+
+  &::before {
+    background-color: $black;
+  }
+}
+
+.plan__step-title {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 36px;
+    font-size: 36px;
+  }
+}
+
+.plan__step-number {
+  display: block;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
+}
+
+.plan__description {
+  margin: 0 0 25px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 42px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 56px;
+    max-width: 55%;
+  }
+}
+
+.plan__field-wrap {
+  margin-bottom: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    padding-top: 24px;
+    margin-bottom: 34px;
+    border-top: 1px solid $light-blue-grey-two;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 66%;
+    border-top: none;
+  }
+}
+
+.plan__field {
+  margin-top: 8px;
+  flex-grow: 1;
+  width: 100%;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    order: 2;
+    flex-grow: 0;
+    margin-top: 0;
+    margin-right: 34px;
+    width: 180px;
+  }
+}
+
+.plan__field-title {
+  @media (min-width: $desktop) {
+    padding-right: 20px;
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+.plan__field-units {
+  color: rgba($dark-slate-blue, 0.3);
+
+  @media (min-width: $desktop) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop) {
+    color: $dark-slate-blue;
+  }
+}
+
+.plan__field-input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid $cloudy-blue;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 44px;
+  letter-spacing: inherit;
+  text-align: center;
+  color: inherit;
+  outline: none;
+  -moz-appearance: textfield; /* stylelint-disable-line */
+
+  &::-webkit-outer-spin-button, /* stylelint-disable-line */
+  &::-webkit-inner-spin-button { /* stylelint-disable-line */
+    -webkit-appearance: none; /* stylelint-disable-line */
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $bluey-grey;
+
+    ~ .plan__field-control {
+      .plan__field-control-icon {
+        fill: $bluey-grey;
+      }
+    }
+  }
+
+  &:active {
+    border-color: $dark-two;
+
+    ~ .plan__field-control {
+      .plan__field-control-icon {
+        fill: $dark-two;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+    line-height: 70px;
+  }
+}
+
+.plan__field-control {
+  padding: 0;
+  width: 42px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .plan__field-control-icon {
+      fill: $bluey-grey;
+    }
+  }
+
+  &:active {
+    .plan__field-control-icon {
+      fill: rgba($dark-two, 0.1);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 62px;
+  }
+}
+
+.plan__field-control--decrement {
+  left: 0;
+}
+
+.plan__field-control--increment {
+  right: 0;
+}
+
+.plan__field-control-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $cloudy-blue;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.plan__checkbox-wrap {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.plan__checkbox {
+  display: block;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.plan__checkbox-input {
+  outline: none;
+
+  &:hover,
+  &:focus {
+    + .plan__checkbox-caption {
+      &::before {
+        border-color: $bluey-grey;
+      }
+    }
+  }
+
+  &:active {
+    + .plan__checkbox-caption {
+      &::before {
+        background-color: $pale-grey-three;
+      }
+    }
+  }
+
+  &:checked {
+    + .plan__checkbox-caption {
+      &::before {
+        background-image: url("../img/tick.svg");
+      }
+    }
+  }
+}
+
+.plan__checkbox-caption {
+  padding-left: 39px;
+  display: block;
+  font-size: 15px;
+  line-height: 26px;
+  position: relative;
+
+  &::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid $cloudy-blue;
+    border-radius: 4px;
+    background-color: $white;
+    background-position: center center;
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 59px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $dark-slate-blue;
+
+    &::before {
+      top: -6px;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 4px;
+      background-size: 12px 12px;
+    }
+  }
+}
+
+.plan__basic-fields {
+  @media (min-width: $tablet) {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+
+    .plan__field-wrap:nth-child(1) {
+      order: 1;
+    }
+
+    .plan__field-wrap:nth-child(2) {
+      order: 3;
+    }
+
+    .plan__checkbox-wrap {
+      order: 2;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: -14px;
+    border-top: 1px solid $light-blue-grey-two;
+  }
+}
+
+.plan__actions {
+  margin-top: 24px;
+
+  @media (min-width: $tablet) {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 56px;
+  }
+}

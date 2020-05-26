@@ -1,68 +1,152 @@
 .tariffs {
-  background: url('../img/rates@1x.png') calc(100% - 25px) 70px / 99px 99px no-repeat $pale-grey;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    right: 0;
+    z-index: 2;
+    width: 99px;
+    height: 99px;
+    background-image: url("../img/rates@1x.png");
+    background-size: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/rates@2x.png");
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      right: 46px;
+      top: auto;
+      bottom: -16px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      width: 198px;
+      height: 198px;
+      right: 0;
+      top: 2px;
+      bottom: auto;
+    }
+  }
 }
 
 .tariffs__table {
   display: block;
-  padding-right: 45px;
+  margin-bottom: 30px;
   width: 100%;
   border-collapse: collapse;
   counter-reset: table-row;
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 33px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -43px;
+      bottom: -43px;
+      right: 0;
+      width: 198px;
+      border-radius: 20px;
+      background-color: $pale-grey-four;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 102px;
+
+    &::after {
+      width: 444px;
+      right: 102px;
+    }
+  }
 }
 
 .tariffs__table-body {
+  padding-right: 45px;
   display: block;
   width: 100%;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet) {
+    padding-left: 92px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 158px;
+  }
 }
 
 .tariffs__table-row {
   display: block;
   padding: 14px 0;
   text-align: left;
-  box-shadow: 0 -1px 0 0 rgba($greyish-brown, .1);
+  box-shadow: 0 -1px 0 0 rgba($greyish-brown, 0.1);
   position: relative;
 
   &:last-child {
     box-shadow:
-      0 1px 0 0 rgba($greyish-brown, .1),
-      0 -1px 0 0 rgba($greyish-brown, .1);
+      0 1px 0 0 rgba($greyish-brown, 0.1),
+      0 -1px 0 0 rgba($greyish-brown, 0.1);
   }
 
-  &:after {
+  &::after {
     counter-increment: table-row;
     content: counter(table-row);
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    padding-top: 12px;
     text-align: center;
     color: $white;
     position: absolute;
     top: 0;
     right: -44px;
     font-size: 16px;
-    line-height: 14px;
+    line-height: 38px;
   }
 
   &:nth-child(1) {
-    &:after {
+    &::after {
       background-color: $mango-three;
     }
   }
 
   &:nth-child(2) {
-    &:after {
+    &::after {
       background-color: $mango-two;
     }
   }
 
   &:nth-child(3) {
-    &:after {
+    &::after {
       background-color: $light-gold;
     }
   }
 
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+
+    &::after {
+      width: 67px;
+      height: 67px;
+      top: 0;
+      left: -92px;
+      right: auto;
+      font-size: 28px;
+      line-height: 74px;
+    }
+  }
 }
 
 .tariffs__table-col {
@@ -71,12 +155,66 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 33px;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
 }
 
 .tariffs__show-all {
   font-weight: 700;
   font-size: 16px;
-  line-height: 16px;
-  color: $dark-blue-grey;
+  line-height: 1;
+  color: $light-navy;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($light-navy, 0.7);
+
+    .tariffs__show-all-svg {
+      fill: rgba($light-navy, 0.7);
+    }
+  }
+
+  &:active {
+    color: rgba($light-navy, 0.3);
+
+    .tariffs__show-all-svg {
+      fill: rgba($light-navy, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+
+.tariffs__show-all-icon {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    margin-right: 23px;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: $pale-grey-four;
+    position: relative;
+  }
+}
+
+.tariffs__show-all-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $light-navy;
 }

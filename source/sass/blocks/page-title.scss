@@ -1,0 +1,96 @@
+.page-title {
+  padding: 20px 0 12px;
+  background-color: $dark-two;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet) {
+    padding: 95px 0 70px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 75px 0 70px;
+  }
+}
+
+.page-title__inner {
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    padding-right: 65px;
+  }
+}
+
+.page-title__text {
+  display: inline-block;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: $white;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: $mango;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+
+    &::after {
+      bottom: -74px;
+      height: 8px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.page-title__action {
+  display: none;
+  padding-right: 55px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  color: $white;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+  }
+}
+
+.page-title__action-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: $white;
+}

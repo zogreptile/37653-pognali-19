@@ -13,19 +13,28 @@
 
   &:hover,
   &:focus {
-    color: rgba($dark-slate-blue, .6);
+    color: rgba($dark-slate-blue, 0.6);
 
     .show-more__icon {
-      fill: rgba($dark-slate-blue, .6);
+      fill: rgba($dark-slate-blue, 0.6);
     }
   }
 
   &:active {
-    color: rgba($dark-slate-blue, .3);
+    color: rgba($dark-slate-blue, 0.3);
 
     .show-more__icon {
-      fill: rgba($dark-slate-blue, .3);
+      fill: rgba($dark-slate-blue, 0.3);
     }
+  }
+
+  @media (min-width: $tablet) {
+    margin: 48px 0 46px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 68px 0 66px;
   }
 }
 
@@ -34,6 +43,12 @@
   width: 18px;
   height: 18px;
   fill: $dark-slate-blue;
+
+  @media (min-width: $tablet) {
+    margin-right: 25px;
+    width: 27px;
+    height: 27px;
+  }
 }
 
 .show-more__text {

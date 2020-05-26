@@ -22,8 +22,8 @@
   position: relative;
   z-index: 1;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -31,7 +31,7 @@
     margin: 0 auto;
     height: 1px;
     width: 32px;
-    background-color: rgba($white, .5);
+    background-color: rgba($white, 0.5);
   }
 }
 
@@ -44,7 +44,7 @@
 }
 
 .level-label__svg-bg {
-  fill: rgba($black, .5);
+  fill: rgba($black, 0.6);
 }
 
 .level-label__svg-progress {
@@ -52,7 +52,6 @@
   stroke-width: 3px;
   stroke: $mango;
   stroke-linecap: round;
-  stroke-dasharray: 166.56;
   stroke-dashoffset: 60;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
@@ -73,6 +72,20 @@
 
   .level-label__caption {
     display: none;
+  }
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+
+    .level-label__caption {
+      display: block;
+      color: rgba($greyish-brown, 0.4);
+
+      &::before {
+        background-color: rgba($greyish-brown, 0.1);
+      }
+    }
   }
 }
 
@@ -100,11 +113,30 @@
     font-size: 18px;
     color: $greyish-brown;
 
-    &:before {
+    &::before {
       top: -3px;
       height: 2px;
       width: 50px;
       background-color: $cloudy-blue;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 94px;
+    height: 94px;
+  }
+
+  @media (min-width: $desktop) {
+    .level-label__amount {
+      color: $white;
+    }
+
+    .level-label__caption {
+      color: $white;
+
+      &::before {
+        background-color: rgba($cloudy-blue, 0.3);
+      }
     }
   }
 }

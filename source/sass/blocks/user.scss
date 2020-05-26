@@ -1,34 +1,114 @@
 .user {
   padding: 23px 25px 63px;
+
+  @media (min-width: $tablet) {
+    padding: 64px 75px 90px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 73px 60px 125px 124px;
+  }
+}
+
+.user__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.user__level {
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: -215px;
+    right: 335px;
+  }
+}
+
+.user__avatar-container {
+  @media (min-width: $tablet) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop) {
+    order: 0;
+  }
 }
 
 .user__avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    width: 94px;
+    height: 94px;
+    border-radius: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 190px;
+    height: 190px;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    top: -263px;
+    right: 99px;
+  }
 }
 
 .user__change-avatar {
   margin-top: 20px;
   margin-bottom: 33px;
-  display: block;
-  width: 100%;
+
+  @media (min-width: $tablet) {
+    order: 4;
+    margin: 52px 0;
+  }
+
+  @media (min-width: $desktop) {
+    order: 0;
+    margin: 0;
+    position: absolute;
+    top: -73px;
+    right: 99px;
+  }
 }
 
-.user__tags {
-  width: 100%;
-}
-
-.user__transport {
-  width: 100%;
+.user__change-avatar-text-piece {
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .user__tags {
   margin-bottom: 25px;
+  width: 100%;
   position: relative;
+
+  @media (min-width: $tablet) {
+    order: 5;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    order: 1;
+    margin-right: 142px;
+  }
 }
 
 .user__tags-title {
@@ -42,6 +122,18 @@
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet) {
+    top: auto;
+    bottom: -12px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 20px;
+    transform: none;
+  }
 }
 
 .user__tags-input {
@@ -66,28 +158,33 @@
   &:active {
     border-color: $dark-two;
   }
-}
 
-.user__info-title {
-  margin: 0;
-  padding: 0 17px;
-  background-color: $pale-grey;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: $dark-slate-blue;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+  @media (min-width: $tablet) {
+    padding: 37px 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .user__transport {
   display: flex;
   justify-content: center;
   padding: 15px;
+  width: 100%;
   border: 1px solid $cloudy-blue;
   border-radius: 10px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    order: 2;
+    align-items: center;
+    width: 308px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 384px;
+    flex-shrink: 0;
+  }
 }
 
 .user__transport-title {
@@ -101,4 +198,11 @@
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet) {
+    top: auto;
+    bottom: -12px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
 }
