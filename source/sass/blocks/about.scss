@@ -1,0 +1,49 @@
+.about {
+  background-image: url('../img/about-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @media (min-width: $tablet) {
+    background-image: url('../img/about-tablet@1x.png');
+    background-position: bottom 82px left 108%;
+    background-image: none;
+  }
+}
+
+.about__inner {
+  padding-top: 326px;
+  padding-bottom: 84px;
+  padding-left: 25px;
+  padding-right: 0;
+
+  @media (min-width: $tablet) {
+    padding-top: 280px;
+    padding-left: 75px;
+    box-sizing: content-box;
+    background-image: url('../img/about-tablet@1x.png');
+    background-repeat: no-repeat;
+    background-position: bottom 80px right;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 132px;
+    padding-left: 126px;
+    padding-bottom: 160px;
+    background-image: url('../img/about-desktop@1x.png');
+    background-position: bottom right;
+  }
+}
+
+.about__description {
+  @media (min-width: $tablet) {
+    width: 302px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 610px;
+  }
+}
+
+.about__button {
+  width: 274px;
+}

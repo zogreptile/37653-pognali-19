@@ -57,21 +57,80 @@
     background-size: auto, cover;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    position: relative;
+    z-index: 2;
   }
 }
 
 .page-section--about {
-  margin-bottom: -30px;
-  padding: 326px 50px 84px;
-  background: $dark-blue-grey url('../img/about-mobile@1x.png') no-repeat center bottom;
+  padding: 0;
+  background-color: $dark-blue-grey;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   position: relative;
   z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 305px;
+    left: 0;
+    z-index: -1;
+    width: 113px;
+    height: 132px;
+    border-radius: 20px;
+    background-color: $dark-blue-grey-four;
+  }
+
+  .page-section__actions {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    &:before {
+      top: 235px;
+      left: 40px;
+      right: 40px;
+      width: auto;
+      height: 212px;
+    }
+
+    .page-section__title {
+      margin-bottom: 42px;
+    }
+
+    .page-section__actions {
+      display: block;
+      margin-top: 52px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    box-shadow: 0 -60px $dark-blue-grey;
+
+    &:before {
+      top: 75px;
+      left: 60px;
+      right: auto;
+      width: 213px;
+      height: 213px;
+    }
+
+    .page-section__title {
+      margin-bottom: 60px;
+    }
+
+    .page-section__actions {
+      margin-top: 86px;
+    }
+  }
 }
 
 .page-section--directions {
-  padding: 102px 25px 0;
+  padding: 72px 25px 0;
   background-color: $pale-grey;
   position: relative;
 
@@ -103,7 +162,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 132px 75px 0;
+    padding: 72px 75px 0;
 
     &:after {
       bottom: -60px;
@@ -132,7 +191,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 251px 60px 65px 130px;
+    padding: 160px 60px 65px 130px;
     box-sizing: content-box;
     min-height: 450px;
 
