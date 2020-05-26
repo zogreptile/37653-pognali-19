@@ -51,7 +51,7 @@
 
   @media (min-width: $desktop) {
     background-color: $dark-two;
-    background-image: url(../img/traveller-illustration-desktop@1x.png), url(../img/globe-back-desktop@1x.jpg);
+    background-image: url('../img/traveller-illustration-desktop@1x.png'), url('../img/globe-back-desktop@1x.jpg');
     background-repeat: no-repeat no-repeat;
     background-position: bottom right 41%, center;
     background-size: auto, cover;
@@ -211,6 +211,18 @@
   padding-top: 103px;
   position: relative;
   background-color: $dark-blue-grey;
+  background-image:
+    url('../img/smolov-back-desktop@1x.png'),
+    url('../img/rogovaya-back-mobile@1x.png');
+  background-size: 143px 143px, 61px 71px;
+  background-repeat: no-repeat;
+  background-position: top 73px left 84%, top 360px left -15px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url('../img/smolov-back-desktop@2x.png'),
+      url('../img/rogovaya-back-mobile@1x.png');
+  }
 
   &:after {
     content: '';
@@ -241,7 +253,18 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 203px 75px 22px;
+    padding: 203px 0 22px;
+    background-image:
+      url('../img/smolov-back-desktop@1x.png'),
+      url('../img/rogovaya-back-desktop@1x.png');
+    background-size: 143px 143px, 285px 285px;
+    background-position: top 480px left 6%, top 135px right 75px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url('../img/smolov-back-desktop@2x.png'),
+        url('../img/rogovaya-back-desktop@1x.png');
+    }
 
     &:after {
       bottom: -60px;
@@ -267,9 +290,16 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 191px 60px 54px 132px;
+    padding: 191px 0 54px 0;
     box-sizing: content-box;
     min-height: 485px;
+    background-position: top 190px left 46%, bottom 25px left 200px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url('../img/smolov-back-desktop@2x.png'),
+        url('../img/rogovaya-back-desktop@1x.png');
+    }
 
     .page-section__title {
       margin-bottom: 60px;

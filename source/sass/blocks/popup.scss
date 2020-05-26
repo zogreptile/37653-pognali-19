@@ -1,0 +1,119 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+}
+
+.popup--opened {
+  display: flex;
+}
+
+.popup__content {
+  margin: auto;
+  padding-top: 33px;
+  width: 270px;
+  border-radius: 20px;
+  background-color: $white;
+  box-shadow: 0px 20px 50px 0 rgba($dark-slate-blue, .1);
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    padding-top: 55px;
+    width: 688px;
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 750px;
+  }
+}
+
+.popup__title {
+  margin: 0 0 26px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: $mango;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 47px;
+    font-size: 45px;
+  }
+}
+
+.popup__price {
+  margin-bottom: 30px;
+  padding: 0 25px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+    padding: 0 90px;
+    font-size: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 60px;
+  }
+}
+
+.popup__price-item {
+  margin-bottom: -1px;
+  padding: 10px 0;
+  display: block;
+  border-top: 1px solid $pale-grey-five;
+  border-bottom: 1px solid $pale-grey-five;
+
+  @media (min-width: $tablet) {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.popup__price-key {
+  padding: 0;
+  display: block;
+  font-weight: 300;
+  text-align: left;
+}
+
+.popup__price-value {
+  padding: 0;
+  display: block;
+}
+
+.popup__button {
+  padding: 21px 0;
+  width: 100%;
+  border: none;
+  background-color: $pale-grey-five;
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $pale-grey;
+  }
+
+  &:active {
+    background-color: $pale-grey;
+    color: rgba($dark-slate-blue, .3);
+  }
+
+  @media (min-width: $tablet) {
+    padding: 41px 0;
+    font-size: 24px;
+    text-transform: none;
+  }
+}

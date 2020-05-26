@@ -28,6 +28,23 @@ window.addEventListener('scroll', function() {
 
 
 
+var popup = document.getElementById('popup');
+
+if (popup) {
+  var openPopupButton = document.querySelector('.js-open-popup');
+  var closePopupButton = document.querySelector('.js-close-popup');
+
+  openPopupButton.addEventListener('click', function() {
+    popup.classList.add('popup--opened');
+  });
+
+  closePopupButton.addEventListener('click', function() {
+    popup.classList.remove('popup--opened');
+  });
+}
+
+
+
 if (document.getElementById('js-route')) {
   var chooseRouteButtons = document.querySelectorAll('.js-choose-route');
   var removeRouteButtons = document.querySelectorAll('.js-remove-route');
@@ -124,10 +141,14 @@ var mapContainer = document.getElementById('map');
 if (mapContainer) {
   ymaps.ready(init);
   function init(){
-    new ymaps.Map("map", {
-      center: [55.76, 37.64],
-      zoom: 7,
+    var map = new ymaps.Map("map", {
+      center: [59.938635, 30.323118],
+      zoom: 14,
       controls: [],
     });
+
+    var placemark = new ymaps.Placemark([59.938635, 30.323118]);
+
+    map.geoObjects.add(placemark);
   }
 }

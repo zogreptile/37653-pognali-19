@@ -1,8 +1,47 @@
 .companions {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    z-index: 0;
+    width: 113px;
+    height: 132px;
+    border-radius: 20px;
+    background-color: $dark-blue-grey-four;
+  }
+
+  @media (min-width: $tablet) {
+    &:before {
+      top: -70px;
+      left: 40px;
+      width: 213px;
+      height: 213px;
+    }
+  }
+
   @media (min-width: $desktop) {
+    padding-left: 65px;
     display: flex;
     flex-direction: column;
-    position: relative;
+
+    &:before {
+      top: -60px;
+      left: 60px;
+      width: 213px;
+      height: 213px;
+    }
+  }
+}
+
+.companions__inner {
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet) {
+    padding: 0 35px;
   }
 }
 
@@ -30,8 +69,8 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: 191px;
-    right: 60px;
+    top: 0;
+    left: 690px;
     width: 630px;
   }
 }
