@@ -125,6 +125,7 @@
 
   @media (max-width: $mobile), (min-width: $desktop) {
     cursor: pointer;
+    pointer-events: auto;
 
     &:hover,
     &:focus {
@@ -151,6 +152,7 @@
     width: 126px;
     font-size: 20px;
     font-weight: 600;
+    pointer-events: none;
 
     &:after {
       content: ':';

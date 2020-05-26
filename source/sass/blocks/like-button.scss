@@ -94,6 +94,7 @@
   font-weight: 700;
   line-height: 1;
   color: $dark-two;
+  white-space: nowrap;
 
   @media (min-width: $tablet) {
     font-size: 20px;
