@@ -2,57 +2,57 @@
   width: 100px;
   height: 19px;
   display: block;
-  background-image: url('../img/logo-mobile-white@1x.png');
+  background-image: url("../img/logo-mobile-white@1x.png");
   background-repeat: no-repeat;
   background-size: 100px 19px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url('../img/logo-mobile-white@2x.png');
+    background-image: url("../img/logo-mobile-white@2x.png");
   }
 
   @media (min-width: $tablet) {
     width: 164px;
     height: 42px;
-    background-image: url('../img/logo-tablet-white@1x.png');
+    background-image: url("../img/logo-tablet-white@1x.png");
     background-size: 164px 42px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/logo-tablet-white@2x.png');
+      background-image: url("../img/logo-tablet-white@2x.png");
     }
   }
 
   @media (min-width: $desktop) {
     width: 200px;
     height: 52px;
-    background-image: url('../img/logo-desktop-white@1x.png');
+    background-image: url("../img/logo-desktop-white@1x.png");
     background-size: 200px 52px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/logo-desktop-white@2x.png');
+      background-image: url("../img/logo-desktop-white@2x.png");
     }
   }
 }
 
 .brand-logo--dark {
-  background-image: url('../img/logo-mobile-blue@1x.png');
+  background-image: url("../img/logo-mobile-blue@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url('../img/logo-mobile-blue@2x.png');
+    background-image: url("../img/logo-mobile-blue@2x.png");
   }
 
   @media (min-width: $tablet) {
-    background-image: url('../img/logo-tablet-blue@1x.png');
+    background-image: url("../img/logo-tablet-blue@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/logo-tablet-blue@2x.png');
+      background-image: url("../img/logo-tablet-blue@2x.png");
     }
   }
 
   @media (min-width: $desktop) {
-    background-image: url('../img/logo-desktop-blue@1x.png');
+    background-image: url("../img/logo-desktop-blue@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/logo-desktop-blue@2x.png');
+      background-image: url("../img/logo-desktop-blue@2x.png");
     }
   }
 }

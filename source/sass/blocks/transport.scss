@@ -11,7 +11,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: rgba($greyish-brown, .3);
+  fill: rgba($greyish-brown, 0.3);
 }
 
 .transport--available {
@@ -31,7 +31,7 @@
     .transport__icon {
       transform:
         translate(-50%, -50%)
-        scale(.8);
+        scale(0.8);
     }
   }
 
@@ -52,27 +52,27 @@
   background-color: $white;
   cursor: pointer;
   box-shadow: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 
   .transport__icon {
-    fill: rgba($dark-slate-blue, .15);
+    fill: rgba($dark-slate-blue, 0.15);
     transform:
       translate(-50%, -50%)
-      scale(.8);
+      scale(0.8);
   }
 
   &:hover,
   &:focus {
-    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
     .transport__icon {
-      fill: rgba($dark-slate-blue, .3);
+      fill: rgba($dark-slate-blue, 0.3);
     }
 
     .transport__input {
       &:checked {
         + .transport__icon {
-          fill: rgba($dark-slate-blue-two, .7);
+          fill: rgba($dark-slate-blue-two, 0.7);
         }
       }
     }
@@ -83,13 +83,13 @@
     box-shadow: none;
 
     .transport__icon {
-      fill: rgba($dark-slate-blue, .1);
+      fill: rgba($dark-slate-blue, 0.1);
     }
 
     .transport__input {
       &:checked {
         + .transport__icon {
-          fill: rgba($dark-slate-blue-two, .3);
+          fill: rgba($dark-slate-blue-two, 0.3);
         }
       }
     }

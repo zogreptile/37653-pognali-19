@@ -51,14 +51,22 @@
 
   @media (min-width: $desktop) {
     background-color: $dark-two;
-    background-image: url('../img/traveller-illustration-desktop@1x.png'), url('../img/globe-back-desktop@1x.jpg');
+    background-image:
+      url("../img/traveller-illustration-desktop@1x.png"),
+      url("../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat no-repeat;
     background-position: bottom right 41%, center;
-    background-size: auto, cover;
+    background-size: 431px 640px, cover;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     position: relative;
     z-index: 2;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/traveller-illustration-desktop@2x.png"),
+        url("../img/globe-back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -70,8 +78,8 @@
   position: relative;
   z-index: 1;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 305px;
     left: 0;
@@ -90,7 +98,7 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
 
-    &:before {
+    &::before {
       top: 235px;
       left: 40px;
       right: 40px;
@@ -111,7 +119,7 @@
   @media (min-width: $desktop) {
     box-shadow: 0 -60px $dark-blue-grey;
 
-    &:before {
+    &::before {
       top: 75px;
       left: 60px;
       right: auto;
@@ -133,8 +141,8 @@
   background-color: $pale-grey;
   position: relative;
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     z-index: 1;
     bottom: -30px;
@@ -161,7 +169,7 @@
   }
 
   @media (min-width: $tablet) {
-    &:after {
+    &::after {
       bottom: -60px;
       height: 60px;
       border-bottom-left-radius: 60px;
@@ -175,11 +183,8 @@
 
     .page-section__description {
       margin-bottom: 113px;
-      max-width: 340px;
-    }
-
-    .page-section__description {
       padding: 0;
+      max-width: 340px;
     }
 
     .page-section__actions {
@@ -212,20 +217,20 @@
   position: relative;
   background-color: $dark-blue-grey;
   background-image:
-    url('../img/smolov-back-desktop@1x.png'),
-    url('../img/rogovaya-back-mobile@1x.png');
+    url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
   background-size: 143px 143px, 61px 71px;
   background-repeat: no-repeat;
   background-position: top 73px left 84%, top 360px left -15px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
-      url('../img/smolov-back-desktop@2x.png'),
-      url('../img/rogovaya-back-mobile@1x.png');
+      url("../img/smolov-back-desktop@2x.png"),
+      url("../img/rogovaya-back-mobile@1x.png");
   }
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     z-index: 1;
     bottom: -30px;
@@ -255,18 +260,18 @@
   @media (min-width: $tablet) {
     padding: 203px 0 22px;
     background-image:
-      url('../img/smolov-back-desktop@1x.png'),
-      url('../img/rogovaya-back-desktop@1x.png');
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-desktop@1x.png");
     background-size: 143px 143px, 285px 285px;
     background-position: top 480px left 6%, top 135px right 75px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image:
-        url('../img/smolov-back-desktop@2x.png'),
-        url('../img/rogovaya-back-desktop@1x.png');
+        url("../img/smolov-back-desktop@2x.png"),
+        url("../img/rogovaya-back-desktop@1x.png");
     }
 
-    &:after {
+    &::after {
       bottom: -60px;
       height: 60px;
       border-bottom-left-radius: 60px;
@@ -297,8 +302,8 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image:
-        url('../img/smolov-back-desktop@2x.png'),
-        url('../img/rogovaya-back-desktop@1x.png');
+        url("../img/smolov-back-desktop@2x.png"),
+        url("../img/rogovaya-back-desktop@1x.png");
     }
 
     .page-section__title {
@@ -326,8 +331,8 @@
   background-color: $pale-grey;
   position: relative;
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     z-index: 1;
     bottom: -30px;
@@ -354,7 +359,7 @@
       text-align: center;
     }
 
-    &:after {
+    &::after {
       bottom: -60px;
       height: 60px;
       border-bottom-left-radius: 60px;
@@ -376,8 +381,8 @@
   background-color: $dark-blue-grey;
   position: relative;
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     z-index: 1;
     bottom: -30px;
@@ -401,7 +406,7 @@
   @media (min-width: $tablet) {
     padding: 137px 75px 0;
 
-    &:after {
+    &::after {
       bottom: -60px;
       height: 60px;
       border-bottom-left-radius: 60px;
@@ -433,8 +438,8 @@
   background-color: $light-gold;
   position: relative;
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     z-index: 1;
     bottom: -30px;
@@ -449,7 +454,7 @@
   @media (min-width: $tablet) {
     padding: 106px 75px 0;
 
-    &:after {
+    &::after {
       bottom: -60px;
       height: 60px;
       border-bottom-left-radius: 60px;
@@ -485,8 +490,8 @@
   background-color: $pale-grey-two;
   position: relative;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     z-index: 1;
     top: -30px;
@@ -510,7 +515,7 @@
   @media (min-width: $desktop) {
     padding: 0 60px 122px 124px;
 
-    &:before {
+    &::before {
       top: -60px;
       height: 60px;
       border-top-left-radius: 60px;
@@ -528,8 +533,8 @@
   background-color: $light-blue-grey-five;
   position: relative;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     z-index: 1;
     top: -30px;
@@ -541,8 +546,8 @@
     border-top-right-radius: 30px;
   }
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     z-index: 0;
     bottom: -30px;
@@ -560,7 +565,7 @@
       font-size: 36px;
     }
 
-    &:after {
+    &::after {
       bottom: -60px;
       height: 60px;
     }
@@ -569,7 +574,7 @@
   @media (min-width: $desktop) {
     padding: 0 60px 72px 124px;
 
-    &:before {
+    &::before {
       top: -60px;
       height: 60px;
       border-top-left-radius: 60px;

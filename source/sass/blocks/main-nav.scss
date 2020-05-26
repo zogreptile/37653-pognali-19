@@ -23,16 +23,16 @@
   }
 
   .main-nav__toggle {
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       background-color: $pinkish-grey;
     }
 
-    &:before {
+    &::before {
       transform: rotate(45deg) translateX(2px);
     }
 
-    &:after {
+    &::after {
       margin-top: 0;
       transform: rotate(-45deg) translateX(2px);
     }
@@ -52,41 +52,41 @@
 
 .main-nav--page-scrolled {
   .main-nav__logo {
-    background-image: url('../img/logo-mobile-blue@1x.png');
+    background-image: url("../img/logo-mobile-blue@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/logo-mobile-blue@2x.png');
+      background-image: url("../img/logo-mobile-blue@2x.png");
     }
   }
 
   .main-nav__toggle {
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       background-color: $pinkish-grey;
     }
   }
 
   @media (min-width: $tablet) {
     .main-nav__logo {
-      background-image: url('../img/logo-tablet-blue@1x.png');
+      background-image: url("../img/logo-tablet-blue@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url('../img/logo-tablet-blue@2x.png');
+        background-image: url("../img/logo-tablet-blue@2x.png");
       }
     }
   }
 
   @media (min-width: $desktop) {
     .main-nav__logo {
-      background-image: url('../img/logo-desktop-blue@1x.png');
+      background-image: url("../img/logo-desktop-blue@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url('../img/logo-desktop-blue@2x.png');
+        background-image: url("../img/logo-desktop-blue@2x.png");
       }
     }
 
     .main-nav__links {
-      &:before {
+      &::before {
         background-color: $dark-blue-grey;
       }
     }
@@ -115,33 +115,33 @@
   width: 100px;
   height: 19px;
   display: block;
-  background-image: url('../img/logo-mobile-white@1x.png');
+  background-image: url("../img/logo-mobile-white@1x.png");
   background-repeat: no-repeat;
   background-size: 100px 19px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url('../img/logo-mobile-white@2x.png');
+    background-image: url("../img/logo-mobile-white@2x.png");
   }
 
   @media (min-width: $tablet) {
     width: 164px;
     height: 42px;
-    background-image: url('../img/logo-tablet-white@1x.png');
+    background-image: url("../img/logo-tablet-white@1x.png");
     background-size: 164px 42px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/logo-tablet-white@2x.png');
+      background-image: url("../img/logo-tablet-white@2x.png");
     }
   }
 
   @media (min-width: $desktop) {
     width: 200px;
     height: 52px;
-    background-image: url('../img/logo-desktop-white@1x.png');
+    background-image: url("../img/logo-desktop-white@1x.png");
     background-size: 200px 52px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/logo-desktop-white@2x.png');
+      background-image: url("../img/logo-desktop-white@2x.png");
     }
   }
 }
@@ -166,8 +166,8 @@
     width: auto;
     position: relative;
 
-    &:before {
-      content: '';
+    &::before {
+      content: "";
       height: 2px;
       width: 60px;
       background-color: $white;
@@ -209,11 +209,11 @@
 
   &:hover,
   &:focus {
-    color: rgba($dark-blue-grey, .6);
+    color: rgba($dark-blue-grey, 0.6);
   }
 
   &:active {
-    color: rgba($dark-blue-grey, .3);
+    color: rgba($dark-blue-grey, 0.3);
   }
 
   @media (min-width: $tablet) {
@@ -225,10 +225,10 @@
     font-size: 20px;
     color: $white;
     transform: none;
-    transition: transform .2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     position: relative;
 
-    &:after {
+    &::after {
       content: attr(data-clone);
       position: absolute;
       bottom: -100%;
@@ -248,7 +248,7 @@
 }
 
 .main-nav__link--active {
-  color: rgba($dark-blue-grey, .3);
+  color: rgba($dark-blue-grey, 0.3);
   pointer-events: none;
 
   @media (min-width: $desktop) {
@@ -267,9 +267,9 @@
   position: relative;
   outline: none;
 
-  &:before,
-  &:after {
-    content: '';
+  &::before,
+  &::after {
+    content: "";
     display: block;
     width: 25px;
     height: 3px;
@@ -277,7 +277,7 @@
     background-color: $white;
   }
 
-  &:after {
+  &::after {
     margin-top: 5px;
   }
 
@@ -343,7 +343,7 @@
 
   &:hover,
   &:focus {
-    color: rgba($dark-blue-grey, .6);
+    color: rgba($dark-blue-grey, 0.6);
 
     .main-nav__contacts-icon {
       fill: $mango-two;
@@ -351,15 +351,15 @@
   }
 
   &:active {
-    color: rgba($dark-blue-grey, .3);
+    color: rgba($dark-blue-grey, 0.3);
 
     .main-nav__contacts-icon {
-      fill: rgba($mango-two, .3);
+      fill: rgba($mango-two, 0.3);
     }
   }
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -377,7 +377,7 @@
     font-size: 28px;
     line-height: 70px;
 
-    &:before {
+    &::before {
       width: 67px;
       height: 67px;
     }
@@ -389,7 +389,7 @@
     height: 50px;
     border-radius: 50%;
 
-    &:before {
+    &::before {
       display: none;
     }
 
@@ -402,7 +402,7 @@
 
     &:active {
       .main-nav__contacts-icon {
-        fill: rgba($dark-two, .3);
+        fill: rgba($dark-two, 0.3);
       }
     }
   }
@@ -493,10 +493,10 @@
 
 .no-js {
   .main-nav__logo {
-    background-image: url('../img/logo-mobile-blue@1x.png');
+    background-image: url("../img/logo-mobile-blue@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/logo-mobile-blue@2x.png');
+      background-image: url("../img/logo-mobile-blue@2x.png");
     }
   }
 
@@ -516,20 +516,20 @@
 
   @media (min-width: $tablet) {
     .main-nav__logo {
-      background-image: url('../img/logo-tablet-blue@1x.png');
+      background-image: url("../img/logo-tablet-blue@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url('../img/logo-tablet-blue@2x.png');
+        background-image: url("../img/logo-tablet-blue@2x.png");
       }
     }
   }
 
   @media (min-width: $desktop) {
     .main-nav__logo {
-      background-image: url('../img/logo-desktop-white@1x.png');
+      background-image: url("../img/logo-desktop-white@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url('../img/logo-desktop-blue@2x.png');
+        background-image: url("../img/logo-desktop-blue@2x.png");
       }
     }
 

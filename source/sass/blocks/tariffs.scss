@@ -1,24 +1,24 @@
 .tariffs {
   position: relative;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: -130px;
     right: 0;
     z-index: 2;
     width: 99px;
     height: 99px;
-    background-image: url('../img/rates@1x.png');
+    background-image: url("../img/rates@1x.png");
     background-size: 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url('../img/rates@2x.png');
+      background-image: url("../img/rates@2x.png");
     }
   }
 
   @media (min-width: $tablet) {
-    &:before {
+    &::before {
       right: 46px;
       top: auto;
       bottom: -16px;
@@ -26,7 +26,7 @@
   }
 
   @media (min-width: $desktop) {
-    &:before {
+    &::before {
       width: 198px;
       height: 198px;
       right: 0;
@@ -47,8 +47,8 @@
   @media (min-width: $tablet) {
     margin-bottom: 33px;
 
-    &:after {
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
       top: -43px;
       bottom: -43px;
@@ -62,7 +62,7 @@
   @media (min-width: $desktop) {
     padding-right: 102px;
 
-    &:after {
+    &::after {
       width: 444px;
       right: 102px;
     }
@@ -90,16 +90,16 @@
   display: block;
   padding: 14px 0;
   text-align: left;
-  box-shadow: 0 -1px 0 0 rgba($greyish-brown, .1);
+  box-shadow: 0 -1px 0 0 rgba($greyish-brown, 0.1);
   position: relative;
 
   &:last-child {
     box-shadow:
-      0 1px 0 0 rgba($greyish-brown, .1),
-      0 -1px 0 0 rgba($greyish-brown, .1);
+      0 1px 0 0 rgba($greyish-brown, 0.1),
+      0 -1px 0 0 rgba($greyish-brown, 0.1);
   }
 
-  &:after {
+  &::after {
     counter-increment: table-row;
     content: counter(table-row);
     width: 34px;
@@ -115,19 +115,19 @@
   }
 
   &:nth-child(1) {
-    &:after {
+    &::after {
       background-color: $mango-three;
     }
   }
 
   &:nth-child(2) {
-    &:after {
+    &::after {
       background-color: $mango-two;
     }
   }
 
   &:nth-child(3) {
-    &:after {
+    &::after {
       background-color: $light-gold;
     }
   }
@@ -137,7 +137,7 @@
     justify-content: space-between;
     padding: 17px 0;
 
-    &:after {
+    &::after {
       width: 67px;
       height: 67px;
       top: 0;
@@ -175,18 +175,18 @@
 
   &:hover,
   &:focus {
-    color: rgba($light-navy, .7);
+    color: rgba($light-navy, 0.7);
 
     .tariffs__show-all-svg {
-      fill: rgba($light-navy, .7);
+      fill: rgba($light-navy, 0.7);
     }
   }
 
   &:active {
-    color: rgba($light-navy, .3);
+    color: rgba($light-navy, 0.3);
 
     .tariffs__show-all-svg {
-      fill: rgba($light-navy, .3);
+      fill: rgba($light-navy, 0.3);
     }
   }
 

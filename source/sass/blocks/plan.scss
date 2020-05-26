@@ -42,8 +42,8 @@
     border-bottom-left-radius: 0;
     position: relative;
 
-    &:before {
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: -70px;
@@ -74,18 +74,18 @@
   padding-left: 40px;
   font-size: 20px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, .6);
+  color: rgba(0, 0, 0, 0.6);
   position: relative;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 7px;
     left: 0;
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   + .plan__step-indicator-item {
@@ -96,7 +96,7 @@
 .plan__step-indicator-item--active {
   color: $black;
 
-  &:before {
+  &::before {
     background-color: $black;
   }
 }
@@ -197,7 +197,7 @@
 }
 
 .plan__field-units {
-  color: rgba($dark-slate-blue, .3);
+  color: rgba($dark-slate-blue, 0.3);
 
   @media (min-width: $desktop) {
     order: 3;
@@ -222,11 +222,11 @@
   text-align: center;
   color: inherit;
   outline: none;
-  -moz-appearance: textfield;
+  -moz-appearance: textfield; /* stylelint-disable-line */
 
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  &::-webkit-outer-spin-button, /* stylelint-disable-line */
+  &::-webkit-inner-spin-button { /* stylelint-disable-line */
+    -webkit-appearance: none; /* stylelint-disable-line */
     margin: 0;
   }
 
@@ -277,7 +277,7 @@
 
   &:active {
     .plan__field-control-icon {
-      fill: rgba($dark-two, .1);
+      fill: rgba($dark-two, 0.1);
     }
   }
 
@@ -334,7 +334,7 @@
   &:hover,
   &:focus {
     + .plan__checkbox-caption {
-      &:before {
+      &::before {
         border-color: $bluey-grey;
       }
     }
@@ -342,7 +342,7 @@
 
   &:active {
     + .plan__checkbox-caption {
-      &:before {
+      &::before {
         background-color: $pale-grey-three;
       }
     }
@@ -350,8 +350,8 @@
 
   &:checked {
     + .plan__checkbox-caption {
-      &:before {
-        background-image: url('../img/tick.svg');
+      &::before {
+        background-image: url("../img/tick.svg");
       }
     }
   }
@@ -364,8 +364,8 @@
   line-height: 26px;
   position: relative;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     box-sizing: border-box;
     position: absolute;
     top: -2px;
@@ -388,7 +388,7 @@
     text-transform: uppercase;
     color: $dark-slate-blue;
 
-    &:before {
+    &::before {
       top: -6px;
       left: 0;
       width: 34px;

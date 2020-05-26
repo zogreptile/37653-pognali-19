@@ -13,18 +13,18 @@
 
   &:hover,
   &:focus {
-    color: rgba($dark-slate-blue, .6);
+    color: rgba($dark-slate-blue, 0.6);
 
     .show-more__icon {
-      fill: rgba($dark-slate-blue, .6);
+      fill: rgba($dark-slate-blue, 0.6);
     }
   }
 
   &:active {
-    color: rgba($dark-slate-blue, .3);
+    color: rgba($dark-slate-blue, 0.3);
 
     .show-more__icon {
-      fill: rgba($dark-slate-blue, .3);
+      fill: rgba($dark-slate-blue, 0.3);
     }
   }
 

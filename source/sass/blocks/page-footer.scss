@@ -3,8 +3,8 @@
   background-color: $white;
   position: relative;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     z-index: 1;
     top: -30px;
@@ -19,7 +19,7 @@
   @media (min-width: $tablet) {
     padding: 0 0 46px;
 
-    &:before {
+    &::before {
       top: -60px;
       height: 60px;
       border-top-left-radius: 60px;
@@ -80,14 +80,14 @@
   &:focus {
     .page-footer__development-caption,
     .page-footer__development-icon {
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 
   &:active {
     .page-footer__development-caption,
     .page-footer__development-icon {
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 

@@ -27,8 +27,8 @@
   position: relative;
   color: $dark-blue-grey;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-color: $dark-blue-grey-two;
-    background-image: url('../img/contacts-location.svg');
+    background-image: url("../img/contacts-location.svg");
     background-size: 14px 22px;
   }
 
@@ -49,7 +49,7 @@
     font-size: 28px;
     line-height: 1;
 
-    &:before {
+    &::before {
       width: 67px;
       height: 67px;
       background-size: 21px 31px;
@@ -62,7 +62,7 @@
     padding-left: 122px;
     min-height: 90px;
 
-    &:before {
+    &::before {
       width: 90px;
       height: 90px;
       background-size: 28px 43px;

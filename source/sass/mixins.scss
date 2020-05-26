@@ -1,23 +1,23 @@
 @mixin placeholder($color: inherit, $font: inherit) {
   &::-webkit-input-placeholder {
-      color: $color;
-      font-family: $font;
+    color: $color;
+    font-family: $font;
   }
 
   &::-moz-placeholder {
-      color: $color;
-      opacity: 1;
-      font-family: $font;
+    color: $color;
+    opacity: 1;
+    font-family: $font;
   }
 
   &:-ms-input-placeholder {
-      color: $color;
-      font-family: $font;
+    color: $color;
+    font-family: $font;
   }
 
   &:-moz-placeholder {
-      color: $color;
-      opacity: 1;
-      font-family: $font;
+    color: $color;
+    opacity: 1;
+    font-family: $font;
   }
 }

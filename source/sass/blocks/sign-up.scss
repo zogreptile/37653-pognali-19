@@ -29,11 +29,11 @@
   }
 
   &:active {
-    color: rgba($mango-two, .3);
+    color: rgba($mango-two, 0.3);
   }
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -51,7 +51,7 @@
     font-size: 28px;
     line-height: 1;
 
-    &:before {
+    &::before {
       width: 67px;
       height: 67px;
     }
@@ -61,7 +61,7 @@
     padding-left: 122px;
     min-height: 90px;
 
-    &:before {
+    &::before {
       width: 90px;
       height: 90px;
     }
@@ -69,58 +69,58 @@
 }
 
 .sign-up__link-mail {
-  &:before {
-    background-image: url('../img/contacts-mail.svg');
+  &::before {
+    background-image: url("../img/contacts-mail.svg");
     background-size: 18px 13px;
   }
 
   &:hover,
   &:focus {
-    &:before {
-      background-image: url('../img/contacts-mail-hover.svg');
+    &::before {
+      background-image: url("../img/contacts-mail-hover.svg");
     }
   }
 
   &:active {
-    &:before {
-      background-image: url('../img/contacts-mail-active.svg');
+    &::before {
+      background-image: url("../img/contacts-mail-active.svg");
     }
   }
 
   @media (min-width: $tablet) {
-    &:before {
+    &::before {
       background-size: 27px 19px;
     }
   }
 
   @media (min-width: $desktop) {
-    &:before {
+    &::before {
       background-size: 36px 26px;
     }
   }
 }
 
 .sign-up__link-phone {
-  &:before {
-    background-image: url('../img/contacts-phone.svg');
+  &::before {
+    background-image: url("../img/contacts-phone.svg");
     background-size: 18px 18px;
   }
 
   &:hover,
   &:focus {
-    &:before {
-      background-image: url('../img/contacts-phone-hover.svg');
+    &::before {
+      background-image: url("../img/contacts-phone-hover.svg");
     }
   }
 
   &:active {
-    &:before {
-      background-image: url('../img/contacts-phone-active.svg');
+    &::before {
+      background-image: url("../img/contacts-phone-active.svg");
     }
   }
 
   @media (min-width: $tablet) {
-    &:before {
+    &::before {
       background-size: 27px 27px;
     }
   }
@@ -128,7 +128,7 @@
   @media (min-width: $desktop) {
     margin-right: 110px;
 
-    &:before {
+    &::before {
       background-size: 36px 36px;
     }
   }
@@ -167,20 +167,20 @@
   font-weight: 700;
   font-family: inherit;
   line-height: 1;
-  color: rgba($greyish-brown, .3);
+  color: rgba($greyish-brown, 0.3);
   outline: none;
 
   &::placeholder {
-    color: rgba($greyish-brown, .3);
+    color: rgba($greyish-brown, 0.3);
   }
 
   &:hover {
     background-color: $pale-grey;
     border-color: $pale-grey;
-    color: rgba($greyish-brown, .5);
+    color: rgba($greyish-brown, 0.5);
 
     &::placeholder {
-      color: rgba($greyish-brown, .5);
+      color: rgba($greyish-brown, 0.5);
     }
   }
 

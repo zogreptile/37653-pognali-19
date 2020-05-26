@@ -41,13 +41,13 @@
   &:hover,
   &:focus {
     .calendar__month-control-icon {
-      fill: rgba($dark-slate-blue, .5);
+      fill: rgba($dark-slate-blue, 0.5);
     }
   }
 
   &:active {
     .calendar__month-control-icon {
-      fill: rgba($dark-slate-blue, .1);
+      fill: rgba($dark-slate-blue, 0.1);
     }
   }
 
@@ -79,7 +79,7 @@
 }
 
 .calendar__month-control-icon {
-  fill: rgba($dark-slate-blue, .3);
+  fill: rgba($dark-slate-blue, 0.3);
 
   @media (min-width: $tablet) {
     width: 15px;
@@ -190,7 +190,7 @@
   &:disabled {
     + .calendar__day {
       background-color: $white;
-      color: rgba($greyish-brown, .3);
+      color: rgba($greyish-brown, 0.3);
       cursor: auto;
     }
   }

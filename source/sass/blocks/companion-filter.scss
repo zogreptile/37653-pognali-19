@@ -81,7 +81,7 @@
     }
 
     .companion-filter__toggle {
-      &:after {
+      &::after {
         transform: rotate(180deg);
       }
     }
@@ -103,7 +103,6 @@
 
   @media (min-width: $desktop) {
     display: none;
-    padding-top: 10px;
     padding: 10px 0 16px;
   }
 }
@@ -129,21 +128,21 @@
 
     &:hover,
     &:focus {
-      opacity: .6;
+      opacity: 0.6;
     }
 
     &:active {
       opacity: 0.3;
     }
 
-    &:before {
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       top: 20px;
       right: 0;
       width: 8px;
       height: 4px;
-      background-image: url('../img/dropdown.svg');
+      background-image: url("../img/dropdown.svg");
     }
   }
 
@@ -154,13 +153,12 @@
     font-weight: 600;
     pointer-events: none;
 
-    &:after {
-      content: ':';
+    &::after {
+      content: ":";
     }
   }
 
   @media (min-width: $desktop) {
-    padding: 16px 0 12px;
     padding: 12px 0 16px;
     width: 100%;
   }
@@ -196,28 +194,28 @@
   &:hover,
   &:focus {
     + .companion-filter__checkbox-caption {
-      color: rgba($greyish-brown, .6);
+      color: rgba($greyish-brown, 0.6);
 
-      &:before {
-        background-color: rgba($white, .6);
+      &::before {
+        background-color: rgba($white, 0.6);
       }
     }
   }
 
   &:active {
     + .companion-filter__checkbox-caption {
-      color: rgba($greyish-brown, .3);
+      color: rgba($greyish-brown, 0.3);
 
-      &:before {
-        background-color: rgba($white, .3);
+      &::before {
+        background-color: rgba($white, 0.3);
       }
     }
   }
 
   &:checked {
     + .companion-filter__checkbox-caption {
-      &:before {
-        background-image: url('../img/tick.svg');
+      &::before {
+        background-image: url("../img/tick.svg");
       }
     }
   }
@@ -230,8 +228,8 @@
   line-height: 18px;
   position: relative;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: -2px;
     left: 0;
@@ -249,7 +247,7 @@
     font-size: 20px;
     line-height: 1.1;
 
-    &:before {
+    &::before {
       width: 24px;
       height: 24px;
       background-size: 12px 12px;
@@ -276,7 +274,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -285,14 +283,7 @@
     height: 11px;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    background: linear-gradient(
-      to bottom,
-      $white,
-      $white 5px,
-      $cloudy-blue 5px,
-      $cloudy-blue 6px,
-      $white 6px
-    );
+    background: linear-gradient(to bottom, $white, $white 5px, $cloudy-blue 5px, $cloudy-blue 6px, $white 6px);
   }
 
   @media (min-width: $tablet) {
@@ -303,14 +294,7 @@
       left: 50%;
       width: 23px;
       height: 17px;
-      background: linear-gradient(
-        to bottom,
-        $white,
-        $white 8px,
-        $cloudy-blue 8px,
-        $cloudy-blue 9px,
-        $white 9px
-      );
+      background: linear-gradient(to bottom, $white, $white 8px, $cloudy-blue 8px, $cloudy-blue 9px, $white 9px);
     }
   }
 
@@ -333,11 +317,11 @@
   text-align: center;
   color: $dark-slate-blue;
   outline: none;
-  -moz-appearance: textfield;
+  -moz-appearance: textfield; /* stylelint-disable-line */
 
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  &::-webkit-outer-spin-button, /* stylelint-disable-line */
+  &::-webkit-inner-spin-button { /* stylelint-disable-line */
+    -webkit-appearance: none; /* stylelint-disable-line */
     margin: 0;
   }
 
@@ -374,7 +358,7 @@
 .companion-filter__range {
   margin: 24px 0 10px;
   height: 2px;
-  background-color: rgba($dark-slate-blue, .2);
+  background-color: rgba($dark-slate-blue, 0.2);
   position: relative;
 
   @media (min-width: $tablet) {
@@ -412,8 +396,8 @@
   top: -4px;
   cursor: pointer;
   transition:
-    transform .2s ease-in-out,
-    box-shadow .2s ease-in-out;
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 
   &:hover,
   &:focus,
@@ -422,7 +406,7 @@
   }
 
   &:active {
-    box-shadow: 0px 3px 7px 0 rgba(29, 46, 91, 0.35);
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
   }
 
   @media (min-width: $tablet) {

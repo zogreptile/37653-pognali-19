@@ -17,7 +17,7 @@
 }
 
 .like-button__icon--inactive {
-  fill: rgba($dark-blue-grey, .3);
+  fill: rgba($dark-blue-grey, 0.3);
 }
 
 .like-button__icon--active {
@@ -39,7 +39,7 @@
     background-color: $pale-grey-four;
 
     .like-button__icon--inactive {
-      fill: rgba($dark-blue-grey, .5);
+      fill: rgba($dark-blue-grey, 0.5);
     }
   }
 
@@ -47,7 +47,7 @@
     background-color: $pale-grey-four;
 
     .like-button__icon--inactive {
-      fill: rgba($dark-blue-grey, .1);
+      fill: rgba($dark-blue-grey, 0.1);
     }
   }
 
@@ -82,7 +82,7 @@
       background-color: $light-tan;
 
       .like-button__icon--active {
-        fill: rgba($tomato, .3);
+        fill: rgba($tomato, 0.3);
       }
     }
   }

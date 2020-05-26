@@ -41,8 +41,8 @@
   color: $white;
   position: relative;
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     bottom: -15px;
     left: 0;
@@ -55,7 +55,7 @@
   @media (min-width: $tablet) {
     font-size: 60px;
 
-    &:after {
+    &::after {
       bottom: -74px;
       height: 8px;
       border-radius: 4px;
@@ -76,11 +76,11 @@
 
   &:hover,
   &:focus {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {

@@ -1,11 +1,17 @@
 .intro {
   @media (min-width: $tablet) {
     background-image:
-      url('../img/traveller-illustration-tablet@1x.png'),
-      url('../img/globe-back-tablet@1x.jpg');
+      url("../img/traveller-illustration-tablet@1x.png"),
+      url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat no-repeat;
     background-position: bottom 279px right 30%, bottom center;
-    background-size: auto, auto 620px;
+    background-size: 372px 451px, auto 620px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/traveller-illustration-tablet@2x.png"),
+        url("../img/globe-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop) {
@@ -20,11 +26,17 @@
 
 .intro__top {
   background-image:
-    url('../img/traveller-illustration-mobile@1x.png'),
-    url('../img/globe-back-mobile@1x.jpg');
+    url("../img/traveller-illustration-mobile@1x.png"),
+    url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat no-repeat;
   background-position: bottom center, center;
-  background-size: auto, cover;
+  background-size: 192px 255px, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/traveller-illustration-mobile@2x.png"),
+      url("../img/globe-back-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet) {
     background-image: none;
@@ -146,7 +158,7 @@
   line-height: 1;
   color: $dark-two;
 
-  &:after {
+  &::after {
     position: absolute;
     top: 23px;
     right: 22px;
@@ -200,7 +212,7 @@
       border-top-right-radius: 0;
     }
 
-    &:after {
+    &::after {
       margin-top: 10px;
       display: block;
       position: static;
@@ -231,7 +243,7 @@
       border-radius: 20px;
     }
 
-    &:after {
+    &::after {
       position: absolute;
       top: 23px;
       right: 22px;

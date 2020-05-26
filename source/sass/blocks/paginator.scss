@@ -28,13 +28,13 @@
   &:hover,
   &:focus {
     .paginator__button-icon {
-      fill: rgba($dark-blue-grey, .6);
+      fill: rgba($dark-blue-grey, 0.6);
     }
   }
 
   &:active {
     .paginator__button-icon {
-      fill: rgba($dark-blue-grey, .3);
+      fill: rgba($dark-blue-grey, 0.3);
     }
   }
 
@@ -92,7 +92,7 @@
 
   &:hover,
   &:focus {
-    color: rgba($dark-two, .6);
+    color: rgba($dark-two, 0.6);
   }
 
   &:active {

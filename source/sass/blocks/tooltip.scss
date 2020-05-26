@@ -27,11 +27,11 @@
   color: $white;
   pointer-events: none;
   transition:
-    opacity .2s ease-in-out,
-    top .2s ease-in-out;
+    opacity 0.2s ease-in-out,
+    top 0.2s ease-in-out;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     left: 50%;
     top: -16px;

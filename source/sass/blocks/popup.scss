@@ -18,7 +18,7 @@
   width: 270px;
   border-radius: 20px;
   background-color: $white;
-  box-shadow: 0px 20px 50px 0 rgba($dark-slate-blue, .1);
+  box-shadow: 0 20px 50px 0 rgba($dark-slate-blue, 0.1);
   overflow: hidden;
 
   @media (min-width: $tablet) {
@@ -108,7 +108,7 @@
 
   &:active {
     background-color: $pale-grey;
-    color: rgba($dark-slate-blue, .3);
+    color: rgba($dark-slate-blue, 0.3);
   }
 
   @media (min-width: $tablet) {
