@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 8px 25px 0;
+  padding: 8px 0 0;
   background-color: $white;
   position: relative;
 
@@ -17,10 +17,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 0 40px 46px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 0 46px;
 
     &:before {
       top: -60px;
@@ -35,6 +32,14 @@
   }
 }
 
+.page-footer__inner {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .page-footer__logo {
   margin-bottom: 41px;
   display: flex;
@@ -43,7 +48,7 @@
   @media (min-width: $tablet) {
     margin-top: -10px;
     margin-bottom: 0;
-    width: 170px;
+    width: 210px;
     justify-content: flex-start;
     z-index: 2;
   }
@@ -89,7 +94,7 @@
   @media (min-width: $tablet) {
     margin-top: -10px;
     padding: 0;
-    width: 170px;
+    width: 210px;
     border-top: none;
     justify-content: flex-end;
   }
