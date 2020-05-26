@@ -1,6 +1,16 @@
 .country-filter {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .country-filter--opened {
@@ -91,6 +101,7 @@
   }
 
   @media (min-width: $desktop) {
+    margin-left: 20px;
     margin-right: 35px;
     padding-left: 44px;
     display: block;
@@ -163,6 +174,10 @@
       height: 5px;
     }
   }
+
+  @media (min-width: $desktop) {
+    margin-right: 68px;
+  }
 }
 
 .country-filter__toggle-text {
@@ -195,6 +210,10 @@
   @media (min-width: $tablet) {
     margin: 0 0 -30px;
     padding-right: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 35px;
   }
 }
 

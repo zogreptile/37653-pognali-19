@@ -432,7 +432,8 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    padding: 60px 75px 55px;
+    padding-top: 60px;
+    padding-bottom: 55px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     box-shadow: 0 -60px $pale-grey-four;
