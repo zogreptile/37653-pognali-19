@@ -333,7 +333,11 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 160px 132px 0 132px;
+    padding: 175px 132px 105px 132px;
+
+    .page-section__title {
+      margin-bottom: 130px;
+    }
   }
 }
 
@@ -385,6 +389,12 @@
 
   @media (min-width: $desktop) {
     padding: 168px 132px 44px;
+
+    .page-section__description {
+      margin-left: auto;
+      margin-right: auto;
+      width: 606px;
+    }
   }
 }
 
