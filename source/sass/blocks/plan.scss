@@ -1,13 +1,28 @@
-.plan-form {
-
+.plan {
+  position: relative;
 }
 
-.plan-form__step {
+.plan__steps {
+  position: absolute;
+  top: 9px;
+  right: 17px;
+
+  @media (min-width: $tablet) {
+    top: 15px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.plan__step {
   padding: 25px 25px 20px;
   border-radius: 10px;
   background-color: $white;
 
-  + .plan-form__step {
+  + .plan__step {
     margin-top: 10px;
   }
 
@@ -15,17 +30,78 @@
     padding: 50px 42px 55px;
     border-radius: 30px;
 
-    + .plan-form__step {
+    + .plan__step {
       margin-top: 40px;
     }
   }
 
   @media (min-width: $desktop) {
-    padding: 100px 160px 105px;
+    padding: 100px 160px 105px 90px;
+    border-radius: 60px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -70px;
+      bottom: 0;
+      width: 70px;
+      border-top-left-radius: 60px;
+      border-bottom-left-radius: 60px;
+      background-color: $white;
+    }
   }
 }
 
-.plan-form__step-title {
+.plan__step-indicator {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 108px;
+  right: 240px;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.plan__step-indicator-item {
+  padding-left: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, .6);
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .6);
+  }
+
+  + .plan__step-indicator-item {
+    margin-top: 24px;
+  }
+}
+
+.plan__step-indicator-item--active {
+  color: $black;
+
+  &:before {
+    background-color: $black;
+  }
+}
+
+.plan__step-title {
   margin: 0 0 18px;
   font-size: 20px;
   font-weight: 700;
@@ -38,7 +114,7 @@
   }
 }
 
-.plan-form__step-number {
+.plan__step-number {
   display: block;
 
   @media (min-width: $desktop) {
@@ -46,7 +122,7 @@
   }
 }
 
-.plan-form__description {
+.plan__description {
   margin: 0 0 25px;
 
   @media (min-width: $tablet) {
@@ -61,7 +137,7 @@
   }
 }
 
-.plan-form__field-wrap {
+.plan__field-wrap {
   margin-bottom: 21px;
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +169,7 @@
   }
 }
 
-.plan-form__field {
+.plan__field {
   margin-top: 8px;
   flex-grow: 1;
   width: 100%;
@@ -112,7 +188,7 @@
   }
 }
 
-.plan-form__field-title {
+.plan__field-title {
   @media (min-width: $desktop) {
     padding-right: 20px;
     width: 100%;
@@ -120,7 +196,7 @@
   }
 }
 
-.plan-form__field-units {
+.plan__field-units {
   color: rgba($dark-slate-blue, .3);
 
   @media (min-width: $desktop) {
@@ -132,7 +208,7 @@
   }
 }
 
-.plan-form__field-input {
+.plan__field-input {
   display: block;
   width: 100%;
   padding: 0;
@@ -158,8 +234,8 @@
   &:focus {
     border-color: $bluey-grey;
 
-    ~ .plan-form__field-control {
-      .plan-form__field-control-icon {
+    ~ .plan__field-control {
+      .plan__field-control-icon {
         fill: $bluey-grey;
       }
     }
@@ -168,8 +244,8 @@
   &:active {
     border-color: $dark-two;
 
-    ~ .plan-form__field-control {
-      .plan-form__field-control-icon {
+    ~ .plan__field-control {
+      .plan__field-control-icon {
         fill: $dark-two;
       }
     }
@@ -180,7 +256,7 @@
   }
 }
 
-.plan-form__field-control {
+.plan__field-control {
   padding: 0;
   width: 42px;
   background-color: transparent;
@@ -194,13 +270,13 @@
 
   &:hover,
   &:focus {
-    .plan-form__field-control-icon {
+    .plan__field-control-icon {
       fill: $bluey-grey;
     }
   }
 
   &:active {
-    .plan-form__field-control-icon {
+    .plan__field-control-icon {
       fill: rgba($dark-two, .1);
     }
   }
@@ -210,15 +286,15 @@
   }
 }
 
-.plan-form__field-control--decrement {
+.plan__field-control--decrement {
   left: 0;
 }
 
-.plan-form__field-control--increment {
+.plan__field-control--increment {
   right: 0;
 }
 
-.plan-form__field-control-icon {
+.plan__field-control-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -231,7 +307,7 @@
   }
 }
 
-.plan-form__checkbox-wrap {
+.plan__checkbox-wrap {
   margin-bottom: 21px;
 
   @media (min-width: $tablet) {
@@ -245,19 +321,19 @@
   }
 }
 
-.plan-form__checkbox {
+.plan__checkbox {
   display: block;
   font-size: 15px;
   line-height: 1;
   cursor: pointer;
 }
 
-.plan-form__checkbox-input {
+.plan__checkbox-input {
   outline: none;
 
   &:hover,
   &:focus {
-    + .plan-form__checkbox-caption {
+    + .plan__checkbox-caption {
       &:before {
         border-color: $bluey-grey;
       }
@@ -265,7 +341,7 @@
   }
 
   &:active {
-    + .plan-form__checkbox-caption {
+    + .plan__checkbox-caption {
       &:before {
         background-color: $pale-grey-three;
       }
@@ -273,7 +349,7 @@
   }
 
   &:checked {
-    + .plan-form__checkbox-caption {
+    + .plan__checkbox-caption {
       &:before {
         background-image: url('../img/tick.svg');
       }
@@ -281,7 +357,7 @@
   }
 }
 
-.plan-form__checkbox-caption {
+.plan__checkbox-caption {
   padding-left: 39px;
   display: block;
   font-size: 15px;
@@ -323,21 +399,21 @@
   }
 }
 
-.plan-form__basic-fields {
+.plan__basic-fields {
   @media (min-width: $tablet) {
     margin-bottom: 26px;
     display: flex;
     flex-direction: column;
 
-    .plan-form__field-wrap:nth-child(1) {
+    .plan__field-wrap:nth-child(1) {
       order: 1;
     }
 
-    .plan-form__field-wrap:nth-child(2) {
+    .plan__field-wrap:nth-child(2) {
       order: 3;
     }
 
-    .plan-form__checkbox-wrap {
+    .plan__checkbox-wrap {
       order: 2;
     }
   }
@@ -352,7 +428,7 @@
   }
 }
 
-.plan-form__actions {
+.plan__actions {
   margin-top: 24px;
 
   @media (min-width: $tablet) {

@@ -11,6 +11,12 @@
   &:not(:last-child) {
     margin-right: 15px;
   }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
 }
 
 .plan-steps__item--active {
