@@ -7,6 +7,16 @@
   background-color: $dark-two;
 }
 
+.page-header--index {
+  @media (min-width: $tablet) {
+    background-color: $dark-blue-grey;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $dark-two;
+  }
+}
+
 .page-header--main-nav-opened {
   @media (max-width: $not-desktop) {
     background-color: $white;
