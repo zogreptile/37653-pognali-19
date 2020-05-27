@@ -21,7 +21,7 @@
   position: relative;
 
   + .description__item {
-    margin-top: 25px;
+    margin-top: 30px;
   }
 
   &:not(:last-child) {
@@ -32,7 +32,7 @@
       bottom: 0;
       left: -14px;
       width: 15px;
-      height: calc(100% + 27px);
+      height: calc(100% + 32px);
       border: 2px solid $dark-slate-blue;
       border-right: none;
     }
@@ -176,6 +176,7 @@
 
   @media (min-width: $desktop) {
     padding: 28px 27px;
+    height: 146px;
   }
 }
 

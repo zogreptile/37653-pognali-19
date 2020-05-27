@@ -14,7 +14,7 @@
 }
 
 .companion-filter__inner {
-  padding: 25px 25px 22px;
+  padding: 26px 25px 22px;
   background-color: $light-gold;
   border-radius: 20px;
 
@@ -28,7 +28,7 @@
 }
 
 .companion-filter__title {
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   width: 120px;
   font-size: 22px;
   font-weight: 700;
@@ -45,6 +45,7 @@
 
   @media (min-width: $desktop) {
     margin: 0;
+    padding-bottom: 21px;
     border: none;
   }
 }
@@ -81,6 +82,8 @@
     }
 
     .companion-filter__toggle {
+      padding-bottom: 13px;
+
       &::after {
         transform: rotate(180deg);
       }
@@ -89,7 +92,7 @@
 }
 
 .companion-filter__fields-container {
-  padding-bottom: 14px;
+  padding-bottom: 19px;
 
   @media (max-width: $mobile) {
     display: none;
@@ -103,12 +106,12 @@
 
   @media (min-width: $desktop) {
     display: none;
-    padding: 10px 0 16px;
+    padding: 10px 0 19px;
   }
 }
 
 .companion-filter__toggle {
-  padding: 16px 0 12px;
+  padding: 13px 0 9px;
   display: block;
   width: 100%;
   border: none;
@@ -159,7 +162,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 12px 0 16px;
+    padding: 12px 0 8px;
     width: 100%;
   }
 }
@@ -427,7 +430,7 @@
 .companion-filter__action {
   @media (min-width: $tablet) {
     margin-top: 36px;
-    padding-top: 36px;
+    padding-top: 28px;
     border-top: 1px solid $macaroni-and-cheese;
   }
 

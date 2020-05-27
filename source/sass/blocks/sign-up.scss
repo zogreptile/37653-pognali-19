@@ -1,11 +1,12 @@
 .sign-up__links {
-  margin-top: -14px;
+  margin-top: 18px;
 
   @media (min-width: $tablet) {
-    margin-top: -20px;
+    margin-top: 42px;
   }
 
   @media (min-width: $desktop) {
+    margin-top: 44px;
     display: flex;
     justify-content: center;
   }
@@ -64,6 +65,7 @@
     &::before {
       width: 90px;
       height: 90px;
+      top: -2px;
     }
   }
 }
@@ -135,11 +137,18 @@
 }
 
 .sign-up__form {
-  margin-bottom: 32px;
+  margin-top: 29px;
+  margin-bottom: 29px;
   position: relative;
 
   @media (min-width: $tablet) {
+    margin-top: 62px;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 57px;
+    margin-bottom: 70px;
   }
 }
 
@@ -156,7 +165,7 @@
 }
 
 .sign-up__input {
-  padding: 0 80px 0 24px;
+  padding: 0 80px 0 20px;
   display: block;
   width: 100%;
   height: 62px;

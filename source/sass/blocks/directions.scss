@@ -1,15 +1,13 @@
 .directions {
-  padding-top: 72px;
+  padding-top: 69px;
   position: relative;
 
   @media (min-width: $tablet) {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 15px;
+    padding: 73px 35px 20px 33px;
     background-image: url("../img/flags-back@1x.png");
     background-size: 289px 575px;
     background-repeat: no-repeat;
-    background-position: top 72px right;
+    background-position: top 80px right;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/flags-back@2x.png");
@@ -17,8 +15,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 160px;
-    padding-left: 70px;
+    padding-top: 166px;
+    padding-left: 67px;
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -95,6 +93,12 @@
 .directions__item {
   &:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
 }
 

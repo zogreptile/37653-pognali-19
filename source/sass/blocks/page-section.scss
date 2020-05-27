@@ -3,7 +3,7 @@
 }
 
 .page-section__title {
-  margin: 0 0 23px;
+  margin: 0 0 20px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
@@ -23,7 +23,7 @@
   font-weight: 300;
 
   &:not(:last-of-type) {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $tablet) {
@@ -55,7 +55,7 @@
       url("../img/traveller-illustration-desktop@1x.png"),
       url("../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat no-repeat;
-    background-position: bottom right 41%, center;
+    background-position: bottom right 40.1%, bottom 4px center;
     background-size: 431px 640px, cover;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -107,12 +107,18 @@
     }
 
     .page-section__title {
-      margin-bottom: 42px;
+      margin-bottom: 40px;
+    }
+
+    .page-section__paragraph {
+      &:first-child {
+        margin-bottom: 31px;
+      }
     }
 
     .page-section__actions {
       display: block;
-      margin-top: 52px;
+      margin-top: 51px;
     }
   }
 
@@ -128,11 +134,21 @@
     }
 
     .page-section__title {
-      margin-bottom: 60px;
+      margin-bottom: 58px;
+    }
+
+    .page-section__paragraph {
+      &:first-child {
+        margin-bottom: 38px;
+      }
+
+      &:last-child {
+        width: 415px;
+      }
     }
 
     .page-section__actions {
-      margin-top: 86px;
+      margin-top: 84px;
     }
   }
 }
@@ -159,13 +175,13 @@
   }
 
   .page-section__description {
-    margin-bottom: 66px;
+    margin-bottom: 59px;
     padding: 0 25px;
     color: $greyish-brown;
   }
 
   .page-section__actions {
-    margin-top: 25px;
+    margin-top: 26px;
   }
 
   @media (min-width: $tablet) {
@@ -178,17 +194,17 @@
 
     .page-section__title {
       padding: 0;
-      margin-bottom: 62px;
+      margin-bottom: 58px;
     }
 
     .page-section__description {
-      margin-bottom: 113px;
+      margin-bottom: 104px;
       padding: 0;
       max-width: 340px;
     }
 
     .page-section__actions {
-      margin-top: 47px;
+      margin-top: 45px;
     }
   }
 
@@ -201,7 +217,7 @@
     }
 
     .page-section__description {
-      margin-bottom: 105px;
+      margin-bottom: 96px;
       margin-left: 735px;
     }
 
@@ -221,7 +237,7 @@
     url("../img/rogovaya-back-mobile@1x.png");
   background-size: 143px 143px, 61px 71px;
   background-repeat: no-repeat;
-  background-position: top 73px left 84%, top 360px left -15px;
+  background-position: top 69px left 86%, top 341px left 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
@@ -243,14 +259,21 @@
   }
 
   .page-section__title {
+    margin-bottom: 18px;
     padding: 0 25px;
   }
 
   .page-section__description {
     box-sizing: content-box;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     padding: 0 25px;
     width: 215px;
+  }
+
+  .page-section__paragraph {
+    &:first-child {
+      margin-bottom: 21px;
+    }
   }
 
   .page-section__actions {
@@ -258,12 +281,12 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 203px 0 22px;
+    padding: 201px 0 28px;
     background-image:
       url("../img/smolov-back-desktop@1x.png"),
       url("../img/rogovaya-back-desktop@1x.png");
     background-size: 143px 143px, 285px 285px;
-    background-position: top 480px left 6%, top 135px right 75px;
+    background-position: top 486px left 6%, top 140px right 75px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image:
@@ -279,14 +302,20 @@
     }
 
     .page-section__title {
-      margin-bottom: 60px;
+      margin-bottom: 57px;
       padding: 0;
     }
 
     .page-section__description {
-      margin-bottom: 60px;
+      margin-bottom: 58px;
       padding: 0;
       width: 425px;
+    }
+
+    .page-section__paragraph {
+      &:first-child {
+        margin-bottom: 39px;
+      }
     }
 
     .page-section__actions {
@@ -295,7 +324,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 191px 0 54px 0;
+    padding: 188px 0 74px;
     box-sizing: content-box;
     min-height: 485px;
     background-position: top 190px left 46%, bottom 25px left 200px;
@@ -307,26 +336,27 @@
     }
 
     .page-section__title {
-      margin-bottom: 60px;
+      margin-bottom: 57px;
       margin-right: 690px;
       padding: 0;
     }
 
     .page-section__description {
-      margin-bottom: 60px;
+      margin-bottom: 83px;
       margin-right: 690px;
-      padding: 0;
+      padding: 0 0 0 3px;
     }
 
     .page-section__actions {
       margin-top: auto;
       margin-right: 690px;
+      padding-left: 3px;
     }
   }
 }
 
 .page-section--tariffs {
-  padding: 82px 25px 8px 50px;
+  padding: 82px 25px 5px 50px;
 
   background-color: $pale-grey;
   position: relative;
@@ -351,7 +381,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 135px 40px 0 40px;
+    padding: 134px 40px 0 40px;
 
     .page-section__title {
       margin-bottom: 74px;
@@ -368,10 +398,10 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 175px 132px 105px 132px;
+    padding: 167px 132px 104px 132px;
 
     .page-section__title {
-      margin-bottom: 130px;
+      margin-bottom: 134px;
     }
   }
 }
@@ -395,16 +425,18 @@
   }
 
   .page-section__title {
+    margin-bottom: 19px;
     text-align: center;
   }
 
   .page-section__description {
-    margin-bottom: 32px;
+    margin: 0 auto;
+    width: 200px;
     text-align: center;
   }
 
   @media (min-width: $tablet) {
-    padding: 137px 75px 0;
+    padding: 139px 75px 0;
 
     &::after {
       bottom: -60px;
@@ -414,16 +446,20 @@
     }
 
     .page-section__title {
-      margin-bottom: 60px;
+      margin-bottom: 58px;
     }
 
     .page-section__description {
-      margin-bottom: 67px;
+      width: auto;
     }
   }
 
   @media (min-width: $desktop) {
-    padding: 168px 132px 44px;
+    padding: 168px 132px 41px;
+
+    .page-section__title {
+      margin-bottom: 56px;
+    }
 
     .page-section__description {
       margin-left: auto;
@@ -434,7 +470,7 @@
 }
 
 .page-section--address {
-  padding-top: 62px;
+  padding-top: 61px;
   background-color: $light-gold;
   position: relative;
 
@@ -452,7 +488,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 106px 75px 0;
+    padding: 108px 75px 25px;
 
     &::after {
       bottom: -60px;
@@ -503,11 +539,15 @@
     border-top-right-radius: 30px;
   }
 
+  .page-section__title {
+    margin-bottom: 26px;
+  }
+
   @media (min-width: $tablet) {
-    padding: 25px 75px 104px;
+    padding: 27px 75px 104px;
 
     .page-section__title {
-      margin-bottom: 56px;
+      margin-bottom: 48px;
       font-size: 36px;
     }
   }
@@ -520,6 +560,10 @@
       height: 60px;
       border-top-left-radius: 60px;
       border-top-right-radius: 60px;
+    }
+
+    .page-section__title {
+      margin-bottom: 44px;
     }
   }
 }
@@ -557,11 +601,15 @@
     background-color: inherit;
   }
 
+  .page-section__title {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $tablet) {
-    padding: 30px 75px 62px;
+    padding: 24px 75px 62px;
 
     .page-section__title {
-      margin-bottom: 60px;
+      margin-bottom: 56px;
       font-size: 36px;
     }
 
@@ -579,6 +627,10 @@
       height: 60px;
       border-top-left-radius: 60px;
       border-top-right-radius: 60px;
+    }
+
+    .page-section__title {
+      margin-bottom: 53px;
     }
   }
 }

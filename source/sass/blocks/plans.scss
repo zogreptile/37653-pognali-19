@@ -21,8 +21,12 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 39px 33px 34px;
+    padding: 38px 42px 35px;
     align-items: center;
+
+    + .plans__item {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -80,8 +84,9 @@
   color: $dark-slate-blue;
 
   @media (min-width: $tablet) {
-    margin: 0 47px 0 0;
+    margin: 0;
     padding: 19px 0 17px 33px;
+    width: 217px;
     font-size: 20px;
     letter-spacing: 2px;
   }

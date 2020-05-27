@@ -15,18 +15,19 @@
 }
 
 .about__inner {
-  padding-top: 326px;
+  padding-top: 312px;
   padding-bottom: 84px;
   padding-left: 25px;
   padding-right: 0;
 
   @media (min-width: $tablet) {
-    padding-top: 280px;
-    padding-left: 75px;
+    padding-top: 278px;
+    padding-bottom: 88px;
+    padding-left: 68px;
     box-sizing: content-box;
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: bottom 80px right;
+    background-position: bottom 90px right;
     background-size: 376px 548px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -36,10 +37,10 @@
 
   @media (min-width: $desktop) {
     padding-top: 132px;
-    padding-left: 126px;
-    padding-bottom: 160px;
+    padding-left: 140px;
+    padding-bottom: 163px;
     background-image: url("../img/about-desktop@1x.png");
-    background-position: bottom right;
+    background-position: bottom right 70px;
     background-size: 630px 665px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -54,7 +55,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 610px;
+    width: 612px;
   }
 }
 

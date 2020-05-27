@@ -12,6 +12,14 @@
 }
 
 .main-nav--opened {
+  .main-nav__logo {
+    background-image: url("../img/logo-mobile-blue@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/logo-mobile-blue@2x.png");
+    }
+  }
+
   .main-nav__links,
   .main-nav__contacts,
   .main-nav__auth {
@@ -38,7 +46,25 @@
     }
   }
 
+  @media (min-width: $tablet) {
+    .main-nav__logo {
+      background-image: url("../img/logo-tablet-blue@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/logo-tablet-blue@2x.png");
+      }
+    }
+  }
+
   @media (min-width: $desktop) {
+    .main-nav__logo {
+      background-image: url("../img/logo-desktop-white@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/logo-desktop-white@2x.png");
+      }
+    }
+
     .main-nav__links,
     .main-nav__contacts {
       display: flex;
@@ -149,19 +175,21 @@
 .main-nav__links {
   order: 3;
   display: none;
-  margin: 78px 0 56px;
+  margin: 75px 0 53px;
   padding: 0;
   width: 100%;
   list-style: none;
 
   @media (min-width: $tablet) {
-    margin: 60px 0 150px;
+    margin: 98px 0 142px;
+    padding-left: 57px;
   }
 
   @media (min-width: $desktop) {
     order: 2;
     margin: 0;
-    padding-left: 140px;
+    padding-top: 11px;
+    padding-left: 143px;
     display: flex;
     width: auto;
     position: relative;
@@ -172,8 +200,8 @@
       width: 60px;
       background-color: $white;
       position: absolute;
-      top: 8px;
-      left: 35px;
+      top: 18px;
+      left: 40px;
     }
   }
 }
@@ -283,7 +311,7 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 55px;
+    top: 57px;
     left: 50%;
     margin-left: -12px;
   }
@@ -307,7 +335,7 @@
 
   @media (min-width: $desktop) {
     order: 4;
-    margin: 0;
+    margin: 3px 0 0;
   }
 }
 
@@ -319,6 +347,7 @@
 
   @media (min-width: $tablet) {
     margin-top: 0;
+    padding-left: 57px;
   }
 
   @media (min-width: $desktop) {
@@ -477,12 +506,12 @@
   order: 6;
   display: none;
   justify-content: center;
-  margin-top: 28px;
+  margin-top: 30px;
   width: 100%;
 
   @media (min-width: $tablet) {
-    margin-top: 130px;
-    padding-left: 10px;
+    margin-top: 119px;
+    padding-left: 67px;
     justify-content: flex-start;
   }
 
