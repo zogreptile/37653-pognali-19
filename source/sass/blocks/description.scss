@@ -49,7 +49,7 @@
         height: calc(100% + 50px);
         border: none;
         left: auto;
-        right: -29px;
+        right: -26px;
         top: 20px;
         background: $dark-slate-blue;
       }
@@ -96,9 +96,9 @@
     &::before {
       width: 15px;
       height: 15px;
-      top: 11px;
+      top: 8px;
       left: auto;
-      right: -35px;
+      right: -32px;
     }
   }
 
@@ -135,7 +135,8 @@
   @media (min-width: $tablet) {
     width: 70px;
     height: 47px;
-    top: -7px;
+    top: -8px;
+    right: 3px;
   }
 
   @media (min-width: $desktop) {
@@ -170,6 +171,7 @@
 
   @media (min-width: $tablet) {
     padding: 21px 19px;
+    height: 144px;
     font-size: 20px;
     line-height: 24px;
   }

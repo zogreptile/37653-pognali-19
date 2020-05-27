@@ -1,4 +1,5 @@
 html {
+  box-sizing: border-box;
   font-family: $base-font;
   font-size: 16px;
   font-weight: 400;
@@ -11,21 +12,15 @@ body {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: inherit;
 
   &::before,
   &::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
   }
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-button,
-input,
-textarea {
-  cursor: pointer;
 }

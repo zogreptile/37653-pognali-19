@@ -10,6 +10,10 @@
     align-items: center;
     height: 100px;
   }
+
+  @media (min-width: $desktop) {
+    padding-right: 30px;
+  }
 }
 
 .paginator__buttons {

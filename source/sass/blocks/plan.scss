@@ -227,11 +227,11 @@
   text-align: center;
   color: inherit;
   outline: none;
-  -moz-appearance: textfield; /* stylelint-disable-line */
+  appearance: textfield;
 
-  &::-webkit-outer-spin-button, /* stylelint-disable-line */
-  &::-webkit-inner-spin-button { /* stylelint-disable-line */
-    -webkit-appearance: none; /* stylelint-disable-line */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
     margin: 0;
   }
 

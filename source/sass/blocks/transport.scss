@@ -106,6 +106,30 @@
 }
 
 .transport__input {
+  &:focus {
+    + .transport__icon {
+      fill: rgba($dark-slate-blue, 0.3);
+    }
+
+    &:checked {
+      + .transport__icon {
+        fill: rgba($dark-slate-blue-two, 0.7);
+      }
+    }
+  }
+
+  &:active {
+    + .transport__icon {
+      fill: rgba($dark-slate-blue, 0.1);
+    }
+
+    &:checked {
+      + .transport__icon {
+        fill: rgba($dark-slate-blue-two, 0.3);
+      }
+    }
+  }
+
   &:checked {
     + .transport__icon {
       fill: $dark-slate-blue;

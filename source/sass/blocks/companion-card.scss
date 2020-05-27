@@ -134,6 +134,8 @@
   }
 
   @media (min-width: $desktop) {
+    padding-right: 0;
+
     &::after {
       right: auto;
       left: -25px;

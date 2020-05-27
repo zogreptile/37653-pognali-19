@@ -332,9 +332,11 @@
     flex-shrink: 0;
     padding: 0 76px 0 34px;
     width: auto;
+    min-width: 286px;
     border-radius: 20px;
     font-size: 24px;
     line-height: 80px;
+    text-align: left;
     text-transform: none;
 
     &:active {
